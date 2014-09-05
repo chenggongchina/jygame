@@ -1,20 +1,18 @@
 package cn.hanjiasongshu.jygame.mediators
 {
-	import cn.hanjiasongshu.jygame.views.MainMenuView;
-	import feathers.data.ListCollection;
-	import starling.events.EventDispatcher;
-	
 	import cn.hanjiasongshu.jygame.events.GameEvent;
+	import cn.hanjiasongshu.jygame.views.MainMenuView;
+	
+	import feathers.data.ListCollection;
+	
 	import starling.events.Event;
+	import starling.events.EventDispatcher;
 
-	public class MainMenuMediator
+	public class MainMenuMediator extends BaseMediator
 	{
 		public function MainMenuMediator()
 		{
 		}
-		
-		[Dispatcher]
-		public var _dispatcher : EventDispatcher;
 		
 		[ViewAdded]
 		public function viewAdded(view:MainMenuView):void

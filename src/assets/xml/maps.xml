@@ -1,0 +1,4045 @@
+<root>
+  <maps>
+    <map name="大地图" pic="地图.大地图">
+      <musics>
+        <music name="音乐.逍遥" />
+        <music name="音乐.逍遥1" />
+        <music name="音乐.逍遥2" />
+        <music name="音乐.逍遥3" />
+        <music name="音乐.逍遥4" />
+      </musics>
+      <location name="昆仑山" x="120" y="213" description="昆仑山延绵千里，白雪皑皑，流传着无数关于她的神奇故事。">
+        <event type="map" value="昆仑山" image="地图.昆仑山" />
+      </location>
+      <location name="黑木崖" x="333" y="91" description="日月神教黑木崖，易守难攻的军事要冲">
+        <event type="story" value="笑傲江湖_黑木崖岳父" image="地图.黑木崖下" repeat="once">
+          <condition type="in_team" value="任盈盈" />
+          <condition type="should_finish" value="笑傲江湖_平一指治好" />
+        </event>
+        <event type="map" value="黑木崖下" image="地图.黑木崖下" />
+      </location>
+      <location name="灵鹫宫" x="251" y="104" description="缥缈峰灵鹫宫">
+        <event type="map" value="灵鹫宫" image="地图.灵鹫宫">
+          <condition type="in_menpai" value="灵鹫宫" />
+        </event>
+      </location>
+      <location name="松鼠旅馆" x="90" y="117" description="汉家松鼠童鞋模仿欧阳锋，在大漠里开了个小旅馆。">
+        <event type="map" value="松鼠旅馆" image="地图.松鼠旅馆" />
+      </location>
+      <location name="大轮寺" x="40" y="445" description="雪山密宗大轮寺，仅大轮弟子可以进入。">
+        <event type="map" value="门派大轮寺" image="地图.大轮寺正殿">
+          <condition type="in_menpai" value="大轮寺" />
+        </event>
+      </location>
+      <location name="血刀门" x="38" y="308" description="邪恶的血刀门。">
+        <event type="map" value="血刀门" image="地图.血刀门">
+          <condition type="in_menpai" value="血刀门" />
+        </event>
+      </location>
+      <location name="香格里拉" x="311" y="455" description="香格里拉，通往天堂之门。">
+        <event type="map" value="香格里拉" image="地图.香格里拉" />
+      </location>
+      <location name="沙漠" x="242" y="149" description="一片沙漠">
+        <event type="story" value="original_女主出场1" image="头像.民女" repeat="once">
+          <condition type="key_not_in_team" value="女主" />
+        </event>
+      </location>
+      <location name="唐军营" x="280" y="149" description="大唐在西域的军营">
+        <event type="story" value="original_大唐军营.父亲大人" image="头像.行军司马" repeat="once">
+          <condition type="key_in_team" value="女主" />
+        </event>
+      </location>
+      <location name="光明顶沙漠" x="205" y="130" description="距离明教圣地光明顶很近的荒芜沙漠" />
+      <location name="光明顶" x="157" y="165" description="明教圣地光明顶">
+        <event type="story" value="original_光明顶开始" image="头像.张无忌">
+          <condition type="in_team" value="张无忌" />
+          <condition type="should_finish" value="original_光明顶" />
+          <condition type="should_not_finish" value="original_光明顶胜" />
+          <condition type="should_not_finish" value="original_光明顶胜简单模式" />
+        </event>
+        <event type="story" value="original_光明顶" image="头像.张无忌" repeat="once">
+          <condition type="in_team" value="张无忌" />
+          <condition type="should_finish" value="mainStory_黑暗的阴影1" />
+        </event>
+      </location>
+      <location name="雁门关" x="470" y="44" description="中原北方的重要边塞。">
+        <event type="map" value="雁门关" image="地图.雁门关" />
+      </location>
+      <location name="哈萨克部落" x="57" y="81" description="哈萨克部落。">
+        <event type="story" value="白马啸西风_陈达海" image="地图.塞外" repeat="once">
+          <condition type="not_in_team" value="李文秀" />
+          <condition type="should_not_finish" value="mainStory_神秘剑客1" />
+        </event>
+        <event type="map" value="哈萨克部落" image="地图.塞外" probability="50" />
+      </location>
+      <location name="高昌迷宫" x="129" y="65" description="高昌迷宫。">
+        <event type="story" value="白马啸西风_高昌迷宫" image="地图.沙漠3" probability="50" repeat="once">
+          <condition type="in_team" value="李文秀" />
+          <condition type="should_finish" value="白马啸西风_李文秀" />
+          <condition type="should_not_finish" value="mainStory_神秘剑客1" />
+        </event>
+        <event type="map" value="高昌迷宫" image="地图.沙漠3" />
+      </location>
+      <location name="回族部落" x="312" y="226" description="回族部落。">
+        <event type="story" value="书剑恩仇录_回族部落" image="地图.塞外" repeat="once">
+          <condition type="not_in_team" value="霍青桐" />
+          <condition type="should_not_finish" value="mainStory_神秘剑客1" />
+        </event>
+        <event type="map" value="回族部落" image="地图.塞外" />
+      </location>
+      <location name="青城派" x="141" y="305" description="传说中武林最弱的门派。">
+        <event type="story" value="倚天屠龙_劝说青城" image="头像.长青子" repeat="once">
+          <condition type="in_team" value="张无忌" />
+          <condition type="should_finish" value="倚天屠龙_光明顶胜利2" />
+        </event>
+        <event type="story" value="倚天邪线_劝说青城" image="头像.长青子" repeat="once">
+          <condition type="should_finish" value="倚天邪线_劝说完成" />
+        </event>
+      </location>
+      <location name="峨眉山" x="197" y="250" description="四川峨眉山">
+        <event type="map" value="峨眉山中1" image="地图.华山" />
+      </location>
+      <location name="恒山" x="205" y="320" description="恒山派">
+        <event type="map" value="恒山山顶" image="地图.恒山" />
+      </location>
+      <location name="星宿海" x="114" y="407" description="星宿老仙丁春秋一手创办的门派，以毒功为主。" />
+      <location name="秦红棉居" x="270" y="400" description="修罗刀秦红棉的居所">
+        <event type="story" value="tlbb.dy_秦红棉居秦红棉1" repeat="once">
+          <condition type="should_finish" value="tlbb.dy_马夫人3" />
+          <condition type="in_team" value="段誉" />
+          <condition type="in_team" value="木婉清" />
+          <condition type="in_team" value="段正淳" />
+        </event>
+        <event type="story" value="tlbb.dy_秦红棉居段誉" repeat="once">
+          <condition type="should_finish" value="tlbb.dy_小镜湖阮星竹6" />
+          <condition type="in_team" value="段正淳" />
+          <condition type="in_team" value="阿朱" />
+        </event>
+      </location>
+      <location name="大理" x="177" y="454" description="云南大理">
+        <event type="story" value="鹿鼎记_吴三桂1" image="头像.吴三桂" description="吴三桂府上正在办寿宴" probability="50" repeat="once">
+          <condition type="should_finish" value="鹿鼎记_阿九3" />
+        </event>
+        <event type="map" value="大理" image="地图.大理" />
+      </location>
+      <location name="大理树林" x="133" y="474" description="大理城外的一片茂密森林">
+        <event type="story" value="tlbb.dy_闪电貂" image="地图.树林" probability="40" repeat="once">
+          <condition type="should_finish" value="tlbb.dy_钟灵找" />
+          <condition type="in_team" value="钟灵" />
+          <condition type="should_finish" value="mainStory_黑暗的阴影1" />
+          <condition type="should_not_finish" value="mainStory_紧急1" />
+        </event>
+        <event type="map" value="大理树林" image="地图.树林" />
+      </location>
+      <location name="无量山洞" x="175" y="500" description="洞中无日月，人间至乐也">
+        <event type="story" value="tlbb.dy_无量山洞1" image="地图.无量山洞" repeat="once">
+          <condition type="not_in_team" value="段誉" />
+        </event>
+        <event type="story" value="original_无量山洞庄子" image="头像.陈家洛" repeat="once">
+          <condition type="in_team" value="段誉" />
+          <condition type="in_team" value="陈家洛" />
+          <condition type="should_finish" value="mainStory_神秘剑客1" />
+        </event>
+        <event type="story" value="tlbb.dy_无量山洞段誉慕容复" image="头像.慕容复" repeat="once">
+          <condition type="in_team" value="段誉" />
+          <condition type="in_team" value="慕容复" />
+          <condition type="should_finish" value="mainStory_神秘剑客1" />
+        </event>
+        <event type="map" value="无量山洞" image="地图.无量山洞" />
+      </location>
+      <location name="万劫谷" x="214" y="465" description="历经万劫的苦逼山谷">
+        <event type="story" value="tlbb.dy_万劫谷地牢1" image="头像.木婉清2" description="万劫谷中一间普通的石屋" probability="50" repeat="once">
+          <condition type="not_in_team" value="段誉" />
+          <condition type="not_in_team" value="木婉清" />
+          <condition type="should_finish" value="tlbb.dy_木婉清身世3" />
+        </event>
+        <event type="map" value="万劫谷" image="地图.村口2" />
+      </location>
+      <location name="天龙寺" x="197" y="414" description="天龙寺">
+        <event type="story" value="tlbb.dy_天龙寺.六脉神剑" image="头像.段誉" description="吐蕃国师鸠摩智造访天龙寺" probability="50" repeat="once">
+          <condition type="in_team" value="段誉" />
+          <condition type="in_team" value="木婉清" />
+          <condition type="should_finish" value="tlbb.dy_天龙寺.救段誉1" />
+        </event>
+        <event type="story" value="tlbb.dy_天龙寺.救段誉1" image="头像.段誉" description="大理保定帝驾临天龙寺" probability="50" repeat="once">
+          <condition type="not_in_team" value="段誉" />
+          <condition type="in_team" value="木婉清" />
+          <condition type="should_finish" value="tlbb.dy_万劫谷地牢.上" />
+          <condition type="should_finish" value="tlbb.dy_镇南王府.救木婉清2" />
+        </event>
+        <event type="story" value="tlbb.dy_天龙寺.战鸠摩智" image="头像.段誉" description="大理保定帝驾临天龙寺" probability="50" repeat="once">
+          <condition type="not_in_team" value="段誉" />
+          <condition type="should_finish" value="tlbb.dy_万劫谷地牢.不上" />
+        </event>
+      </location>
+      <location name="西夏" x="200" y="180" description="西夏">
+        <event type="map" value="西夏" image="地图.西夏" />
+      </location>
+      <location name="擂鼓山" x="294" y="271" description="聪辩先生苏星河的居所。">
+        <event type="map" value="擂鼓山" image="地图.擂鼓山" />
+      </location>
+      <location name="武道大会" x="400" y="123" description="华山的武道大会">
+        <event type="map" value="武道大会" image="地图.比武场" />
+      </location>
+      <location name="华山" x="433" y="143" description="西岳华山，随处可见险峰峭壁，如同一把利剑直插天际。">
+        <event type="story" value="original_华山论剑" description="华山论剑！" repeat="once">
+          <condition type="should_finish" value="mainStory_最终决战3" />
+        </event>
+        <event type="story" value="original_华山论剑" description="华山论剑！" repeat="once">
+          <condition type="should_finish" value="original_女主.重伤.南贤居" />
+        </event>
+        <event type="map" value="华山" image="地图.华山" />
+      </location>
+      <location name="小镜湖" x="487" y="142" description="小镜湖">
+        <event type="story" value="tlbb.dy_小镜湖乔峰1" image="头像.阿朱" probability="30" repeat="once">
+          <condition type="should_finish" value="tlbb.dy_雁门关有阿朱" />
+          <condition type="in_team" value="乔峰" />
+          <condition type="in_team" value="阿朱" />
+        </event>
+        <event type="story" value="tlbb.dy_小镜湖阮星竹1" image="头像.阿朱" probability="30" repeat="once">
+          <condition type="should_finish" value="tlbb.dy_秦红棉居秦红棉1" />
+          <condition type="in_team" value="段誉" />
+          <condition type="in_team" value="段正淳" />
+          <condition type="in_team" value="阿朱" />
+        </event>
+      </location>
+      <location name="古墓派" x="374" y="185" description="内有美女，点击进入！">
+        <event type="map" value="古墓派" image="地图.古墓内" />
+      </location>
+      <location name="绝情谷" x="410" y="205" description="绝情谷">
+        <event type="story" value="sdxl_断肠崖.杨过跳崖" image="地图.绝情谷大厅.小" lv="25" repeat="once">
+          <condition type="in_team" value="杨过" />
+          <condition type="not_in_team" value="小龙女" />
+          <condition type="not_in_team" value="郭襄" />
+          <condition type="should_finish" value="mainStory_黑暗的阴影1" />
+        </event>
+        <event type="story" value="sdxl_断肠崖.杨过郭襄跳崖" image="地图.绝情谷大厅.小" repeat="once">
+          <condition type="in_team" value="杨过" />
+          <condition type="not_in_team" value="小龙女" />
+          <condition type="in_team" value="郭襄" />
+          <condition type="should_finish" value="mainStory_黑暗的阴影1" />
+        </event>
+        <event type="map" value="绝情谷" image="地图.绝情谷大厅.小" />
+      </location>
+      <location name="程英居" x="410" y="288" description="程英居">
+        <event type="story" value="sdxl_程英.月下吹箫" image="地图.小村口" description="这里隐居着一位恬淡的女子。" probability="60" repeat="once">
+          <condition type="not_in_team" value="杨过" />
+          <condition type="not_in_team" value="程英" />
+          <condition type="not_in_team" value="田伯光" />
+          <condition type="should_not_finish" value="mainStory_神秘剑客1" />
+        </event>
+        <event type="map" value="程英居" image="地图.小村口" description="这里隐居着一位恬淡的女子。" />
+      </location>
+      <location name="风陵渡口" x="519" y="191" description="一个有故事的渡口">
+        <event type="story" value="鸳鸯刀_太岳四侠" image="地图.风陵渡口" repeat="once">
+          <condition type="in_time" value="子#丑#寅#卯#亥" />
+        </event>
+        <event type="story" value="sdxl_程英.风陵渡口" image="地图.风陵渡口" repeat="once">
+          <condition type="in_team" value="杨过" />
+          <condition type="not_in_team" value="程英" />
+        </event>
+        <event type="story" value="笑傲江湖_风陵渡黑衣人" image="地图.风陵渡口" repeat="once">
+          <condition type="in_team" value="令狐冲" />
+          <condition type="in_team" value="任盈盈" />
+          <condition type="should_finish" value="笑傲江湖_琴居东方胜" />
+        </event>
+        <event type="story" value="sdxl_郭襄.风陵渡口" image="地图.风陵渡口" probability="20" lv="5" repeat="once">
+          <condition type="in_team" value="田伯光" />
+          <condition type="not_in_team" value="杨过" />
+        </event>
+        <event type="map" value="风陵渡口" image="地图.风陵渡口" />
+      </location>
+      <location name="剑魔荒冢" x="250" y="254" description="剑魔独孤求败埋冢之地">
+        <event type="story" value="original_剑魔荒冢独孤求败" image="头像.杨过" description="研习独孤求败武学" lv="25" repeat="once">
+          <condition type="in_team" value="杨过" />
+          <condition type="in_team" value="令狐冲" />
+          <condition type="should_finish" value="mainStory_黑暗的阴影1" />
+        </event>
+        <event type="story" value="笑傲江湖_真独孤九剑" image="地图.剑魔荒冢" description="令狐冲领悟真独孤九剑" lv="30" repeat="once">
+          <condition type="in_team" value="令狐冲" />
+          <condition type="should_finish" value="笑傲江湖_风陵渡黑衣人胜2" />
+        </event>
+        <event type="map" value="剑魔荒冢" image="地图.剑魔荒冢" description="剑魔独孤求败埋冢之地，有大鸟出没，非高手勿入！" />
+      </location>
+      <location name="北京" x="528" y="121" description="北京欢迎您">
+        <event type="story" value="少林寺_南北之争1" image="头像.玄生" description="一个很老很老的和尚" repeat="once">
+          <condition type="should_finish" value="少林寺_南北之争" />
+        </event>
+        <event type="story" value="鹿鼎记_皇宫太后1" image="头像.韦小宝" description="韦小宝又有鬼点子了.." probability="30" repeat="once">
+          <condition type="in_team" value="韦小宝" />
+          <condition type="should_finish" value="鹿鼎记_皇宫鳌拜1" />
+        </event>
+        <event type="story" value="鹿鼎记_皇宫鳌拜1" image="头像.韦小宝" description="韦小宝又有鬼点子了.." probability="30" repeat="once">
+          <condition type="in_team" value="韦小宝" />
+          <condition type="should_finish" value="鹿鼎记_北京韦小宝加入" />
+        </event>
+        <event type="story" value="倚天屠龙_北京救赵敏" image="头像.赵敏" description="天下兵马大元帅的府邸" repeat="once">
+          <condition type="should_finish" value="倚天屠龙_张无忌2" />
+        </event>
+        <event type="map" value="北京" image="地图.长安" />
+      </location>
+      <location name="丐帮总舵" x="631" y="255" description="丐帮总舵。">
+        <event type="story" value="tlbb.dy_丐帮总舵" image="地图.丐帮">
+          <condition type="should_not_finish" value="tlbb.dy_丐帮总舵胜" />
+        </event>
+        <event type="map" value="丐帮" image="地图.丐帮">
+          <condition type="should_finish" value="tlbb.dy_丐帮总舵胜" />
+        </event>
+      </location>
+      <location name="聚贤庄" x="602" y="216" description="聚贤庄">
+        <event type="story" value="tlbb.dy_聚贤庄1" image="头像.萧峰" probability="50" repeat="once">
+          <condition type="should_finish" value="tlbb.dy_少林寺2" />
+          <condition type="in_team" value="段誉" />
+          <condition type="should_finish" value="mainStory_黑暗的阴影1" />
+        </event>
+      </location>
+      <location name="洛阳" x="487" y="240" description="繁华的洛阳城">
+        <event type="story" value="mainStory_紧急.洛阳" description="洛阳告急！" repeat="once">
+          <condition type="should_finish" value="mainStory_紧急4" />
+        </event>
+        <event type="story" value="tlbb.dy_马夫人1" description="木婉清又有了新的发现..." probability="30" repeat="once">
+          <condition type="should_finish" value="tlbb.dy_曼陀山庄李青萝3" />
+          <condition type="in_team" value="段誉" />
+          <condition type="in_team" value="木婉清" />
+          <condition type="in_team" value="阿朱" />
+        </event>
+        <event type="map" value="洛阳" image="地图.洛阳" />
+      </location>
+      <location name="襄阳" x="524" y="292" description="蒙古人年年南下，襄阳城早已经破败不堪。">
+        <event type="story" value="mainStory_襄阳1" description="最后的战场！" repeat="once">
+          <condition type="should_finish" value="mainStory_紧急.杭州胜" />
+        </event>
+        <event type="map" value="襄阳" image="地图.襄阳" description="战火纷飞的襄阳城" />
+      </location>
+      <location name="嵩山" x="473" y="198" description="中岳嵩山，卓然立于中原大地。">
+        <event type="map" value="嵩山" image="地图.嵩山" />
+      </location>
+      <location name="武当派" x="457" y="260" description="武林各门派中的泰山北斗">
+        <event type="map" value="武当派" image="地图.大殿2" />
+      </location>
+      <location name="长安" x="360" y="254" description="都城长安">
+        <event type="story" value="original_长安.家中" image="头像.民女" repeat="once">
+          <condition type="should_finish" value="original_大唐军营.父亲大人" />
+          <condition type="key_in_team" value="女主" />
+        </event>
+        <event type="map" value="长安" image="地图.长安" />
+      </location>
+      <location name="苗人凤居" x="555" y="165" description="打遍天下无敌手金面佛苗人凤的居所">
+        <event type="map" value="苗人凤居" image="头像.苗人凤">
+          <condition type="should_not_finish" value="雪山飞狐_苗人凤居.阎基对峙.杀苗人凤.战斗.胜利" />
+          <condition type="should_not_finish" value="雪山飞狐_苗人凤居.田归农胡斐.杀苗人凤.胜利" />
+          <condition type="should_not_finish" value="雪山飞狐_苗人凤居.阎基对峙.杀苗人凤.战斗.胜利简单模式" />
+          <condition type="should_not_finish" value="雪山飞狐_苗人凤居.田归农胡斐.杀苗人凤.胜利简单模式" />
+        </event>
+      </location>
+      <location name="南贤居" x="592" y="285" description="南贤的简陋居室，现在也是你在这个世界的家">
+        <event type="story" value="original_女主.重伤.南贤居" image="头像.民女" description="南贤的简陋居室，现在也是你在这个世界的家" repeat="once">
+          <condition type="should_finish" value="original_女主.襄阳受重伤结束.南贤" />
+        </event>
+        <event type="map" value="南贤居" image="地图.主角之家" />
+      </location>
+      <location name="田伯光居" x="650" y="335" description="万里独行田伯光的居所">
+        <event type="story" value="全真教_杀死田伯光" image="头像.田伯光" description="采花大盗田伯光，依然乖乖地呆在家里。" repeat="once">
+          <condition type="should_finish" value="全真教_孙不二是" />
+        </event>
+        <event type="story" value="笑傲江湖_田伯光居1" image="头像.田伯光" description="采花大盗田伯光，依然乖乖地呆在家里。" repeat="once">
+          <condition type="should_not_finish" value="全真教_杀死田伯光完成" />
+          <condition type="should_not_finish" value="mainStory_黑暗的阴影1" />
+        </event>
+      </location>
+      <location name="衡阳" x="560" y="361" description="南部城市衡阳">
+        <event type="story" value="mainStory_紧急.衡阳" description="衡阳告急！" repeat="once">
+          <condition type="should_finish" value="mainStory_紧急4" />
+        </event>
+        <event type="map" value="衡阳" image="地图.衡阳" />
+      </location>
+      <location name="杭州" x="692" y="322" description="人间天堂">
+        <event type="story" value="mainStory_紧急.杭州" description="杭州告急！" repeat="once">
+          <condition type="should_finish" value="mainStory_紧急4" />
+          <condition type="should_finish" value="mainStory_紧急.衡阳胜" />
+          <condition type="should_finish" value="mainStory_紧急.洛阳胜" />
+        </event>
+        <event type="map" value="杭州" image="地图.杭州" />
+      </location>
+      <location name="商家堡" x="612" y="160" description="八卦门前掌门紫金八卦刀商剑鸣的住所">
+        <event type="story" value="雪山飞狐_商家堡.商宝震练功" image="头像.商宝震" description="商家堡的少爷商宝震整天在练武，去和他一起练两手吧。">
+          <condition type="should_not_finish" value="雪山飞狐_商家堡.商家堡风波1" />
+          <condition type="should_not_finish" value="雪山飞狐_商家堡.商家堡风波2" />
+          <condition type="not_in_time" value="子#丑#寅#卯#亥" />
+        </event>
+        <event type="story" value="雪山飞狐_商家堡.商家堡风波1" image="头像.商宝震" description="夜深人静的商家堡，还传出阵阵练武吆喝声，不知道是什么情况。" lv="8" repeat="once">
+          <condition type="in_time" value="子#丑#寅#卯#亥" />
+          <condition type="in_team" value="胡斐" />
+        </event>
+        <event type="story" value="雪山飞狐_商家堡.商家堡风波2" image="头像.商老太" description="隐隐约约听见商老婆子那令人毛骨悚然的笑声，不知道又在搞什么阴谋？" probability="50" lv="15" repeat="once">
+          <condition type="in_time" value="子#丑#寅#卯#亥" />
+          <condition type="should_finish" value="雪山飞狐_商家堡.商家堡风波1" />
+          <condition type="in_team" value="胡斐" />
+        </event>
+        <event type="story" value="雪山飞狐_商家堡.商家堡风波3" image="头像.胡斐" description="商家堡自从上次的风波后，空荡荡的好像成为了一个鬼屋！" lv="25" repeat="once">
+          <condition type="in_time" value="子#丑#寅#卯#亥" />
+          <condition type="should_finish" value="雪山飞狐_商家堡.商家堡风波2" />
+          <condition type="in_team" value="胡斐" />
+        </event>
+        <event type="story" value="侠客行_赏善罚恶令" image="头像.张三" description="赏善罚恶二使驾到商家堡" probability="30" repeat="once">
+          <condition type="should_finish" value="雪山飞狐_商家堡.商家堡风波3" />
+        </event>
+      </location>
+      <location name="阎基居" x="570" y="243" description="一个江湖跌打医生的住所">
+        <event type="story" value="雪山飞狐_阎基居.两页刀法" image="头像.阎基" repeat="once">
+          <condition type="in_team" value="胡斐" />
+        </event>
+        <event type="story" value="雪山飞狐_阎基居.七星海棠" image="头像.阎基" probability="50" repeat="once">
+          <condition type="should_finish" value="雪山飞狐_药王庄.程灵素.求药" />
+        </event>
+      </location>
+      <location name="江陵" x="400" y="347" description="又名荆州，人间水乡">
+        <event type="map" value="江陵" image="地图.江陵" />
+      </location>
+      <location name="佛山镇" x="440" y="440" description="广东的一个小镇">
+        <event type="map" value="佛山镇" image="地图.村口2" />
+      </location>
+      <location name="鄱阳湖" x="560" y="400" description="五湖四海之一">
+        <event type="story" value="倚天邪线_鄱阳湖偷粮" image="头像.全冠清" repeat="once">
+          <condition type="should_finish" value="倚天邪线_劝说青城完成1" />
+        </event>
+        <event type="story" value="倚天屠龙_鄱阳湖" image="头像.常遇春" repeat="once">
+          <condition type="should_finish" value="倚天屠龙_劝说武当成功" />
+          <condition type="should_finish" value="倚天屠龙_劝说少林成功" />
+          <condition type="should_finish" value="倚天屠龙_劝说华山成功" />
+          <condition type="should_finish" value="倚天屠龙_劝说嵩山2" />
+          <condition type="should_finish" value="倚天屠龙_劝说峨眉成功" />
+          <condition type="should_finish" value="倚天屠龙_劝说青城成功" />
+        </event>
+        <event type="story" value="倚天邪线_康茂才" image="头像.康茂才" repeat="once">
+          <condition type="should_finish" value="倚天邪线_加入丐帮" />
+        </event>
+      </location>
+      <location name="福建少林寺" x="605" y="405" description="拳打少林，脚踢武当" />
+      <location name="胡斐居" x="743" y="18" description="雪山飞狐胡斐的居所">
+        <event type="story" value="雪山飞狐_胡斐居" image="头像.胡斐">
+          <condition type="not_in_team" value="胡斐" />
+          <condition type="should_not_finish" value="mainStory_黑暗的阴影1" />
+        </event>
+      </location>
+      <location name="帐篷" x="419" y="32" description="江南七怪在大漠里的帐篷">
+        <event type="story" value="射雕英雄传_塞外郭靖" image="头像.郭靖" probability="50" repeat="once">
+          <condition type="not_in_team" value="郭靖" />
+          <condition type="should_not_finish" value="mainStory_黑暗的阴影1" />
+        </event>
+        <event type="story" value="射雕英雄传_梅超风1" image="头像.梅超风" description="帐篷附近有奇怪的声音响起..." probability="25" lv="15" repeat="once">
+          <condition type="in_time" value="子#丑" />
+        </event>
+      </location>
+      <location name="白驼山庄" x="17" y="229" description="西毒欧阳锋的奇幻蛇庄">
+        <event type="map" value="白驼山庄" image="地图.绝情谷大厅.小" />
+      </location>
+      <location name="张家口" x="511" y="64" description="一个普通的北方城市">
+        <event type="story" value="射雕英雄传_张家口1" image="头像.黄蓉" description="一个小叫花" repeat="once">
+          <condition type="in_team" value="郭靖" />
+          <condition type="should_not_finish" value="mainStory_黑暗的阴影1" />
+        </event>
+        <event type="story" value="刀法_雁行刀" image="头像.牧羊女" description="塞上明珠" repeat="once">
+          <condition type="should_not_finish" value="mainStory_黑暗的阴影1" />
+        </event>
+        <event type="story" value="侠客行_主张家口" image="头像.石破天" description="狗杂种石破天" repeat="once">
+          <condition type="should_finish" value="侠客行_主杭州石清" />
+        </event>
+        <event type="story" value="侠客行_石张家口" image="头像.石破天" description="高富帅石破天" repeat="once">
+          <condition type="should_finish" value="侠客行_石太玄神功" />
+        </event>
+      </location>
+      <location name="一灯居" x="428" y="375" description="南帝一灯大师隐居之所">
+        <event type="story" value="射雕英雄传_渔樵耕读1" image="头像.段王爷" probability="20" lv="15" repeat="once">
+          <condition type="should_finish" value="射雕英雄传_张家口1" />
+          <condition type="in_team" value="郭靖" />
+          <condition type="should_finish" value="mainStory_黑暗的阴影1" />
+        </event>
+        <event type="story" value="射雕英雄传_一灯居1" image="头像.段王爷" description="一灯大师等候你多时了" lv="25" repeat="once">
+          <condition type="should_finish" value="射雕英雄传_渔樵耕读2" />
+          <condition type="in_team" value="郭靖" />
+          <condition type="should_finish" value="mainStory_黑暗的阴影1" />
+        </event>
+        <event type="story" value="射雕英雄传_一灯居再战" image="头像.段王爷" description="一灯大师等候你多时了" lv="25" repeat="once">
+          <condition type="should_finish" value="射雕英雄传_渔樵耕读2" />
+          <condition type="in_team" value="郭靖" />
+          <condition type="should_finish" value="mainStory_黑暗的阴影1" />
+          <condition type="should_finish" value="射雕英雄传_一灯居1" />
+          <condition type="should_not_finish" value="射雕英雄传_一灯居2" />
+        </event>
+      </location>
+      <location name="桃花岛" x="760" y="320" description="东邪黄药师的花花小岛">
+        <event type="map" value="桃花岛" image="地图.桃花岛" />
+      </location>
+      <location name="黑龙潭" x="480" y="375" description="周伯通已经搬到黑龙潭和瑛姑一起住了。">
+        <event type="map" value="黑龙潭" image="头像.周伯通" lv="20" />
+      </location>
+      <location name="长江岸边" x="479" y="298" description="长江岸边，迁客骚人都喜欢的地方">
+        <event type="story" value="射雕英雄传_洪七公1" image="头像.洪七公" probability="20" lv="25" repeat="once">
+          <condition type="should_finish" value="射雕英雄传_张家口1" />
+          <condition type="in_team" value="郭靖" />
+          <condition type="should_finish" value="mainStory_黑暗的阴影1" />
+        </event>
+        <event type="story" value="射雕英雄传_洪七公再战" image="头像.洪七公" lv="25" repeat="once">
+          <condition type="should_finish" value="射雕英雄传_张家口1" />
+          <condition type="in_team" value="郭靖" />
+          <condition type="should_finish" value="mainStory_黑暗的阴影1" />
+          <condition type="should_finish" value="射雕英雄传_洪七公1" />
+          <condition type="should_not_finish" value="射雕英雄传_洪七公2" />
+        </event>
+        <event type="story" value="original_李白1" image="头像.李白" description="诗仙李白行吟江畔" probability="50" repeat="once">
+          <condition type="should_not_finish" value="original_李白2" />
+        </event>
+        <event type="story" value="original_李白2" image="头像.李白" description="诗仙李白行吟江畔" probability="50" repeat="once">
+          <condition type="should_finish" value="original_李白1" />
+          <condition type="should_not_finish" value="original_李白3" />
+        </event>
+        <event type="story" value="original_李白3" image="头像.李白" description="诗仙李白行吟江畔" probability="50" repeat="once">
+          <condition type="should_finish" value="original_李白2" />
+          <condition type="should_not_finish" value="original_李白4" />
+        </event>
+        <event type="story" value="original_李白4" image="头像.李白" description="诗仙李白行吟江畔" probability="50" repeat="once">
+          <condition type="should_finish" value="original_李白3" />
+          <condition type="should_not_finish" value="original_李白5" />
+        </event>
+        <event type="story" value="original_李白5" image="头像.李白" description="诗仙李白行吟江畔" probability="50" repeat="once">
+          <condition type="should_finish" value="original_李白4" />
+          <condition type="should_not_finish" value="original_李白6" />
+        </event>
+        <event type="story" value="original_李白6" image="头像.李白" description="诗仙李白行吟江畔" probability="50" repeat="once">
+          <condition type="should_finish" value="original_李白5" />
+          <condition type="should_not_finish" value="original_李白7" />
+        </event>
+        <event type="story" value="original_李白7" image="头像.李白" description="诗仙李白行吟江畔" probability="50" repeat="once">
+          <condition type="should_finish" value="original_李白6" />
+          <condition type="should_not_finish" value="original_李白8" />
+        </event>
+        <event type="story" value="original_李白8" image="头像.李白" description="诗仙李白行吟江畔" probability="50" repeat="once">
+          <condition type="should_finish" value="original_李白7" />
+          <condition type="should_not_finish" value="original_李白9" />
+        </event>
+        <event type="story" value="original_李白9" image="头像.李白" description="诗仙李白行吟江畔" probability="50" repeat="once">
+          <condition type="should_finish" value="original_李白8" />
+          <condition type="should_not_finish" value="original_李白10" />
+        </event>
+        <event type="story" value="original_李白10" image="头像.李白" description="诗仙李白行吟江畔" probability="50" repeat="once">
+          <condition type="should_finish" value="original_李白9" />
+        </event>
+      </location>
+      <location name="同福客栈" x="341" y="341" description="七侠镇的同福客栈。">
+        <event type="map" value="同福客栈" image="地图.客栈" />
+      </location>
+      <location name="全真教" x="350" y="155" description="全真教">
+        <event type="story" value="射雕英雄传_重阳宫王重阳1" description="和黄蓉说说话..." lv="22" repeat="once">
+          <condition type="should_finish" value="射雕英雄传_桃花岛招亲2" />
+          <condition type="in_team" value="郭靖" />
+          <condition type="in_team" value="黄蓉" />
+        </event>
+        <event type="story" value="射雕英雄传_重阳宫九阴真经1" image="头像.王重阳" description="天下第一王重阳" lv="30" repeat="once">
+          <condition type="should_finish" value="射雕英雄传_重阳宫王重阳3" />
+        </event>
+        <event type="map" value="全真教" image="地图.全真教" description="终南山全真教">
+          <condition type="in_menpai" value="全真教" />
+        </event>
+      </location>
+      <location name="太湖" x="650" y="290" description="太湖广袤，尤以姑苏慕容氏斗转星移绝学天下闻名。">
+        <event type="story" value="tlbb.dy_阿朱阿碧" image="头像.阿碧" description="姑苏慕容氏，斗转星移绝学天下闻名" probability="50" repeat="once" />
+        <event type="story" value="tlbb.dy_曼陀山庄1" image="头像.段誉" description="姑苏慕容氏，斗转星移绝学天下闻名" probability="50" repeat="once">
+          <condition type="should_finish" value="tlbb.dy_天龙寺.战鸠摩智" />
+        </event>
+        <event type="story" value="tlbb.dy_燕子坞慕容复" image="头像.慕容复" description="姑苏慕容氏，斗转星移绝学天下闻名" probability="50" repeat="once">
+          <condition type="should_finish" value="tlbb.dy_少林寺帮助慕容复" />
+          <condition type="in_team" value="段誉" />
+          <condition type="in_team" value="阿碧" />
+        </event>
+        <event type="story" value="tlbb.dy_曼陀山庄李青萝1" description="曼陀山庄" probability="30" repeat="once">
+          <condition type="in_team" value="段誉" />
+          <condition type="in_team" value="阿朱" />
+          <condition type="in_team" value="木婉清" />
+        </event>
+        <event type="story" value="tlbb.dy_琴韵小筑阿碧1" image="头像.阿碧" description="姑苏慕容氏，斗转星移绝学天下闻名" probability="30" repeat="once">
+          <condition type="should_finish" value="tlbb.dy_湘江阿碧" />
+          <condition type="in_team" value="阿碧" />
+          <condition type="in_team" value="段誉" />
+          <condition type="in_team" value="木婉清" />
+        </event>
+        <event type="story" value="tlbb.dy_曼陀山庄逍遥子" image="头像.阿碧" description="姑苏慕容氏，斗转星移绝学天下闻名" repeat="once">
+          <condition type="should_finish" value="tlbb.dy_无量山洞无崖子战胜" />
+          <condition type="in_team" value="阿碧" />
+          <condition type="in_team" value="段誉" />
+          <condition type="in_team" value="木婉清" />
+        </event>
+      </location>
+      <location name="勃泥岛" x="757" y="257" description="袁承志和温青青隐居之所。">
+        <event type="map" value="勃泥岛" image="地图.树林2" />
+      </location>
+      <location name="神龙岛" x="739" y="200" description="神龙教盘踞的海岛">
+        <event type="story" value="鹿鼎记_神龙岛" image="头像.韦小宝" probability="30" repeat="once">
+          <condition type="should_finish" value="鹿鼎记_吴三桂4" />
+        </event>
+      </location>
+      <location name="台湾" x="717" y="440" description="宝岛台湾，中国不可分割的领土！！">
+        <event type="story" value="鹿鼎记_台湾1" image="头像.韦小宝" probability="30" repeat="once">
+          <condition type="should_finish" value="鹿鼎记_神龙岛" />
+          <condition type="not_in_team" value="阿珂" />
+        </event>
+      </location>
+      <location name="鹿鼎山" x="618" y="38" description="满清龙脉所在">
+        <event type="story" value="鹿鼎记_鹿鼎山1" image="头像.韦小宝" probability="30" repeat="once">
+          <condition type="should_finish" value="鹿鼎记_台湾1" />
+        </event>
+      </location>
+      <location name="霹雳堂" x="754" y="394" description="孔八拉的霹雳堂">
+        <event type="map" value="霹雳堂" image="地图.霹雳堂" />
+      </location>
+    </map>
+    <map name="洛阳" pic="地图.洛阳">
+      <musics>
+        <music name="音乐.城市3" />
+      </musics>
+      <maprole roleKey="小孩" pic="头像.小孩" description="洛阳街上的小孩">
+        <event type="story" value="original_洛阳.小孩1" />
+      </maprole>
+      <maprole roleKey="王家老爷" pic="头像.王家老爷" description="洛阳王家的有钱大老爷">
+        <event type="story" value="original_洛阳奇闻.阿福1" description="王家老爷的阿福似乎走丢了...">
+          <condition type="not_in_time" value="子#丑#寅#卯#亥" />
+        </event>
+      </maprole>
+      <maprole roleKey="平一指居" pic="地图.室内" description="移居洛阳的平一指居，晚上不开门" hide="0">
+        <event type="map" value="平一指居" description="移居洛阳的平一指居，晚上不开门">
+          <condition type="not_in_time" value="子#丑#寅#卯#亥" />
+        </event>
+      </maprole>
+      <maprole roleKey="商店" pic="场景.商店" description="洛阳城的杂货店，专卖各种杂货药品" hide="0">
+        <event type="shop" value="洛阳.商店">
+          <condition type="not_in_time" value="子#丑#寅#卯#亥" />
+        </event>
+        <event type="shop" value="洛阳.商店.神秘" description="杂货店本应该关门的，但这个时间不知道为什么在神秘的卖东西" probability="20">
+          <condition type="in_time" value="子#丑#寅#卯#亥" />
+        </event>
+      </maprole>
+      <maprole roleKey="back" description="夜晚关闭城门，禁止出城">
+        <event type="map" value="大地图" description="返回大地图" />
+      </maprole>
+    </map>
+    <map name="平一指居" pic="地图.室内">
+      <musics>
+        <music name="音乐.城市1" />
+      </musics>
+      <maprole roleKey="平一指" description="杀人名医平一指">
+        <event type="story" value="笑傲江湖_平一指治疗" repeat="once">
+          <condition type="in_team" value="令狐冲" />
+          <condition type="in_team" value="蓝凤凰" />
+          <condition type="in_team" value="平一指" />
+          <condition type="have_item" value="雪莲花" />
+          <condition type="have_item" value="万年醉" />
+          <condition type="have_item" value="长白人参" />
+        </event>
+        <event type="story" value="笑傲江湖_平一指3">
+          <condition type="should_finish" value="笑傲江湖_平一指2" />
+          <condition type="should_not_finish" value="笑傲江湖_平一指治好" />
+        </event>
+        <event type="story" value="笑傲江湖_平一指2" repeat="once">
+          <condition type="in_team" value="令狐冲" />
+          <condition type="in_team" value="蓝凤凰" />
+          <condition type="should_not_finish" value="笑傲江湖_平一指3" />
+          <condition type="should_not_finish" value="笑傲江湖_平一指治好" />
+        </event>
+        <event type="story" value="笑傲江湖_平一指1" />
+      </maprole>
+      <maprole roleKey="back" description="回洛阳城">
+        <event type="map" value="洛阳" />
+      </maprole>
+    </map>
+    <map name="长安" pic="地图.长安">
+      <musics>
+        <music name="音乐.武侠进行" />
+      </musics>
+      <maprole roleKey="长安西市" pic="地图.长安西市" description="热闹喧哗的长安西市。">
+        <event type="map" value="长安西市" />
+      </maprole>
+      <maprole roleKey="长安琴舍" pic="地图.琴舍" description="长安城内的风雅去处。">
+        <event type="map" value="长安琴舍" />
+      </maprole>
+      <maprole roleKey="长安当铺" pic="场景.商店" description="长安城内的当铺">
+        <event type="sellshop" value="长安.当铺" />
+      </maprole>
+      <maprole roleKey="back" description="夜晚关闭城门，禁止出城">
+        <event type="map" value="大地图" description="返回大地图" />
+      </maprole>
+    </map>
+    <map name="长安琴舍" pic="地图.琴舍">
+      <musics>
+        <music name="音乐.武侠进行" />
+      </musics>
+      <maprole roleKey="抚琴女" pic="头像.抚琴女" description="长安城内的抚琴名家。">
+        <event type="story" value="original_长安一梦.抚琴女1" probability="50" />
+        <event type="story" value="original_长安一梦.抚琴女2" />
+      </maprole>
+      <maprole roleKey="back" description="返回长安城">
+        <event type="map" value="长安" />
+      </maprole>
+    </map>
+    <map name="长安西市" pic="地图.长安西市">
+      <musics>
+        <music name="音乐.武侠进行" />
+      </musics>
+      <maprole roleKey="民女1" pic="头像.民女" description="流落长安街头的女子。">
+        <event type="story" value="original_长安一梦.民女2">
+          <condition type="should_finish" value="original_长安一梦.民女C1" />
+          <condition type="should_not_finish" value="original_长安一梦.民女3" />
+        </event>
+        <event type="story" value="original_长安一梦.民女C1" probability="20" repeat="once">
+          <condition type="should_finish" value="original_长安一梦.民女B1" />
+        </event>
+        <event type="story" value="original_长安一梦.民女B1" probability="20" repeat="once">
+          <condition type="should_finish" value="original_长安一梦.民女1" />
+        </event>
+        <event type="story" value="original_长安一梦.民女1" probability="20" repeat="once">
+          <condition type="key_not_in_team" value="女主" />
+        </event>
+      </maprole>
+      <maprole roleKey="长安酒楼" pic="地图.酒楼" description="长安酒楼">
+        <event type="map" value="长安酒楼" />
+      </maprole>
+      <maprole roleKey="商店" pic="场景.商店" description="长安城的杂货店，专卖各种杂货药品" hide="0">
+        <event type="shop" value="长安.商店">
+          <condition type="not_in_time" value="子#丑#寅#卯#亥" />
+        </event>
+      </maprole>
+      <maprole roleKey="流浪汉" pic="头像.流浪汉" description="穿的破破烂烂的">
+        <event type="story" value="功夫_柴山十八路" repeat="once" />
+      </maprole>
+      <maprole roleKey="back" description="返回长安城">
+        <event type="map" value="长安" />
+      </maprole>
+    </map>
+    <map name="长安酒楼" pic="地图.酒楼">
+      <musics>
+        <music name="音乐.武侠进行" />
+      </musics>
+      <maprole roleKey="酒楼老板" pic="头像.酒楼老板" description="酒楼的老板，喜欢跟客人攀谈。">
+        <event type="story" value="tlbb.dy_西夏驸马.酒楼传闻" description="在议论些什么。" repeat="once">
+          <condition type="should_finish" value="tlbb.dy_小镜湖乔峰5" />
+          <condition type="in_team" value="段誉" />
+        </event>
+        <event type="story" value="original_长安酒楼.奇闻1" probability="10" />
+        <event type="story" value="original_长安酒楼.奇闻2" probability="10" />
+        <event type="story" value="original_长安酒楼.奇闻3" probability="10" />
+        <event type="story" value="original_长安酒楼.奇闻4" probability="10" />
+        <event type="story" value="original_长安酒楼.奇闻5" probability="10" />
+        <event type="story" value="original_长安酒楼.奇闻6" probability="10" />
+        <event type="story" value="original_长安酒楼.奇闻7" probability="10" />
+        <event type="story" value="original_长安酒楼.奇闻8" probability="10" />
+        <event type="story" value="original_长安酒楼.奇闻9" probability="10" />
+        <event type="story" value="original_长安酒楼.奇闻10" probability="10" />
+        <event type="story" value="original_长安酒楼.奇闻12" probability="10" />
+        <event type="story" value="original_长安酒楼.奇闻11" />
+      </maprole>
+      <maprole roleKey="back" pic="地图.长安西市" description="返回长安西市">
+        <event type="map" value="长安西市" />
+      </maprole>
+    </map>
+    <map name="衡阳" pic="地图.衡阳">
+      <musics>
+        <music name="音乐.武侠流水" />
+      </musics>
+      <maprole roleKey="衡阳琴舍" pic="地图.琴舍" description="衡阳地处偏远，难得有一处清雅的去处。">
+        <event type="map" value="衡阳琴舍" />
+      </maprole>
+      <maprole roleKey="潇湘古林" pic="地图.郊外" description="通往三湘四水的古老森林。">
+        <event type="map" value="潇湘古林1" />
+      </maprole>
+      <maprole roleKey="湘妃庙" pic="地图.湘妃庙" description="供奉湘妃的神庙，如今已经破旧不堪。">
+        <event type="map" value="湘妃庙" />
+      </maprole>
+      <maprole roleKey="back" description="夜晚关闭城门，禁止出城">
+        <event type="map" value="大地图" description="返回大地图" />
+      </maprole>
+    </map>
+    <map name="衡阳琴舍" pic="地图.琴舍">
+      <maprole roleKey="民女2" pic="头像.民女2" description="衡阳城的琵琶高手。">
+        <event type="story" value="original_衡阳秋色.民女1" probability="30" />
+        <event type="story" value="original_衡阳秋色.民女2" probability="30" />
+        <event type="story" value="original_衡阳秋色.民女3" probability="30" />
+        <event type="story" value="original_衡阳秋色.民女4" probability="30" />
+        <event type="story" value="original_衡阳秋色.民女5" probability="30" />
+        <event type="story" value="original_衡阳秋色.民女6" probability="30" />
+        <event type="story" value="original_衡阳秋色.民女7" repeat="once" />
+        <event type="story" value="original_衡阳秋色.民女8" />
+      </maprole>
+      <maprole roleKey="东方不败" pic="头像.东方不败" description="日出东方，唯我不败">
+        <event type="story" value="笑傲江湖_琴居东方" repeat="once">
+          <condition type="should_finish" value="笑傲江湖_黑木崖东方胜" />
+          <condition type="in_team" value="令狐冲" />
+          <condition type="in_team" value="任盈盈" />
+          <condition type="not_in_team" value="曲非烟" />
+        </event>
+        <event type="story" value="笑傲邪_初见东方" repeat="once">
+          <condition type="should_finish" value="笑傲江湖_黑木崖.辟邪剑谱到手" />
+        </event>
+      </maprole>
+      <maprole roleKey="back" description="返回衡阳城">
+        <event type="map" value="衡阳" />
+      </maprole>
+    </map>
+    <map name="西夏" pic="地图.西夏">
+      <musics>
+        <music name="音乐.武侠回忆" />
+      </musics>
+      <maprole roleKey="西夏女子" pic="头像.西夏女子" description="一个神秘莫测的女子。">
+        <event type="story" value="original_西夏.神秘女子1" probability="20" />
+        <event type="story" value="original_西夏.神秘女子2" probability="20" />
+        <event type="story" value="original_西夏.神秘女子3" probability="20" />
+      </maprole>
+      <maprole roleKey="梦姑" pic="头像.梦姑" description="西夏一位美丽的公主">
+        <event type="story" value="少林_人生最幸福的事情" repeat="once">
+          <condition type="should_finish" value="tlbb.dy_西夏驸马段誉8" />
+          <condition type="should_finish" value="少林派_不剃度" />
+        </event>
+      </maprole>
+      <maprole roleKey="西夏酒楼" pic="地图.酒楼" description="西夏酒楼">
+        <event type="map" value="西夏酒楼" />
+      </maprole>
+      <maprole roleKey="西夏郊外" pic="地图.小镜湖晚上" description="西夏郊外传来一阵呜咽声...">
+        <event type="story" value="tlbb.dy_西夏驸马段誉1" repeat="once">
+          <condition type="should_finish" value="tlbb.dy_西夏驸马.酒楼传闻" />
+          <condition type="in_team" value="段誉" />
+          <condition type="not_in_team" value="王语嫣" />
+          <condition type="not_in_team" value="慕容复" />
+          <condition type="not_in_team" value="鸠摩智" />
+        </event>
+      </maprole>
+      <maprole roleKey="back" description="夜晚关闭城门，禁止出城">
+        <event type="map" value="大地图" description="返回大地图" />
+      </maprole>
+    </map>
+    <map name="西夏酒楼" pic="地图.酒楼">
+      <musics>
+        <music name="音乐.武侠回忆" />
+      </musics>
+      <maprole roleKey="男子" pic="头像.男子" description="一个神秘的男子。">
+        <event type="story" value="tlbb.dy_西夏驸马.酒楼传闻" description="在议论些什么。" repeat="once">
+          <condition type="should_finish" value="tlbb.dy_小镜湖乔峰5" />
+          <condition type="in_team" value="段誉" />
+        </event>
+        <event type="story" value="original_西夏酒楼.男子1" />
+      </maprole>
+      <maprole roleKey="韦小宝" description="小宝有话要说">
+        <event type="story" value="鸳鸯刀邪_西夏酒楼" repeat="once">
+          <condition type="in_team" value="韦小宝" />
+          <condition type="should_finish" value="鸳鸯刀邪_风陵渡" />
+        </event>
+      </maprole>
+      <maprole roleKey="back" description="返回西夏">
+        <event type="map" value="西夏" />
+      </maprole>
+    </map>
+    <map name="少林寺" pic="地图.少林">
+      <musics>
+        <music name="音乐.天龙八部.佛音1" />
+        <music name="音乐.天龙八部.佛音2" />
+      </musics>
+      <maprole roleKey="方证大师" description="少林寺方证大师" hide="0">
+        <event type="story" value="tlbb.dy_归还经书" repeat="once">
+          <condition type="have_item" value="少林寺失窃的经书" />
+        </event>
+        <event type="story" value="倚天邪线_劝说少林" description="方证大师" repeat="once">
+          <condition type="should_finish" value="倚天邪线_劝说各大派" />
+        </event>
+        <event type="story" value="original_少林.木人巷" description="挑战木人巷">
+          <condition type="should_not_finish" value="original_少林.木人巷胜" />
+          <condition type="should_not_finish" value="original_少林.木人巷胜简单模式" />
+        </event>
+        <event type="story" value="original_少林.铜人巷" description="挑战铜人巷">
+          <condition type="should_finish" value="original_少林.木人巷胜" />
+          <condition type="should_not_finish" value="original_少林.铜人巷胜" />
+          <condition type="should_not_finish" value="original_少林.铜人巷胜简单模式" />
+        </event>
+        <event type="story" value="少林寺_重回塔林" description="找方丈聊聊天" repeat="once">
+          <condition type="should_finish" value="少林派_少林出师" />
+          <condition type="should_finish" value="mainStory_黑暗的阴影1" />
+          <condition type="should_not_finish" value="少林派_南少林出师" />
+        </event>
+        <event type="story" value="少林寺_南北之争" description="找方丈聊聊南北少林" repeat="once">
+          <condition type="should_finish" value="少林派_少林出师" />
+          <condition type="should_finish" value="mainStory_黑暗的阴影3" />
+          <condition type="should_not_finish" value="少林派_南少林出师" />
+        </event>
+        <event type="story" value="门派少林寺_聊天" description="聊佛法">
+          <condition type="should_finish" value="少林派_少林出师" />
+        </event>
+      </maprole>
+      <maprole roleKey="藏经阁" description="少林寺的藏经阁">
+        <event type="map" value="藏经阁" description="夜黑风高，藏经阁的守备貌似不太森严，难道..." probability="15">
+          <condition type="in_time" value="子#丑" />
+        </event>
+        <event type="story" value="original_少林.藏经阁" />
+      </maprole>
+      <maprole roleKey="back" description="返回嵩山">
+        <event type="map" value="嵩山" />
+      </maprole>
+    </map>
+    <map name="佛山镇" pic="地图.佛山镇">
+      <musics>
+        <music name="音乐.欢快工作" />
+      </musics>
+      <maprole roleKey="凤天南" description="一个佛山镇的土豪">
+        <event type="story" value="雪山飞狐_佛山镇.凤天南">
+          <condition type="not_in_team" value="胡斐" />
+          <condition type="should_not_finish" value="雪山飞狐_佛山镇.凤天南作恶" />
+        </event>
+        <event type="story" value="雪山飞狐_佛山镇.凤天南作恶" repeat="once">
+          <condition type="in_team" value="胡斐" />
+        </event>
+      </maprole>
+      <maprole roleKey="小孩" description="街边小屁孩">
+        <event type="story" value="鸳鸯刀邪_佛山镇" repeat="once">
+          <condition type="in_team" value="韦小宝" />
+          <condition type="should_finish" value="鸳鸯刀邪_西夏酒楼" />
+        </event>
+      </maprole>
+      <maprole roleKey="back" description="返回大地图">
+        <event type="map" value="大地图" />
+      </maprole>
+    </map>
+    <map name="湘妃庙" pic="地图.湘妃庙">
+      <maprole roleKey="凤天南" description="一个佛山镇的土豪">
+        <event type="story" value="雪山飞狐_湘妃庙.凤天南作恶" description="在佛山作恶的恶霸凤天南，跑到这儿来了" probability="50" repeat="once">
+          <condition type="in_team" value="胡斐" />
+          <condition type="should_finish" value="雪山飞狐_佛山镇.凤天南作恶" />
+        </event>
+      </maprole>
+      <maprole roleKey="田归农" description="天龙门北宗掌门人">
+        <event type="story" value="雪山飞狐_湘妃庙.田归农.阎基" repeat="once">
+          <condition type="should_finish" value="雪山飞狐_苗人凤居.田归农来战.胜利.2" />
+          <condition type="should_finish" value="雪山飞狐_阎基居.七星海棠.胜利.不杀" />
+        </event>
+        <event type="story" value="雪山飞狐_湘妃庙.田归农" repeat="once">
+          <condition type="should_finish" value="雪山飞狐_苗人凤居.田归农来战.胜利.2" />
+          <condition type="should_finish" value="雪山飞狐_阎基居.七星海棠.胜利.杀" />
+        </event>
+      </maprole>
+      <maprole roleKey="back" description="返回衡阳">
+        <event type="map" value="衡阳" />
+      </maprole>
+    </map>
+    <map name="苗人凤居" pic="地图.小村口">
+      <musics>
+        <music name="音乐.天龙八部.紧张感5" />
+      </musics>
+      <maprole roleKey="苗人凤" description="金面佛苗人凤">
+        <event type="story" value="雪山飞狐_苗人凤居.苗人凤.1">
+          <condition type="not_in_team" value="胡斐" />
+        </event>
+        <event type="story" value="雪山飞狐_苗人凤居.苗人凤被毒" description="有人正在送信给金面佛苗人凤" repeat="once">
+          <condition type="should_finish" value="雪山飞狐_阎基居.两页刀法" />
+          <condition type="in_team" value="胡斐" />
+        </event>
+        <event type="story" value="雪山飞狐_苗人凤居.苗人凤.正在求解药" description="被毒瞎眼睛的金面佛苗人凤">
+          <condition type="should_finish" value="雪山飞狐_苗人凤居.苗人凤被毒" />
+          <condition type="should_not_finish" value="雪山飞狐_阎基居.七星海棠.胜利" />
+        </event>
+        <event type="story" value="雪山飞狐_苗人凤居.救治" description="被毒瞎眼睛的金面佛苗人凤" repeat="once">
+          <condition type="should_finish" value="雪山飞狐_阎基居.七星海棠.胜利" />
+          <condition type="should_finish" value="雪山飞狐_阎基居.七星海棠.胜利.杀" />
+        </event>
+        <event type="story" value="雪山飞狐_苗人凤居.正在调查" description="被毒瞎眼睛的金面佛苗人凤">
+          <condition type="should_finish" value="雪山飞狐_苗人凤居.田归农来战.胜利.2" />
+          <condition type="should_not_finish" value="雪山飞狐_苗人凤居.阎基对峙.杀苗人凤.战斗.胜利" />
+          <condition type="should_not_finish" value="雪山飞狐_湘妃庙.田归农" />
+          <condition type="should_not_finish" value="雪山飞狐_湘妃庙.田归农.阎基" />
+        </event>
+        <event type="story" value="雪山飞狐_苗人凤居.阎基对峙" description="被毒瞎眼睛的金面佛苗人凤" repeat="once">
+          <condition type="should_finish" value="雪山飞狐_阎基居.七星海棠.胜利" />
+          <condition type="should_finish" value="雪山飞狐_阎基居.七星海棠.胜利.不杀" />
+        </event>
+        <event type="story" value="雪山飞狐_苗人凤居.田归农" description="被毒瞎眼睛的金面佛苗人凤" repeat="once">
+          <condition type="should_finish" value="雪山飞狐_湘妃庙.相信田归农" />
+        </event>
+        <event type="story" value="雪山飞狐_苗人凤居.谜底" description="被毒瞎眼睛的金面佛苗人凤" repeat="once">
+          <condition type="should_finish" value="雪山飞狐_湘妃庙.不相信田归农" />
+        </event>
+        <event type="story" value="雪山飞狐_苗人凤居.谜底.2" description="被毒瞎眼睛的金面佛苗人凤" repeat="once">
+          <condition type="should_finish" value="雪山飞狐_湘妃庙.胡斐单挑田归农阎基.胜利" />
+        </event>
+        <event type="story" value="雪山飞狐_苗人凤居.回忆战">
+          <condition type="should_finish" value="雪山飞狐_苗人凤居.谜底.3" />
+          <condition type="should_not_finish" value="雪山飞狐_苗人凤居.回忆战.胜利" />
+          <condition type="should_not_finish" value="雪山飞狐_苗人凤居.回忆战.胜利简单模式" />
+        </event>
+        <event type="story" value="雪山飞狐_苗人凤居.告诫">
+          <condition type="should_finish" value="雪山飞狐_苗人凤居.回忆战.胜利简单模式" />
+          <condition type="should_not_finish" value="飞狐外传_苗人凤的伤痛1" />
+        </event>
+      </maprole>
+      <maprole roleKey="back" description="返回大地图">
+        <event type="map" value="大地图" />
+      </maprole>
+    </map>
+    <map name="药王庄" pic="地图.小村口">
+      <musics>
+        <music name="音乐.天外村" />
+      </musics>
+      <maprole roleKey="程灵素" description="一个面色枯黄的姑娘">
+        <event type="story" value="雪山飞狐_药王庄.程灵素.求药" repeat="once">
+          <condition type="should_finish" value="雪山飞狐_苗人凤居.苗人凤被毒.胜利" />
+          <condition type="not_in_team" value="程灵素" />
+        </event>
+      </maprole>
+      <maprole roleKey="毒手药王" description="药王庄的主人">
+        <event type="story" value="雪山飞狐_药王庄.毒手药王" probability="50">
+          <condition type="in_team" value="程灵素" />
+          <condition type="should_finish" value="mainStory_黑暗的阴影1" />
+          <condition type="should_not_finish" value="雪山飞狐_药王庄.毒手药王.胜利" />
+        </event>
+        <event type="story" value="雪山飞狐_药王庄.毒手药王.单挑战" probability="50" repeat="once">
+          <condition type="in_team" value="程灵素" />
+          <condition type="should_finish" value="雪山飞狐_药王庄.毒手药王" />
+          <condition type="should_finish" value="mainStory_组织1" />
+          <condition type="should_not_finish" value="雪山飞狐_药王庄.毒手药王.单挑战.胜利" />
+        </event>
+      </maprole>
+      <maprole roleKey="back" description="返回衡阳">
+        <event type="map" value="衡阳" />
+      </maprole>
+    </map>
+    <map name="藏经阁" pic="地图.室内2">
+      <musics>
+        <music name="音乐.天龙八部.佛音4" />
+      </musics>
+      <maprole roleKey="松鼠无名老僧" description="一个正在扫地的老和尚">
+        <event type="story" value="original_少林.无名老僧">
+          <condition type="should_not_finish" value="original_少林.无名老僧.胜" />
+        </event>
+      </maprole>
+      <maprole roleKey="back" description="返回少林">
+        <event type="map" value="少林寺" />
+      </maprole>
+    </map>
+    <map name="江陵" pic="地图.江陵">
+      <musics>
+        <music name="音乐.大地图2" />
+      </musics>
+      <maprole roleKey="天宁寺" pic="地图.天宁寺" description="天宁寺，一个古朴破旧的寺庙。">
+        <event type="map" value="天宁寺" />
+      </maprole>
+      <maprole roleKey="狄云" description="狄云有话要说...">
+        <event type="story" value="连城诀_江陵复仇" repeat="once">
+          <condition type="should_finish" value="连城诀_雪谷水笙" />
+          <condition type="in_team" value="狄云" />
+        </event>
+      </maprole>
+      <maprole roleKey="back" description="返回大地图">
+        <event type="map" value="大地图" />
+      </maprole>
+    </map>
+    <map name="天宁寺" pic="地图.天宁寺">
+      <musics>
+        <music name="音乐.大地图2" />
+      </musics>
+      <maprole roleKey="大佛像" pic="头像.佛像" description="一个满是灰尘和蜘蛛网的佛像。" hide="0">
+        <event type="story" value="连城诀_天宁寺毒">
+          <condition type="not_in_team" value="狄云" />
+          <condition type="should_not_finish" value="连城诀_天宁寺毒习武" />
+        </event>
+        <event type="story" value="连城诀_天宁寺毒2">
+          <condition type="should_finish" value="连城诀_天宁寺毒习武" />
+        </event>
+        <event type="story" value="连城诀_连城诀2">
+          <condition type="should_finish" value="连城诀_连城诀" />
+        </event>
+      </maprole>
+      <maprole roleKey="back" description="返回江陵">
+        <event type="map" value="江陵" />
+      </maprole>
+    </map>
+    <map name="霹雳堂" pic="地图.霹雳堂">
+      <musics>
+        <music name="音乐.武林至尊" />
+      </musics>
+      <maprole roleKey="孔八拉" pic="头像.孔八拉" description="霹雳堂堂主孔八拉">
+        <event type="story" value="original_孔八拉" repeat="once" />
+        <event type="story" value="original_孔八拉_挑战">
+          <condition type="should_not_finish" value="original_孔八拉_简单模式" />
+        </event>
+        <event type="story" value="original_孔八拉_简单模式_对话">
+          <condition type="should_finish" value="original_孔八拉_简单模式" />
+        </event>
+      </maprole>
+      <maprole roleKey="back" description="返回大地图">
+        <event type="map" value="大地图" />
+      </maprole>
+    </map>
+    <map name="侠客岛" pic="地图.侠客岛">
+      <musics>
+        <music name="音乐.天龙八部.逍遥派" />
+      </musics>
+      <maprole roleKey="龙岛主" pic="头像.龙岛主" description="侠客岛龙岛主">
+        <event type="story" value="侠客行_龙岛主" />
+      </maprole>
+      <maprole roleKey="木岛主" pic="头像.木岛主" description="侠客岛木岛主">
+        <event type="story" value="侠客行_木岛主" />
+      </maprole>
+      <maprole roleKey="侠客岛洞内" pic="地图.侠客岛洞内" description="侠客岛的洞内">
+        <event type="map" value="侠客岛洞内" />
+      </maprole>
+    </map>
+    <map name="侠客岛洞内" pic="地图.侠客岛洞内">
+      <musics>
+        <music name="音乐.天龙八部.逍遥派" />
+      </musics>
+      <maprole roleKey="石破天" pic="头像.石破天" description="狗杂种石破天">
+        <event type="story" value="侠客行_石破天" />
+      </maprole>
+      <maprole roleKey="白自在" pic="头像.白自在" description="威德先生白自在">
+        <event type="story" value="侠客行_白自在" />
+      </maprole>
+      <maprole roleKey="石壁" pic="头像.石壁" description="刻有太玄经的石壁">
+        <event type="story" value="侠客行_太玄经" repeat="once" />
+      </maprole>
+      <maprole roleKey="back" description="出洞">
+        <event type="map" value="侠客岛" />
+      </maprole>
+    </map>
+    <map name="南贤居死胡同" pic="地图.主角之家">
+      <maprole roleKey="南贤" pic="头像.南贤" description="死老头南贤">
+        <event type="story" value="mainStory_online" />
+      </maprole>
+    </map>
+    <map name="武道大会" pic="地图.比武场">
+      <musics>
+        <music name="音乐.金庸群侠传5" />
+      </musics>
+      <maprole roleKey="汉家松鼠" pic="头像.汉家松鼠" description="游戏制作人汉家松鼠">
+        <event type="story" value="original_武道大会松鼠介绍" repeat="once" />
+        <event type="story" value="original_武道大会" />
+      </maprole>
+      <maprole roleKey="back" description="回大地图">
+        <event type="map" value="大地图" />
+      </maprole>
+    </map>
+    <map name="门派古墓" pic="地图.古墓派">
+      <musics>
+        <music name="音乐.神雕.舒缓" />
+      </musics>
+      <maprole roleKey="黄衫女子" description="清丽脱俗的黄衫女子">
+        <event type="story" value="门派古墓_再试左右互搏">
+          <condition type="should_finish" value="门派古墓_左右互搏" />
+          <condition type="should_not_finish" value="门派古墓_左右互搏行" />
+        </event>
+        <event type="story" value="门派古墓_左右互搏" repeat="once">
+          <condition type="should_finish" value="门派古墓_古墓出师" />
+          <condition type="should_finish" value="mainStory_组织1" />
+          <condition type="should_finish" value="门派古墓_回古墓.玄铁剑法3胜" />
+          <condition type="should_finish" value="original_周伯通胜" />
+        </event>
+        <event type="story" value="门派古墓_回古墓.玄铁剑法选择">
+          <condition type="should_finish" value="门派古墓_古墓出师" />
+          <condition type="should_finish" value="mainStory_神秘剑客1" />
+          <condition type="should_finish" value="门派古墓_回古墓.玄铁剑法" />
+          <condition type="should_not_finish" value="门派古墓_回古墓.玄铁剑法练习" />
+        </event>
+        <event type="story" value="门派古墓_回古墓.玄铁剑法" repeat="once">
+          <condition type="should_finish" value="门派古墓_古墓出师" />
+          <condition type="should_finish" value="mainStory_神秘剑客1" />
+        </event>
+        <event type="story" value="门派古墓_回古墓.玉蜂浆" repeat="once">
+          <condition type="should_finish" value="门派古墓_古墓出师" />
+          <condition type="should_finish" value="mainStory_黑暗的阴影1" />
+          <condition type="should_not_finish" value="mainStory_神秘剑客1" />
+        </event>
+        <event type="story" value="门派古墓_回古墓">
+          <condition type="should_finish" value="门派古墓_古墓出师" />
+        </event>
+      </maprole>
+      <maprole roleKey="天罗地网之间" pic="地图.古墓天罗地网之间" description="天罗地网之间（学习天罗地网掌）">
+        <event type="story" value="门派古墓_天罗地网之间">
+          <condition type="should_not_finish" value="门派古墓_古墓出师" />
+        </event>
+      </maprole>
+      <maprole roleKey="寒玉之间" pic="地图.古墓寒玉之间" description="寒玉之间（学习玉女心经）">
+        <event type="story" value="门派古墓_寒玉之间">
+          <condition type="should_not_finish" value="门派古墓_古墓出师" />
+        </event>
+      </maprole>
+      <maprole roleKey="祖师之间" pic="地图.古墓师祖之间" description="祖师之间（学习玉女剑法）">
+        <event type="story" value="门派古墓_祖师之间">
+          <condition type="should_not_finish" value="门派古墓_古墓出师" />
+        </event>
+      </maprole>
+      <maprole roleKey="古墓侧室" pic="地图.古墓玉蜂之间" description="古墓侧室">
+        <event type="map" value="古墓侧室" />
+      </maprole>
+    </map>
+    <map name="古墓侧室" pic="地图.古墓玉蜂之间">
+      <musics>
+        <music name="音乐.神雕.舒缓" />
+      </musics>
+      <maprole roleKey="绳床之间" pic="地图.古墓绳床之间" description="绳床之间（学习定力）">
+        <event type="story" value="门派古墓_绳床之间">
+          <condition type="should_not_finish" value="门派古墓_古墓出师" />
+        </event>
+      </maprole>
+      <maprole roleKey="玉蜂之间" pic="地图.古墓玉蜂之间" description="玉蜂之间（学习玉蜂针）">
+        <event type="story" value="门派古墓_玉蜂之间">
+          <condition type="should_not_finish" value="门派古墓_古墓出师" />
+        </event>
+      </maprole>
+      <maprole roleKey="古墓走廊" pic="地图.古墓走廊" description="前往古墓派众人居所">
+        <event type="map" value="古墓走廊" />
+      </maprole>
+      <maprole roleKey="古墓正厅" pic="地图.古墓派" description="返回古墓正厅">
+        <event type="map" value="门派古墓" />
+      </maprole>
+      <maprole roleKey="back" description="返回江湖！">
+        <event type="map" value="大地图">
+          <condition type="should_finish" value="门派古墓_古墓出师" />
+        </event>
+        <event type="story" value="门派古墓_出不去">
+          <condition type="should_not_finish" value="门派古墓_古墓出师" />
+        </event>
+      </maprole>
+    </map>
+    <map name="古墓走廊" pic="地图.古墓走廊">
+      <musics>
+        <music name="音乐.神雕.舒缓" />
+      </musics>
+      <maprole roleKey="掌门之间" pic="地图.古墓绳床之间" description="古墓掌门居所" />
+      <maprole roleKey="杨冰儿房间" pic="地图.古墓绳床之间" description="杨冰儿的房间">
+        <event type="map" value="杨冰儿房间" />
+      </maprole>
+      <maprole roleKey="古墓侧室" pic="地图.古墓玉蜂之间" description="返回古墓侧室">
+        <event type="map" value="古墓侧室" />
+      </maprole>
+    </map>
+    <map name="杨冰儿房间" pic="地图.古墓绳床之间">
+      <musics>
+        <music name="音乐.室内_安静" />
+      </musics>
+      <maprole roleKey="杨冰儿" description="古墓派弟子杨冰儿">
+        <event type="story" value="门派古墓_杨冰儿初登场" repeat="once" />
+        <event type="story" value="门派古墓_杨冰儿比武">
+          <condition type="should_finish" value="门派古墓_杨冰儿初登场" />
+          <condition type="should_not_finish" value="门派古墓_古墓出师" />
+        </event>
+      </maprole>
+      <maprole roleKey="古墓走廊" pic="地图.古墓走廊" description="返回古墓走廊">
+        <event type="map" value="古墓走廊" />
+      </maprole>
+    </map>
+    <map name="门派大轮寺" pic="地图.大轮寺正殿">
+      <musics>
+        <music name="音乐.天龙八部.佛音4" />
+      </musics>
+      <maprole roleKey="金轮法王" description="武艺高超的金轮法王">
+        <event type="story" value="门派大轮寺_回大轮寺.龙象秘籍" repeat="once">
+          <condition type="should_finish" value="门派大轮寺_回大轮寺.霍都" />
+          <condition type="should_finish" value="门派大轮寺_回大轮寺.郭襄" />
+        </event>
+        <event type="story" value="门派大轮寺_回大轮寺.霍都" repeat="once">
+          <condition type="should_finish" value="门派大轮寺_大轮寺出师" />
+          <condition type="should_finish" value="门派大轮寺_霍都胜" />
+        </event>
+        <event type="story" value="门派大轮寺_回大轮寺.郭襄" repeat="once">
+          <condition type="should_finish" value="门派大轮寺_大轮寺出师" />
+          <condition type="in_team" value="郭襄" />
+        </event>
+        <event type="story" value="门派大轮寺_回大轮寺">
+          <condition type="should_finish" value="门派大轮寺_大轮寺出师" />
+        </event>
+      </maprole>
+      <maprole roleKey="修炼密宗大手印" pic="地图.大轮寺武场" description="修炼密宗大手印">
+        <event type="story" value="门派大轮寺_密宗大手印">
+          <condition type="should_not_finish" value="门派大轮寺_大轮寺出师" />
+        </event>
+      </maprole>
+      <maprole roleKey="修炼无上大力杆" pic="地图.大轮寺武场" description="修炼无上大力杆">
+        <event type="story" value="门派大轮寺_无上大力杆">
+          <condition type="should_not_finish" value="门派大轮寺_大轮寺出师" />
+        </event>
+      </maprole>
+      <maprole roleKey="修炼漫天花雨" pic="地图.大轮寺武场" description="修炼漫天花雨">
+        <event type="story" value="门派大轮寺_漫天花雨">
+          <condition type="should_not_finish" value="门派大轮寺_大轮寺出师" />
+        </event>
+      </maprole>
+      <maprole roleKey="大轮寺雪山" pic="地图.大轮寺雪山" description="大轮寺雪山">
+        <event type="map" value="大轮寺雪山" />
+      </maprole>
+    </map>
+    <map name="大轮寺雪山" pic="地图.大轮寺雪山">
+      <musics>
+        <music name="音乐.天龙八部.佛音4" />
+      </musics>
+      <maprole roleKey="欢喜禅" pic="地图.大轮寺雪山" description="参悟欢喜禅">
+        <event type="story" value="门派大轮寺_参禅">
+          <condition type="should_not_finish" value="门派大轮寺_大轮寺出师" />
+        </event>
+      </maprole>
+      <maprole roleKey="雪中行走" pic="地图.大轮寺雪山" description="练习雪中行走">
+        <event type="story" value="门派大轮寺_雪山小路">
+          <condition type="should_not_finish" value="门派大轮寺_大轮寺出师" />
+        </event>
+      </maprole>
+      <maprole roleKey="大轮寺雪谷" pic="地图.大轮寺雪谷1" description="前往大轮寺雪谷">
+        <event type="map" value="大轮寺雪谷" />
+      </maprole>
+      <maprole roleKey="大轮寺" pic="地图.大轮寺正殿" description="返回大轮寺">
+        <event type="map" value="门派大轮寺" />
+      </maprole>
+      <maprole roleKey="back" description="返回江湖！">
+        <event type="map" value="大地图">
+          <condition type="should_finish" value="门派大轮寺_大轮寺出师" />
+        </event>
+        <event type="story" value="门派大轮寺_出不去">
+          <condition type="should_not_finish" value="门派大轮寺_大轮寺出师" />
+        </event>
+      </maprole>
+    </map>
+    <map name="大轮寺雪谷" pic="地图.大轮寺雪谷1">
+      <musics>
+        <music name="音乐.天龙八部.佛音4" />
+      </musics>
+      <maprole roleKey="桑结" description="大护法桑结">
+        <event type="story" value="门派大轮寺_桑结负">
+          <condition type="should_finish" value="门派大轮寺_桑结胜" />
+        </event>
+        <event type="story" value="门派大轮寺_桑结2">
+          <condition type="should_finish" value="门派大轮寺_桑结1" />
+          <condition type="should_not_finish" value="门派大轮寺_桑结胜" />
+        </event>
+        <event type="story" value="门派大轮寺_桑结1" repeat="once" />
+      </maprole>
+      <maprole roleKey="大轮寺雪谷深处" pic="地图.大轮寺雪谷2" description="大轮寺雪谷深处">
+        <event type="map" value="大轮寺雪谷深处" />
+      </maprole>
+      <maprole roleKey="大轮寺雪山" pic="地图.大轮寺雪山" description="返回大轮寺雪山">
+        <event type="map" value="大轮寺雪山" />
+      </maprole>
+    </map>
+    <map name="大轮寺雪谷深处" pic="地图.大轮寺雪谷2">
+      <musics>
+        <music name="音乐.天龙八部.佛音4" />
+      </musics>
+      <maprole roleKey="达尔巴" description="臂力惊人的达尔巴">
+        <event type="story" value="门派大轮寺_达尔巴负">
+          <condition type="should_finish" value="门派大轮寺_达尔巴胜" />
+        </event>
+        <event type="story" value="门派大轮寺_达尔巴2">
+          <condition type="should_finish" value="门派大轮寺_达尔巴1" />
+          <condition type="should_not_finish" value="门派大轮寺_达尔巴胜" />
+        </event>
+        <event type="story" value="门派大轮寺_达尔巴1" repeat="once" />
+      </maprole>
+      <maprole roleKey="灵智上人" description="大轮寺灵智上人">
+        <event type="story" value="门派大轮寺_灵智上人负">
+          <condition type="should_finish" value="门派大轮寺_灵智上人胜" />
+        </event>
+        <event type="story" value="门派大轮寺_灵智上人2">
+          <condition type="should_finish" value="门派大轮寺_灵智上人1" />
+          <condition type="should_not_finish" value="门派大轮寺_灵智上人胜" />
+        </event>
+        <event type="story" value="门派大轮寺_灵智上人1" repeat="once" />
+      </maprole>
+      <maprole roleKey="大轮寺雪谷" pic="地图.大轮寺雪谷1" description="返回大轮寺雪谷">
+        <event type="map" value="大轮寺雪谷" />
+      </maprole>
+    </map>
+    <map name="血刀门" pic="地图.血刀门">
+      <musics>
+        <music name="音乐.血刀门" />
+      </musics>
+      <maprole roleKey="血刀老祖" description="血刀门掌门人，血刀老祖">
+        <event type="story" value="血刀门_血刀老祖杀死狄云" repeat="once">
+          <condition type="should_finish" value="血刀门_出师" />
+        </event>
+        <event type="story" value="血刀门_血刀老祖杀死狄云执行中">
+          <condition type="should_finish" value="血刀门_血刀老祖杀死狄云OK" />
+          <condition type="should_not_finish" value="连城诀_唐诗山洞.狄云死亡" />
+        </event>
+        <event type="story" value="血刀门_血刀老祖杀死狄云完成" repeat="once">
+          <condition type="should_finish" value="连城诀_唐诗山洞.狄云死亡" />
+        </event>
+        <event type="story" value="血刀门_血刀老祖的试炼" repeat="once">
+          <condition type="should_finish" value="mainStory_黑暗的阴影1" />
+          <condition type="should_finish" value="血刀门_血刀老祖杀死狄云完成" />
+        </event>
+        <event type="story" value="血刀门_血刀老祖废话">
+          <condition type="should_finish" value="血刀门_出师" />
+        </event>
+      </maprole>
+      <maprole roleKey="善勇" description="血刀门，善勇">
+        <event type="story" value="血刀门_善勇" repeat="once">
+          <condition type="should_not_finish" value="血刀门_出师" />
+        </event>
+        <event type="story" value="血刀门_善勇2">
+          <condition type="should_not_finish" value="血刀门_出师" />
+        </event>
+      </maprole>
+      <maprole roleKey="胜谛" description="血刀门，胜谛">
+        <event type="story" value="血刀门_胜谛" repeat="once">
+          <condition type="should_not_finish" value="血刀门_出师" />
+        </event>
+        <event type="story" value="血刀门_胜谛2">
+          <condition type="should_not_finish" value="血刀门_胜谛帮4" />
+          <condition type="should_not_finish" value="血刀门_出师" />
+        </event>
+        <event type="story" value="血刀门_胜谛事后">
+          <condition type="should_not_finish" value="血刀门_出师" />
+        </event>
+      </maprole>
+      <maprole roleKey="宝象" description="血刀门，宝象">
+        <event type="story" value="血刀门_宝象" repeat="once">
+          <condition type="should_not_finish" value="血刀门_出师" />
+        </event>
+        <event type="story" value="血刀门_宝象2">
+          <condition type="should_not_finish" value="血刀门_出师" />
+        </event>
+      </maprole>
+      <maprole roleKey="back" description="返回江湖！">
+        <event type="map" value="大地图">
+          <condition type="should_finish" value="血刀门_出师" />
+        </event>
+      </maprole>
+    </map>
+    <map name="全真教" pic="地图.全真教">
+      <musics>
+        <music name="音乐.全真教" />
+      </musics>
+      <maprole roleKey="马钰" description="全真教掌门人，马钰">
+        <event type="story" value="全真教_马钰考核" repeat="once">
+          <condition type="should_finish" value="全真教_出师" />
+          <condition type="should_finish" value="全真教_周伯通胜" />
+        </event>
+        <event type="story" value="全真教_马钰废话">
+          <condition type="should_finish" value="全真教_出师" />
+        </event>
+      </maprole>
+      <maprole roleKey="烧香坊" description="烧香坊，许多人在这里烧香祈求神灵的保佑">
+        <event type="story" value="全真教_烧香坊">
+          <condition type="should_not_finish" value="全真教_出师" />
+        </event>
+      </maprole>
+      <maprole roleKey="静念楼" description="静念楼，可以安静的在这里打坐">
+        <event type="story" value="全真教_静念楼">
+          <condition type="should_not_finish" value="全真教_出师" />
+        </event>
+      </maprole>
+      <maprole roleKey="尹志平" description="全真教尹志平">
+        <event type="story" value="全真教_尹志平" repeat="once">
+          <condition type="should_not_finish" value="全真教_出师" />
+        </event>
+        <event type="story" value="全真教_尹志平内功">
+          <condition type="skill_less_than" value="主角#全真心法#10" />
+          <condition type="should_not_finish" value="全真教_出师" />
+        </event>
+        <event type="story" value="全真教_尹志平内功修炼完毕" repeat="once">
+          <condition type="skill_more_than" value="主角#全真心法#10" />
+          <condition type="should_not_finish" value="全真教_出师" />
+        </event>
+        <event type="story" value="全真教_尹志平2">
+          <condition type="should_finish" value="全真教_尹志平内功修炼完毕" />
+          <condition type="should_not_finish" value="全真教_出师" />
+        </event>
+      </maprole>
+      <maprole roleKey="赵志敬" description="全真教赵志敬">
+        <event type="story" value="全真教_赵志敬" repeat="once">
+          <condition type="should_not_finish" value="全真教_出师" />
+        </event>
+        <event type="story" value="全真教_讨好赵志敬后">
+          <condition type="should_finish" value="全真教_讨好赵志敬" />
+          <condition type="skill_less_than" value="主角#全真剑法#10" />
+          <condition type="should_not_finish" value="全真教_出师" />
+        </event>
+        <event type="story" value="全真教_讨好赵志敬开小灶" probability="50">
+          <condition type="should_finish" value="全真教_讨好赵志敬" />
+          <condition type="skill_more_than" value="主角#全真剑法#10" />
+          <condition type="should_not_finish" value="全真教_出师" />
+        </event>
+        <event type="story" value="全真教_讨好赵志敬开小灶2">
+          <condition type="should_finish" value="全真教_讨好赵志敬" />
+          <condition type="skill_more_than" value="主角#全真剑法#10" />
+          <condition type="should_not_finish" value="全真教_出师" />
+        </event>
+      </maprole>
+      <maprole roleKey="苗守一" description="全真教，武功最菜的弟子苗守一">
+        <event type="story" value="全真教_苗守一练习" />
+      </maprole>
+      <maprole roleKey="孙不二" description="全真教清静散人，孙不二">
+        <event type="story" value="全真教_孙不二" repeat="once">
+          <condition type="should_finish" value="全真教_出师" />
+          <condition type="not_in_team" value="田伯光" />
+        </event>
+        <event type="story" value="全真教_孙不二进行中">
+          <condition type="should_finish" value="全真教_孙不二是" />
+          <condition type="should_not_finish" value="全真教_杀死田伯光完成" />
+        </event>
+        <event type="story" value="全真教_孙不二完成任务" repeat="once">
+          <condition type="should_finish" value="全真教_杀死田伯光完成" />
+        </event>
+      </maprole>
+      <maprole roleKey="back" description="返回江湖！">
+        <event type="map" value="大地图">
+          <condition type="should_finish" value="全真教_出师" />
+        </event>
+      </maprole>
+    </map>
+    <map name="灵鹫宫" pic="地图.灵鹫宫">
+      <musics>
+        <music name="音乐.天外村" />
+      </musics>
+      <maprole roleKey="秦婆婆" description="灵鹫宫“大管家”秦婆婆。">
+        <event type="story" value="灵鹫宫_秦婆婆1">
+          <condition type="should_finish" value="门派灵鹫宫_出师" />
+          <condition type="should_not_finish" value="灵鹫宫_密室武学" />
+          <condition type="should_not_finish" value="灵鹫宫_攻打完成珍珑棋局大战胜利" />
+        </event>
+        <event type="story" value="灵鹫宫_秦婆婆2">
+          <condition type="should_finish" value="门派灵鹫宫_出师" />
+          <condition type="should_finish" value="灵鹫宫_密室武学" />
+          <condition type="should_not_finish" value="灵鹫宫_攻打完成珍珑棋局大战胜利" />
+        </event>
+      </maprole>
+      <maprole roleKey="九尊殿" description="八荒六合，九天独尊">
+        <event type="story" value="灵鹫宫.九尊殿">
+          <condition type="should_not_finish" value="门派灵鹫宫_出师" />
+        </event>
+      </maprole>
+      <maprole roleKey="御虚阁" description="灵虚御风而不知其止，渺渺兮觉羽化而登仙">
+        <event type="story" value="灵鹫宫_修炼天山掌法1" probability="25" repeat="once">
+          <condition type="should_not_finish" value="门派灵鹫宫_出师" />
+        </event>
+        <event type="story" value="灵鹫宫_修炼天山掌法2" probability="5" repeat="once">
+          <condition type="should_not_finish" value="门派灵鹫宫_出师" />
+        </event>
+        <event type="story" value="灵鹫宫.御虚阁">
+          <condition type="should_not_finish" value="门派灵鹫宫_出师" />
+        </event>
+      </maprole>
+      <maprole roleKey="九宫阁" description="九宫八卦，易经归藏">
+        <event type="story" value="灵鹫宫_修炼归藏剑" repeat="once">
+          <condition type="should_not_finish" value="门派灵鹫宫_出师" />
+        </event>
+        <event type="story" value="灵鹫宫_修炼归藏剑1" repeat="once">
+          <condition type="should_not_finish" value="门派灵鹫宫_出师" />
+          <condition type="should_finish" value="灵鹫宫_修炼归藏剑" />
+        </event>
+        <event type="story" value="灵鹫宫_修炼归藏剑2" repeat="once">
+          <condition type="should_not_finish" value="门派灵鹫宫_出师" />
+          <condition type="should_finish" value="灵鹫宫_修炼归藏剑" />
+          <condition type="should_finish" value="灵鹫宫_修炼归藏剑1" />
+        </event>
+        <event type="story" value="灵鹫宫_修炼归藏剑3" repeat="once">
+          <condition type="should_not_finish" value="门派灵鹫宫_出师" />
+          <condition type="should_finish" value="灵鹫宫_修炼归藏剑" />
+          <condition type="should_finish" value="灵鹫宫_修炼归藏剑1" />
+          <condition type="should_finish" value="灵鹫宫_修炼归藏剑2" />
+        </event>
+        <event type="story" value="灵鹫宫_修炼归藏剑4" repeat="once">
+          <condition type="should_not_finish" value="门派灵鹫宫_出师" />
+          <condition type="should_finish" value="灵鹫宫_修炼归藏剑" />
+          <condition type="should_finish" value="灵鹫宫_修炼归藏剑1" />
+          <condition type="should_finish" value="灵鹫宫_修炼归藏剑2" />
+          <condition type="should_finish" value="灵鹫宫_修炼归藏剑3" />
+        </event>
+        <event type="story" value="灵鹫宫_修炼归藏剑5" repeat="once">
+          <condition type="should_not_finish" value="门派灵鹫宫_出师" />
+          <condition type="should_finish" value="灵鹫宫_修炼归藏剑" />
+          <condition type="should_finish" value="灵鹫宫_修炼归藏剑1" />
+          <condition type="should_finish" value="灵鹫宫_修炼归藏剑2" />
+          <condition type="should_finish" value="灵鹫宫_修炼归藏剑3" />
+          <condition type="should_finish" value="灵鹫宫_修炼归藏剑4" />
+        </event>
+        <event type="story" value="灵鹫宫_修炼归藏剑6" repeat="once">
+          <condition type="should_not_finish" value="门派灵鹫宫_出师" />
+          <condition type="should_finish" value="灵鹫宫_修炼归藏剑" />
+          <condition type="should_finish" value="灵鹫宫_修炼归藏剑1" />
+          <condition type="should_finish" value="灵鹫宫_修炼归藏剑2" />
+          <condition type="should_finish" value="灵鹫宫_修炼归藏剑3" />
+          <condition type="should_finish" value="灵鹫宫_修炼归藏剑4" />
+          <condition type="should_finish" value="灵鹫宫_修炼归藏剑5" />
+        </event>
+        <event type="story" value="灵鹫宫_修炼归藏剑7" repeat="once">
+          <condition type="should_not_finish" value="门派灵鹫宫_出师" />
+          <condition type="should_finish" value="灵鹫宫_修炼归藏剑" />
+          <condition type="should_finish" value="灵鹫宫_修炼归藏剑1" />
+          <condition type="should_finish" value="灵鹫宫_修炼归藏剑2" />
+          <condition type="should_finish" value="灵鹫宫_修炼归藏剑3" />
+          <condition type="should_finish" value="灵鹫宫_修炼归藏剑4" />
+          <condition type="should_finish" value="灵鹫宫_修炼归藏剑5" />
+          <condition type="should_finish" value="灵鹫宫_修炼归藏剑6" />
+        </event>
+        <event type="story" value="灵鹫宫_修炼归藏剑8" repeat="once">
+          <condition type="should_not_finish" value="门派灵鹫宫_出师" />
+          <condition type="should_finish" value="灵鹫宫_修炼归藏剑" />
+          <condition type="should_finish" value="灵鹫宫_修炼归藏剑1" />
+          <condition type="should_finish" value="灵鹫宫_修炼归藏剑2" />
+          <condition type="should_finish" value="灵鹫宫_修炼归藏剑3" />
+          <condition type="should_finish" value="灵鹫宫_修炼归藏剑4" />
+          <condition type="should_finish" value="灵鹫宫_修炼归藏剑5" />
+          <condition type="should_finish" value="灵鹫宫_修炼归藏剑6" />
+          <condition type="should_finish" value="灵鹫宫_修炼归藏剑7" />
+        </event>
+        <event type="story" value="灵鹫宫_修炼归藏剑9">
+          <condition type="should_not_finish" value="门派灵鹫宫_出师" />
+          <condition type="should_finish" value="灵鹫宫_修炼归藏剑8" />
+        </event>
+      </maprole>
+      <maprole roleKey="九华阁" description="山川锦绣，九月九华">
+        <event type="story" value="灵鹫宫_读书识字">
+          <condition type="should_not_finish" value="门派灵鹫宫_出师" />
+        </event>
+      </maprole>
+      <maprole roleKey="灵鹫宫后山树林" description="后山树林，菊剑在踢毽子要一起玩么？">
+        <event type="story" value="灵鹫宫_间谍" probability="25" repeat="once">
+          <condition type="should_not_finish" value="门派灵鹫宫_出师" />
+        </event>
+        <event type="story" value="灵鹫宫_委屈求全1" probability="30" repeat="once">
+          <condition type="should_finish" value="灵鹫宫_委屈求全" />
+          <condition type="should_not_finish" value="门派灵鹫宫_出师" />
+        </event>
+        <event type="story" value="灵鹫宫_好好练功" probability="20">
+          <condition type="should_not_finish" value="门派灵鹫宫_出师" />
+        </event>
+        <event type="story" value="灵鹫宫_踢毽子">
+          <condition type="should_not_finish" value="门派灵鹫宫_出师" />
+        </event>
+      </maprole>
+      <maprole roleKey="back" description="返回江湖！">
+        <event type="map" value="大地图">
+          <condition type="should_finish" value="门派灵鹫宫_出师" />
+        </event>
+      </maprole>
+    </map>
+    <map name="少林寺内" pic="地图.少林寺内">
+      <musics>
+        <music name="音乐.少林山门" />
+      </musics>
+      <maprole roleKey="罗汉堂" pic="地图.罗汉堂" description="少林十八罗汉居住的地方">
+        <event type="story" value="少林派_少林拳法" repeat="once">
+          <condition type="should_not_finish" value="少林派_不剃度" />
+        </event>
+        <event type="story" value="少林派_少林拳法1">
+          <condition type="should_finish" value="少林派_少林拳法" />
+        </event>
+        <event type="story" value="少林派_少林拳法2" />
+      </maprole>
+      <maprole roleKey="戒律院" pic="地图.戒律院" description="少林弟子受戒场所">
+        <event type="story" value="少林派_少林棍法" repeat="once">
+          <condition type="should_finish" value="少林派_不剃度" />
+        </event>
+        <event type="story" value="少林派_少林棍法1">
+          <condition type="should_finish" value="少林派_少林棍法" />
+        </event>
+        <event type="story" value="少林派_少林棍法2" />
+      </maprole>
+      <maprole roleKey="大雄宝殿" pic="地图.大雄宝殿" description="方证大师在此讲经">
+        <event type="story" value="少林派_讲经殿" />
+      </maprole>
+      <maprole roleKey="初祖庵" pic="地图.初祖庵" description="达摩曾在此参佛">
+        <event type="story" value="少林派_初祖庵" />
+      </maprole>
+      <maprole roleKey="后山" pic="地图.少林后山" description="和尚们后山的生活">
+        <event type="map" value="少林后山" />
+      </maprole>
+    </map>
+    <map name="少林后山" pic="地图.少林后山">
+      <maprole roleKey="塔林" pic="地图.少林塔林" description="埋葬历代高僧舍利子的地方">
+        <event type="story" value="少林派_塔林" />
+      </maprole>
+      <maprole roleKey="少林伙夫" description="每天管着几千小和尚，老和尚的伙食">
+        <event type="story" value="少林派_厨房" />
+      </maprole>
+      <maprole roleKey="东汉三阙" pic="地图.东汉三阙" description="汉代就有的遗迹，存留至今">
+        <event type="story" value="少林派_东汉三阙" repeat="once" />
+        <event type="story" value="少林派_东汉三阙1">
+          <condition type="should_finish" value="少林派_东汉三阙" />
+        </event>
+      </maprole>
+      <maprole roleKey="back" description="返回本院">
+        <event type="map" value="少林寺内" />
+      </maprole>
+    </map>
+    <map name="南少林" pic="地图.南少林">
+      <maprole roleKey="本真和尚" description="现在是你师傅了">
+        <event type="story" value="少林寺_福建南少林破败" repeat="once" />
+        <event type="story" value="少林寺_福建南少林小洪拳">
+          <condition type="should_finish" value="少林寺_福建南少林破败" />
+        </event>
+      </maprole>
+      <maprole roleKey="雷老虎" description="拳打武当，脚踢少林雷老虎是也">
+        <event type="story" value="少林寺_大洪拳" repeat="once" />
+        <event type="story" value="南少林_大洪拳胜利">
+          <condition type="should_finish" value="少林寺_大洪拳" />
+        </event>
+      </maprole>
+    </map>
+    <map name="昆仑派" pic="地图.昆仑派">
+      <musics>
+        <music name="音乐.天外村" />
+      </musics>
+    </map>
+    <map name="武当广场" pic="地图.武当广场">
+      <musics>
+        <music name="音乐.纯阳" />
+      </musics>
+      <maprole roleKey="三清殿" pic="地图.三清殿" description="武当派贡放真武大帝的地方">
+        <event type="story" value="武当派_三清殿" repeat="once">
+          <condition type="should_not_finish" value="武当派_三清殿1" />
+        </event>
+        <event type="story" value="武当派_三清殿1">
+          <condition type="should_finish" value="武当派_三清殿" />
+        </event>
+      </maprole>
+      <maprole roleKey="宋青书" description="武当侠客宋远桥的儿子，一个倒霉的富二代">
+        <event type="story" value="武当派_宋青书" />
+      </maprole>
+      <maprole roleKey="莫声谷" description="武当七侠之一，七侠中年龄最小者">
+        <event type="story" value="武当派_梯云纵" probability="25" />
+        <event type="story" value="武当派_绵掌">
+          <condition type="should_finish" value="武当派_三清殿" />
+        </event>
+      </maprole>
+      <maprole roleKey="宋远桥" description="武当七侠之一，七侠之首">
+        <event type="story" value="武当派_宋远桥" probability="25" repeat="once" />
+        <event type="story" value="武当派_宋远桥1" probability="25" repeat="once">
+          <condition type="should_finish" value="武当派_宋远桥" />
+        </event>
+      </maprole>
+      <maprole roleKey="后山练功场" pic="地图.武当后山" description="武当派后山练功场">
+        <event type="map" value="后山练功场" />
+      </maprole>
+    </map>
+    <map name="后山练功场" pic="地图.武当后山">
+      <maprole roleKey="张松溪" description="武当七侠之一，除张翠山外天分最高者">
+        <event type="story" value="武当派_松溪白虹剑">
+          <condition type="should_finish" value="武当派_三清殿" />
+        </event>
+      </maprole>
+      <maprole roleKey="复真观" pic="地图.复真观" description="在此可以参悟道家典籍">
+        <event type="story" value="武当派_复真观" />
+      </maprole>
+      <maprole roleKey="天柱峰" pic="地图.天柱峰" description="武当山风景最好的地方，传说仙人曾经在此悟道。">
+        <event type="story" value="武当派_天柱峰" />
+      </maprole>
+      <maprole roleKey="太和山" pic="地图.太和山" description="武当山自古有太岳，玄岳之称">
+        <event type="story" value="武当派_太和山" />
+      </maprole>
+      <maprole roleKey="玉虚宫" pic="地图.玉虚宫" description="武当山道家养生之所">
+        <event type="story" value="武当派_玉虚宫" />
+      </maprole>
+      <maprole roleKey="back" description="返回武当广场">
+        <event type="map" value="武当广场" />
+      </maprole>
+    </map>
+    <map name="大理" pic="地图.大理">
+      <musics>
+        <music name="音乐.城市4" />
+      </musics>
+      <maprole roleKey="阿珂" description="风华绝代的阿珂姑娘">
+        <event type="story" value="鹿鼎记_阿九1" repeat="once">
+          <condition type="should_finish" value="鹿鼎记_皇宫太后7" />
+          <condition type="in_team" value="袁承志" />
+          <condition type="in_team" value="温青青" />
+          <condition type="in_team" value="韦小宝" />
+        </event>
+      </maprole>
+      <maprole roleKey="大理高手" description="守卫森严的大理王府">
+        <event type="story" value="倚天邪线_大理夺阵" repeat="once">
+          <condition type="should_finish" value="倚天邪线_劝说嵩山" />
+        </event>
+      </maprole>
+      <maprole roleKey="镇南王府" pic="地图.府门前" description="镇南王段正淳的居所">
+        <event type="story" value="tlbb.dy_木婉清身世1" image="头像.木婉清2" description="段誉和木婉清高高兴兴地回大理成亲，不料..." repeat="once">
+          <condition type="should_finish" value="tlbb.dy_童姥使者3" />
+          <condition type="should_finish" value="tlbb.dy_无量山洞3" />
+          <condition type="not_in_team" value="木婉清" />
+          <condition type="not_in_team" value="段誉" />
+        </event>
+        <event type="story" value="tlbb.dy_镇南王府.救木婉清1" image="头像.木婉清2" description="王府中隐隐有女子怨愤的声音传出" lv="10" repeat="once">
+          <condition type="should_finish" value="tlbb.dy_万劫谷地牢.上" />
+          <condition type="not_in_team" value="木婉清" />
+          <condition type="not_in_team" value="段誉" />
+        </event>
+        <event type="map" value="镇南王府" description="前往镇南王府" />
+      </maprole>
+      <maprole roleKey="五毒教山中1" pic="地图.山间小路1" description="去往云南五毒教">
+        <event type="story" value="tlbb.dy_闪电貂2" probability="30" repeat="once">
+          <condition type="in_team" value="钟灵" />
+          <condition type="should_finish" value="tlbb.dy_闪电貂" />
+          <condition type="should_finish" value="mainStory_黑暗的阴影1" />
+          <condition type="should_not_finish" value="mainStory_紧急1" />
+        </event>
+        <event type="map" value="五毒教山中1" />
+      </maprole>
+      <maprole roleKey="back" description="夜晚关闭城门，禁止出城">
+        <event type="map" value="大地图" description="返回大地图" />
+      </maprole>
+    </map>
+    <map name="镇南王府" pic="地图.府门前">
+      <musics>
+        <music name="音乐.城市4" />
+      </musics>
+      <maprole roleKey="back" description="返回大理">
+        <event type="map" value="大理" />
+      </maprole>
+    </map>
+    <map name="大理树林" pic="地图.树林">
+      <musics>
+        <music name="音乐.天龙八部8" />
+      </musics>
+      <maprole roleKey="木婉清.蒙面" description="一位头蒙黑纱的美丽姑娘">
+        <event type="story" value="tlbb.dy_童姥使者1" image="头像.木婉清" description="树林之中隐约传来打斗之声。" probability="50" lv="1" repeat="once">
+          <condition type="not_in_team" value="木婉清" />
+        </event>
+      </maprole>
+      <maprole roleKey="刀白凤" description="段誉生母刀白凤">
+        <event type="story" value="tlbb.dy_刀白凤树林1" description="树林之中隐约传来打斗之声。" probability="50" lv="1" repeat="once">
+          <condition type="not_in_team" value="云中鹤" />
+          <condition type="not_in_team" value="刀白凤" />
+        </event>
+      </maprole>
+      <maprole roleKey="岳老三" description="南海鳄神岳老三">
+        <event type="battle" value="岳老三树林_战斗1" description="树林之中隐约传来打斗之声。" probability="50" lv="5" repeat="once">
+          <condition type="not_in_team" value="岳老三" />
+        </event>
+      </maprole>
+      <maprole roleKey="back" description="返回大地图">
+        <event type="map" value="大地图" />
+      </maprole>
+    </map>
+    <map name="无量山洞" pic="地图.无量山洞">
+      <musics>
+        <music name="音乐.天龙八部.无量山洞" />
+      </musics>
+      <maprole roleKey="段誉" description="无量山洞中发呆的段誉">
+        <event type="story" value="tlbb.dy_闪电貂带路" probability="30" repeat="once">
+          <condition type="in_team" value="段誉" />
+          <condition type="in_team" value="木婉清" />
+          <condition type="in_team" value="阿碧" />
+          <condition type="not_in_team" value="钟灵" />
+          <condition type="should_not_finish" value="tlbb.dy_闪电貂" />
+          <condition type="should_finish" value="tlbb.dy_琴韵小筑阿碧2" />
+        </event>
+      </maprole>
+      <maprole roleKey="陈家洛" description="研习庄子">
+        <event type="story" value="original_无量山洞庄子开始">
+          <condition type="in_team" value="段誉" />
+          <condition type="in_team" value="陈家洛" />
+          <condition type="should_finish" value="original_无量山洞庄子" />
+          <condition type="should_not_finish" value="original_无量山洞庄子胜" />
+          <condition type="should_not_finish" value="original_无量山洞庄子胜简单模式" />
+        </event>
+      </maprole>
+      <maprole roleKey="慕容复" description="研习无名老僧武学">
+        <event type="story" value="tlbb.dy_无量山洞段誉慕容复挑战">
+          <condition type="in_team" value="段誉" />
+          <condition type="in_team" value="慕容复" />
+          <condition type="should_finish" value="tlbb.dy_无量山洞段誉慕容复" />
+          <condition type="should_not_finish" value="tlbb.dy_无量山洞段誉慕容复胜" />
+          <condition type="should_not_finish" value="tlbb.dy_无量山洞段誉慕容复胜简单模式" />
+        </event>
+      </maprole>
+      <maprole roleKey="无量秘洞" pic="地图.密洞" description="无量秘洞">
+        <event type="map" value="无量秘洞" description="前往无量秘洞">
+          <condition type="should_finish" value="tlbb.dy_闪电貂带路2" />
+        </event>
+      </maprole>
+      <maprole roleKey="back" description="返回大地图">
+        <event type="map" value="大地图" />
+      </maprole>
+    </map>
+    <map name="无量秘洞" pic="地图.密洞">
+      <musics>
+        <music name="音乐.天龙八部.无量山洞" />
+      </musics>
+      <maprole roleKey="木婉清" description="无量秘洞中的发呆的木婉清...">
+        <event type="story" value="tlbb.dy_无量玉洞无崖子" repeat="once">
+          <condition type="should_finish" value="tlbb.dy_闪电貂还钟灵" />
+          <condition type="should_not_finish" value="tlbb.dy_无量山洞无崖子战胜" />
+          <condition type="in_team" value="段誉" />
+          <condition type="in_team" value="木婉清" />
+          <condition type="in_team" value="阿碧" />
+        </event>
+        <event type="story" value="tlbb.dy_无量山洞无崖子选择" description="搜寻无量秘洞">
+          <condition type="should_finish" value="tlbb.dy_无量玉洞无崖子" />
+          <condition type="should_not_finish" value="tlbb.dy_无量山洞无崖子战胜" />
+          <condition type="in_team" value="段誉" />
+          <condition type="in_team" value="木婉清" />
+          <condition type="in_team" value="阿碧" />
+        </event>
+      </maprole>
+      <maprole roleKey="back" description="返回无量山洞">
+        <event type="map" value="无量山洞" />
+      </maprole>
+    </map>
+    <map name="万劫谷" pic="地图.村口2">
+      <musics>
+        <music name="音乐.天龙八部8" />
+      </musics>
+      <maprole roleKey="钟灵" description="万劫谷钟万仇的爱女">
+        <event type="story" value="tlbb.dy_闪电貂还钟灵" repeat="once">
+          <condition type="should_finish" value="tlbb.dy_闪电貂带路2" />
+          <condition type="in_team" value="木婉清" />
+        </event>
+        <event type="story" value="tlbb.dy_钟灵" repeat="once">
+          <condition type="should_not_finish" value="tlbb.dy_闪电貂还钟灵" />
+          <condition type="should_not_finish" value="tlbb.dy_闪电貂" />
+          <condition type="should_not_finish" value="tlbb.dy_闪电貂带路2" />
+        </event>
+        <event type="story" value="tlbb.dy_钟灵不找2">
+          <condition type="should_finish" value="tlbb.dy_钟灵不找" />
+        </event>
+      </maprole>
+      <maprole roleKey="back" description="返回大地图">
+        <event type="map" value="大地图" />
+      </maprole>
+    </map>
+    <map name="五毒教山中1" pic="地图.山间小路1">
+      <musics>
+        <music name="音乐.城市4" />
+      </musics>
+      <maprole roleKey="front" description="向前走">
+        <event type="battle" value="山中等级0_战斗" probability="5" />
+        <event type="map" value="五毒教山中1" />
+      </maprole>
+      <maprole roleKey="left" description="向左走">
+        <event type="battle" value="山中等级0_战斗" probability="5" />
+        <event type="map" value="五毒教山中1" />
+      </maprole>
+      <maprole roleKey="right" description="向右走">
+        <event type="battle" value="山中等级0_战斗" probability="5" />
+        <event type="map" value="五毒教山中2" description="传来阵阵怪虫的声音..." probability="70" />
+        <event type="map" value="五毒教山中2" />
+      </maprole>
+      <maprole roleKey="back" description="返回大理">
+        <event type="map" value="大理" />
+      </maprole>
+    </map>
+    <map name="五毒教山中2" pic="地图.山间小路2">
+      <musics>
+        <music name="音乐.城市4" />
+      </musics>
+      <maprole roleKey="front" description="向前走">
+        <event type="battle" value="山中等级0_战斗" probability="5" />
+        <event type="map" value="五毒教山中3" description="传来阵阵怪虫的声音..." probability="70" />
+        <event type="map" value="五毒教山中3" />
+      </maprole>
+      <maprole roleKey="left" description="向左走">
+        <event type="battle" value="山中等级0_战斗" probability="5" />
+        <event type="map" value="五毒教山中1" />
+      </maprole>
+      <maprole roleKey="right" description="向右走">
+        <event type="battle" value="山中等级0_战斗" probability="5" />
+        <event type="map" value="五毒教山中2" />
+      </maprole>
+      <maprole roleKey="back" description="返回大理">
+        <event type="map" value="大理" />
+      </maprole>
+    </map>
+    <map name="五毒教山中3" pic="地图.山间小路1">
+      <musics>
+        <music name="音乐.城市4" />
+      </musics>
+      <maprole roleKey="front" description="向前走">
+        <event type="battle" value="山中等级0_战斗" probability="5" />
+        <event type="map" value="五毒教山中4" description="传来阵阵怪虫的声音..." probability="70" />
+        <event type="map" value="五毒教山中4" />
+      </maprole>
+      <maprole roleKey="left" description="向左走">
+        <event type="battle" value="山中等级0_战斗" probability="5" />
+        <event type="map" value="五毒教山中1" />
+      </maprole>
+      <maprole roleKey="right" description="向右走">
+        <event type="battle" value="山中等级0_战斗" probability="5" />
+        <event type="map" value="五毒教山中2" />
+      </maprole>
+      <maprole roleKey="back" description="返回大理">
+        <event type="map" value="大理" />
+      </maprole>
+    </map>
+    <map name="五毒教山中4" pic="地图.山间小路2">
+      <musics>
+        <music name="音乐.城市4" />
+      </musics>
+      <maprole roleKey="front" description="向前走">
+        <event type="battle" value="山中等级0_战斗" probability="5" />
+        <event type="map" value="五毒教" description="传来阵阵怪虫的声音..." probability="70" />
+        <event type="map" value="五毒教" />
+      </maprole>
+      <maprole roleKey="left" description="向左走">
+        <event type="battle" value="山中等级0_战斗" probability="5" />
+        <event type="map" value="五毒教山中2" />
+      </maprole>
+      <maprole roleKey="right" description="向右走">
+        <event type="battle" value="山中等级0_战斗" probability="5" />
+        <event type="map" value="五毒教山中1" />
+      </maprole>
+      <maprole roleKey="back" description="返回大理">
+        <event type="map" value="大理" />
+      </maprole>
+    </map>
+    <map name="五毒教" pic="地图.五毒教">
+      <musics>
+        <music name="音乐.城市4" />
+      </musics>
+      <maprole roleKey="蓝凤凰" description="五毒教教主蓝凤凰">
+        <event type="story" value="笑傲江湖_蓝凤凰2" description="千娇百媚蓝凤凰" repeat="once">
+          <condition type="in_team" value="令狐冲" />
+          <condition type="not_in_team" value="蓝凤凰" />
+        </event>
+        <event type="story" value="笑傲江湖_蓝凤凰1">
+          <condition type="not_in_team" value="令狐冲" />
+          <condition type="not_in_team" value="蓝凤凰" />
+        </event>
+      </maprole>
+      <maprole roleKey="五毒教深处" pic="地图.森林1" description="通往五毒教深处">
+        <event type="story" value="碧血剑_五毒教圣地2">
+          <condition type="should_finish" value="碧血剑_何红药胜" />
+        </event>
+        <event type="story" value="碧血剑_五毒教圣地1" />
+      </maprole>
+      <maprole roleKey="back" description="返回大理。">
+        <event type="map" value="大理" description="返回大理" />
+      </maprole>
+    </map>
+    <map name="五毒教森林1" pic="地图.森林1">
+      <musics>
+        <music name="音乐.城市4" />
+      </musics>
+      <maprole roleKey="front" description="向前走">
+        <event type="battle" value="山中等级2_战斗" probability="5" />
+        <event type="map" value="五毒教森林1" />
+      </maprole>
+      <maprole roleKey="left" description="向左走">
+        <event type="battle" value="山中等级2_战斗" probability="5" />
+        <event type="map" value="五毒教森林1" />
+      </maprole>
+      <maprole roleKey="right" description="向右走">
+        <event type="battle" value="山中等级2_战斗" probability="5" />
+        <event type="map" value="五毒教森林2" description="传来貌似蛇的响声..." probability="70" />
+        <event type="map" value="五毒教森林2" />
+      </maprole>
+      <maprole roleKey="back" description="返回五毒教">
+        <event type="map" value="五毒教" />
+      </maprole>
+    </map>
+    <map name="五毒教森林2" pic="地图.森林2">
+      <musics>
+        <music name="音乐.城市4" />
+      </musics>
+      <maprole roleKey="front" description="向前走">
+        <event type="battle" value="山中等级2_战斗" probability="5" />
+        <event type="map" value="五毒教森林1" />
+      </maprole>
+      <maprole roleKey="left" description="向左走">
+        <event type="battle" value="山中等级2_战斗" probability="5" />
+        <event type="map" value="五毒教森林2" />
+      </maprole>
+      <maprole roleKey="right" description="向右走">
+        <event type="battle" value="山中等级2_战斗" probability="5" />
+        <event type="map" value="五毒教森林3" description="传来貌似蛇的响声..." probability="70" />
+        <event type="map" value="五毒教森林3" />
+      </maprole>
+      <maprole roleKey="back" description="返回五毒教">
+        <event type="map" value="五毒教" />
+      </maprole>
+    </map>
+    <map name="五毒教森林3" pic="地图.森林1">
+      <musics>
+        <music name="音乐.城市4" />
+      </musics>
+      <maprole roleKey="front" description="向前走">
+        <event type="battle" value="山中等级2_战斗" probability="5" />
+        <event type="map" value="五毒教森林3" />
+      </maprole>
+      <maprole roleKey="left" description="向左走">
+        <event type="battle" value="山中等级2_战斗" probability="5" />
+        <event type="map" value="五毒教森林2" />
+      </maprole>
+      <maprole roleKey="right" description="向右走">
+        <event type="battle" value="山中等级2_战斗" probability="5" />
+        <event type="map" value="五毒教森林4" description="传来貌似蛇的响声..." probability="70" />
+        <event type="map" value="五毒教森林4" />
+      </maprole>
+      <maprole roleKey="back" description="返回五毒教">
+        <event type="map" value="五毒教" />
+      </maprole>
+    </map>
+    <map name="五毒教森林4" pic="地图.森林2">
+      <musics>
+        <music name="音乐.城市4" />
+      </musics>
+      <maprole roleKey="front" description="向前走">
+        <event type="battle" value="山中等级2_战斗" probability="5" />
+        <event type="map" value="金蛇窟" description="传来貌似蛇的响声..." probability="70" />
+        <event type="map" value="金蛇窟" />
+      </maprole>
+      <maprole roleKey="left" description="向左走">
+        <event type="battle" value="山中等级2_战斗" probability="5" />
+        <event type="map" value="五毒教森林2" />
+      </maprole>
+      <maprole roleKey="right" description="向右走">
+        <event type="battle" value="山中等级2_战斗" probability="5" />
+        <event type="map" value="五毒教森林1" />
+      </maprole>
+      <maprole roleKey="back" description="返回五毒教">
+        <event type="map" value="五毒教" />
+      </maprole>
+    </map>
+    <map name="金蛇窟" pic="地图.华山山洞">
+      <musics>
+        <music name="音乐.天龙八部.忧伤" />
+      </musics>
+      <maprole roleKey="金蛇剑" pic="物品.金蛇剑" description="五毒教不传之秘">
+        <event type="story" value="碧血剑_五毒教金蛇窟" repeat="once" />
+      </maprole>
+      <maprole roleKey="back" description="返回五毒教。">
+        <event type="map" value="五毒教" />
+      </maprole>
+    </map>
+    <map name="勃泥岛" pic="地图.树林2">
+      <musics>
+        <music name="音乐.天龙八部1" />
+      </musics>
+      <maprole roleKey="back" description="返回大地图。">
+        <event type="map" value="大地图" />
+      </maprole>
+    </map>
+    <map name="华山" pic="地图.华山">
+      <musics>
+        <music name="音乐.武侠雄壮" />
+      </musics>
+      <maprole roleKey="华山派" pic="地图.帮派门前" description="华山派所在地">
+        <event type="story" value="original_华山选择" />
+      </maprole>
+      <maprole roleKey="华山后山1" pic="地图.山间小路1" description="通往华山后山">
+        <event type="map" value="华山后山1" />
+      </maprole>
+      <maprole roleKey="back" description="返回大地图">
+        <event type="map" value="大地图" />
+      </maprole>
+    </map>
+    <map name="华山派" pic="地图.帮派门前">
+      <musics>
+        <music name="音乐.武侠雄壮" />
+      </musics>
+      <maprole roleKey="岳灵珊" description="华山派岳灵珊，她的父亲自宫了，她的丈夫也自宫了...">
+        <event type="story" value="笑傲江湖_岳灵珊3" probability="50" repeat="once">
+          <condition type="in_team" value="令狐冲" />
+        </event>
+        <event type="story" value="笑傲江湖_岳灵珊2" probability="50">
+          <condition type="not_in_team" value="令狐冲" />
+          <condition type="should_not_finish" value="笑傲江湖_岳灵珊3胜" />
+          <condition type="should_finish" value="笑傲江湖_岳灵珊1胜" />
+        </event>
+        <event type="story" value="笑傲江湖_岳灵珊1" repeat="once">
+          <condition type="not_in_team" value="令狐冲" />
+          <condition type="should_not_finish" value="笑傲江湖_岳灵珊3胜" />
+        </event>
+      </maprole>
+      <maprole roleKey="黄真" description="华山大弟子">
+        <event type="story" value="bixuejianShyou_包裹线end4" repeat="once">
+          <condition type="should_finish" value="bixuejianShyou_包裹线end" />
+        </event>
+      </maprole>
+      <maprole roleKey="岳肃" description="华山派新任掌门">
+        <event type="story" value="倚天屠龙_劝说华山" probability="99" repeat="once">
+          <condition type="in_team" value="张无忌" />
+          <condition type="should_finish" value="倚天屠龙_光明顶胜利2" />
+        </event>
+        <event type="story" value="倚天邪线_劝说华山成功" probability="99" repeat="once">
+          <condition type="should_finish" value="倚天邪线_劝说各大派" />
+        </event>
+      </maprole>
+      <maprole roleKey="华山弟子" pic="头像.华山弟子" description="华山护山弟子">
+        <event type="story" value="笑傲邪_收服华山" repeat="once">
+          <condition type="should_finish" value="笑傲邪_初见东方" />
+        </event>
+      </maprole>
+      <maprole roleKey="back" description="返回华山">
+        <event type="map" value="华山" />
+      </maprole>
+    </map>
+    <map name="华山后山1" pic="地图.山间小路1">
+      <musics>
+        <music name="音乐.武侠雄壮" />
+      </musics>
+      <maprole roleKey="front" description="向前走">
+        <event type="battle" value="山中等级0_战斗" probability="5" />
+        <event type="map" value="华山后山2" description="貌似前方有亮光.." probability="70" />
+        <event type="map" value="华山后山2" />
+      </maprole>
+      <maprole roleKey="left" description="向左走">
+        <event type="battle" value="山中等级0_战斗" probability="5" />
+        <event type="map" value="华山后山1" />
+      </maprole>
+      <maprole roleKey="right" description="向右走">
+        <event type="battle" value="山中等级0_战斗" probability="5" />
+        <event type="map" value="华山后山3" description="貌似前方有亮光.." probability="70" />
+        <event type="map" value="华山后山3" />
+      </maprole>
+      <maprole roleKey="back" description="返回华山">
+        <event type="map" value="华山" />
+      </maprole>
+    </map>
+    <map name="华山后山2" pic="地图.山间小路2">
+      <musics>
+        <music name="音乐.武侠雄壮" />
+      </musics>
+      <maprole roleKey="front" description="向前走">
+        <event type="battle" value="山中等级0_战斗" probability="5" />
+        <event type="map" value="华山后山3" description="貌似前方有亮光.." probability="70" />
+        <event type="map" value="华山后山3" />
+      </maprole>
+      <maprole roleKey="left" description="向左走">
+        <event type="battle" value="山中等级0_战斗" probability="5" />
+        <event type="map" value="华山后山1" />
+      </maprole>
+      <maprole roleKey="right" description="向右走">
+        <event type="battle" value="山中等级0_战斗" probability="5" />
+        <event type="map" value="华山后山2" />
+      </maprole>
+      <maprole roleKey="back" description="返回华山">
+        <event type="map" value="华山" />
+      </maprole>
+    </map>
+    <map name="华山后山3" pic="地图.山间小路1">
+      <musics>
+        <music name="音乐.武侠雄壮" />
+      </musics>
+      <maprole roleKey="front" description="向前走">
+        <event type="battle" value="山中等级0_战斗" probability="5" />
+        <event type="map" value="华山后山2" />
+      </maprole>
+      <maprole roleKey="left" description="向左走">
+        <event type="battle" value="山中等级0_战斗" probability="5" />
+        <event type="map" value="华山后山4" description="貌似前方有亮光.." probability="70" />
+        <event type="map" value="华山后山4" />
+      </maprole>
+      <maprole roleKey="right" description="向右走">
+        <event type="battle" value="山中等级0_战斗" probability="5" />
+        <event type="map" value="华山后山2" />
+      </maprole>
+      <maprole roleKey="back" description="返回华山">
+        <event type="map" value="华山" />
+      </maprole>
+    </map>
+    <map name="华山后山4" pic="地图.山间小路2">
+      <musics>
+        <music name="音乐.武侠雄壮" />
+      </musics>
+      <maprole roleKey="front" description="向前走">
+        <event type="battle" value="山中等级0_战斗" probability="5" />
+        <event type="map" value="华山仙境" description="貌似前方有亮光.." probability="70" />
+        <event type="map" value="华山仙境" />
+      </maprole>
+      <maprole roleKey="left" description="向左走">
+        <event type="battle" value="山中等级0_战斗" probability="5" />
+        <event type="map" value="华山后山3" />
+      </maprole>
+      <maprole roleKey="right" description="向右走">
+        <event type="battle" value="山中等级0_战斗" probability="5" />
+        <event type="map" value="华山后山" description="貌似前方有亮光.." probability="70" />
+        <event type="map" value="华山后山" />
+      </maprole>
+      <maprole roleKey="哑仆" description="似乎是华山派的哑仆">
+        <event type="story" value="bixuejianShyou_华山学武1" repeat="once">
+          <condition type="should_finish" value="bixuejianShyou_脱险" />
+          <condition type="should_not_finish" value="mainStory_黑暗的阴影1" />
+        </event>
+      </maprole>
+      <maprole roleKey="back" description="返回华山">
+        <event type="map" value="华山" />
+      </maprole>
+    </map>
+    <map name="华山后山" pic="地图.华山后山">
+      <musics>
+        <music name="音乐.武侠雄壮" />
+      </musics>
+      <maprole roleKey="令狐冲" description="华山派大弟子令狐冲，得独孤九剑真传走遍天下，留下了不少豪迈的英雄故事。">
+        <event type="story" value="笑傲江湖_天下第一令狐冲" repeat="once" />
+      </maprole>
+      <maprole roleKey="华山山洞" pic="地图.华山山洞" description="华山后方的一个小山洞。">
+        <event type="map" value="华山山洞" />
+      </maprole>
+      <maprole roleKey="back" description="返回华山">
+        <event type="map" value="华山" />
+      </maprole>
+    </map>
+    <map name="华山山洞" pic="地图.华山山洞">
+      <musics>
+        <music name="音乐.武侠雄壮" />
+      </musics>
+      <maprole roleKey="辟邪剑谱" pic="物品.剑谱" description="欲练神功，必先...">
+        <event type="story" value="笑傲江湖_华山山洞.辟邪剑谱1" probability="50" repeat="once">
+          <condition type="should_finish" value="笑傲江湖_西湖底.询问林平之辟邪3" />
+          <condition type="in_team" value="令狐冲" />
+          <condition type="not_in_team" value="曲非烟" />
+        </event>
+      </maprole>
+      <maprole roleKey="曲非烟" description="和曲非烟说说话，谈谈心...">
+        <event type="story" value="笑傲江湖_华山后山.剑宗1" probability="50" repeat="once">
+          <condition type="should_not_finish" value="笑傲江湖_华山山洞.辟邪剑谱1" />
+          <condition type="should_not_finish" value="笑傲江湖_西湖底.封不平救走林平之1" />
+          <condition type="in_team" value="令狐冲" />
+          <condition type="in_team" value="曲非烟" />
+        </event>
+      </maprole>
+      <maprole roleKey="何红药" description="何红药，一个丑陋的女子，因为帮助金蛇郎君而触犯教规被驱逐出五毒教。">
+        <event type="story" value="碧血剑_何红药1" probability="50">
+          <condition type="should_not_finish" value="碧血剑_何红药胜" />
+          <condition type="in_time" value="子#丑#寅#卯#亥" />
+        </event>
+      </maprole>
+      <maprole roleKey="石壁" description="刻着五岳剑派精妙剑法的石壁">
+        <event type="story" value="倚天屠龙_劝说嵩山1" probability="50" repeat="once">
+          <condition type="should_finish" value="倚天屠龙_劝说嵩山" />
+          <condition type="in_time" value="子#丑#寅#卯#亥" />
+        </event>
+      </maprole>
+      <maprole roleKey="back" description="返回华山后山。">
+        <event type="map" value="华山后山" />
+      </maprole>
+    </map>
+    <map name="华山仙境" pic="地图.黑木崖下">
+      <musics>
+        <music name="音乐.武侠回忆" />
+      </musics>
+      <maprole roleKey="金蛇郎君" description="金蛇郎君夏雪宜">
+        <event type="story" value="bixuejianShyou_金蛇郎君" description="金蛇郎君夏雪宜。" repeat="once">
+          <condition type="in_team" value="袁承志" />
+          <condition type="in_team" value="温青青" />
+          <condition type="should_finish" value="mainStory_黑暗的阴影1" />
+        </event>
+      </maprole>
+      <maprole roleKey="穆人清" description="神剑仙猿穆人清">
+        <event type="story" value="碧血剑_穆人清" description="神剑仙猿穆人清。" repeat="once">
+          <condition type="in_team" value="袁承志" />
+          <condition type="in_team" value="温青青" />
+          <condition type="should_finish" value="bixuejianShyou_金蛇郎君" />
+          <condition type="should_finish" value="mainStory_神秘剑客1" />
+        </event>
+      </maprole>
+      <maprole roleKey="木桑道长" description="铁剑门掌门木桑道长">
+        <event type="story" value="碧血剑_穆人清" repeat="once">
+          <condition type="in_team" value="袁承志" />
+          <condition type="in_team" value="温青青" />
+          <condition type="should_finish" value="bixuejianShyou_金蛇郎君" />
+          <condition type="should_finish" value="mainStory_神秘剑客1" />
+        </event>
+      </maprole>
+      <maprole roleKey="阿九" description="独臂血流不止">
+        <event type="story" value="bixuejianShyou_华山派" repeat="once">
+          <condition type="in_team" value="袁承志" />
+          <condition type="in_team" value="阿九" />
+          <condition type="should_finish" value="bixuejianShyou_京城行1" />
+        </event>
+      </maprole>
+      <maprole roleKey="袁承志" description="特想念阿九，回来找她来了">
+        <event type="story" value="bixuejianShyou_铁剑门0" repeat="once">
+          <condition type="in_team" value="袁承志" />
+          <condition type="not_in_team" value="阿九" />
+          <condition type="should_finish" value="bixuejianShyou_华山派" />
+          <condition type="should_finish" value="mainStory_神秘剑客1" />
+        </event>
+      </maprole>
+      <maprole roleKey="炼狱金蛇郎君" description="忆往昔，金蛇翩翩若蛟龙">
+        <event type="story" value="bixuejianShyou_华山仙境变身01" repeat="once">
+          <condition type="in_team" value="袁承志" />
+          <condition type="in_team" value="九难" />
+          <condition type="should_finish" value="bixuejianShyou_铁剑门3" />
+        </event>
+      </maprole>
+      <maprole roleKey="back" description="返回华山">
+        <event type="map" value="华山" />
+      </maprole>
+    </map>
+    <map name="嵩山" pic="地图.嵩山">
+      <musics>
+        <music name="音乐.天龙八部5" />
+      </musics>
+      <maprole roleKey="少林寺" pic="地图.少林" description="千年古刹少林寺">
+        <event type="story" value="倚天屠龙_劝说少林" repeat="once">
+          <condition type="should_finish" value="倚天屠龙_光明顶胜利2" />
+          <condition type="in_team" value="张无忌" />
+        </event>
+        <event type="story" value="tlbb.dy_少林寺1" repeat="once">
+          <condition type="should_finish" value="tlbb.dy_丐帮大变3" />
+          <condition type="in_team" value="段誉" />
+        </event>
+        <event type="story" value="少林_由来" repeat="once">
+          <condition type="should_finish" value="少林寺_南北之争1" />
+          <condition type="in_team" value="段誉" />
+        </event>
+        <event type="story" value="tlbb.dy_少林寺萧远山1" repeat="once">
+          <condition type="should_finish" value="tlbb.dy_雁门关无阿朱" />
+          <condition type="in_team" value="段誉" />
+          <condition type="in_team" value="阿碧" />
+        </event>
+        <event type="map" value="少林寺" />
+      </maprole>
+      <maprole roleKey="嵩山派" pic="地图.嵩山派" description="嵩山派">
+        <event type="story" value="original_嵩山选择" />
+      </maprole>
+      <maprole roleKey="back" description="返回大地图">
+        <event type="map" value="大地图" />
+      </maprole>
+    </map>
+    <map name="嵩山派" pic="地图.嵩山派">
+      <musics>
+        <music name="音乐.天龙八部5" />
+      </musics>
+      <maprole roleKey="曲非烟" description="跟曲非烟说说话...">
+        <event type="story" value="笑傲江湖_嵩山1" repeat="once">
+          <condition type="in_team" value="令狐冲" />
+          <condition type="in_team" value="曲非烟" />
+          <condition type="should_finish" value="笑傲江湖_黑木崖下.费彬2" />
+        </event>
+      </maprole>
+      <maprole roleKey="左冷禅" description="做梦都想当盟主的左大大">
+        <event type="story" value="倚天屠龙_劝说嵩山" repeat="once">
+          <condition type="in_team" value="张无忌" />
+          <condition type="should_finish" value="倚天屠龙_光明顶胜利2" />
+        </event>
+        <event type="story" value="倚天屠龙_劝说嵩山2" repeat="once">
+          <condition type="in_team" value="张无忌" />
+          <condition type="should_finish" value="倚天屠龙_劝说嵩山1" />
+        </event>
+        <event type="story" value="倚天邪线_劝说嵩山" repeat="once">
+          <condition type="should_finish" value="倚天邪线_劝说各大派" />
+        </event>
+        <event type="story" value="笑傲邪_收服嵩山" repeat="once">
+          <condition type="should_finish" value="笑傲邪_收服华山胜利" />
+        </event>
+        <event type="story" value="笑傲邪_五岳并派大会" repeat="once">
+          <condition type="should_finish" value="笑傲邪_收服恒山胜利" />
+        </event>
+      </maprole>
+      <maprole roleKey="back" description="返回嵩山">
+        <event type="map" value="嵩山" />
+      </maprole>
+    </map>
+    <map name="古墓派" pic="地图.古墓派">
+      <musics>
+        <music name="音乐.室内_安静" />
+      </musics>
+      <maprole roleKey="小龙女" description="清丽脱俗的绝世美人">
+        <event type="story" value="original_古墓王重阳开始" image="头像.小龙女" description="重返古墓的小龙女...">
+          <condition type="in_team" value="杨过" />
+          <condition type="in_team" value="小龙女" />
+          <condition type="should_finish" value="original_古墓王重阳" />
+          <condition type="should_not_finish" value="original_古墓王重阳胜" />
+          <condition type="should_not_finish" value="original_古墓王重阳胜简单模式" />
+        </event>
+        <event type="story" value="original_古墓王重阳" image="头像.小龙女" description="重返古墓的小龙女..." repeat="once">
+          <condition type="in_team" value="杨过" />
+          <condition type="in_team" value="小龙女" />
+        </event>
+        <event type="story" value="sdxl_古墓幽居" image="头像.小龙女" lv="10" repeat="once">
+          <condition type="not_in_team" value="杨过" />
+          <condition type="not_in_team" value="小龙女" />
+          <condition type="not_in_team" value="李莫愁" />
+          <condition type="should_not_finish" value="mainStory_黑暗的阴影1" />
+          <condition type="not_in_menpai" value="古墓" />
+        </event>
+      </maprole>
+      <maprole roleKey="杨过" description="杨过有话要说..">
+        <event type="story" value="全真教_古墓九阴" repeat="once">
+          <condition type="in_team" value="杨过" />
+          <condition type="in_team" value="小龙女" />
+          <condition type="should_finish" value="全真教_战胜赵志敬" />
+          <condition type="should_finish" value="全真教_李志常胜" />
+        </event>
+      </maprole>
+      <maprole roleKey="古墓正厅" pic="地图.古墓派" description="进入古墓派">
+        <event type="map" value="门派古墓">
+          <condition type="in_team" value="杨冰儿" />
+          <condition type="in_menpai" value="古墓" />
+        </event>
+      </maprole>
+      <maprole roleKey="back" description="返回大地图">
+        <event type="map" value="大地图" />
+      </maprole>
+    </map>
+    <map name="绝情谷" pic="地图.绝情谷大厅.小">
+      <musics>
+        <music name="音乐.神雕.舒缓" />
+      </musics>
+      <maprole roleKey="公孙谷主" description="绝情谷的公孙谷主据说要迎娶一位美娇娘，谷主即将迎来第二春，赚翻了。">
+        <event type="story" value="sdxl_绝情谷1" probability="50" lv="15" repeat="once">
+          <condition type="not_in_team" value="杨过" />
+          <condition type="not_in_team" value="小龙女" />
+          <condition type="not_in_team" value="公孙谷主" />
+          <condition type="should_not_finish" value="mainStory_紧急1" />
+        </event>
+      </maprole>
+      <maprole roleKey="back" description="返回大地图">
+        <event type="map" value="大地图" />
+      </maprole>
+    </map>
+    <map name="程英居" pic="地图.小村口">
+      <musics>
+        <music name="音乐.神雕.歌泣" />
+      </musics>
+      <maprole roleKey="back" description="返回大地图">
+        <event type="map" value="大地图" />
+      </maprole>
+    </map>
+    <map name="风陵渡口" pic="地图.风陵渡口">
+      <musics>
+        <music name="音乐.神雕.歌泣" />
+      </musics>
+      <maprole roleKey="郭襄" description="跟郭襄说说话吧。">
+        <event type="story" value="sdxl_三枚金针.风陵渡口" probability="30" repeat="once">
+          <condition type="in_team" value="郭襄" />
+          <condition type="not_in_team" value="杨过" />
+          <condition type="should_finish" value="sdxl_三枚金针.丢失" />
+        </event>
+      </maprole>
+      <maprole roleKey="袁承志" description="长大了的袁承志">
+        <event type="story" value="bixuejianShyou_风陵渡口" probability="50" repeat="once">
+          <condition type="not_in_team" value="袁承志" />
+          <condition type="not_in_team" value="儿时袁承志" />
+          <condition type="should_finish" value="mainStory_黑暗的阴影1" />
+        </event>
+      </maprole>
+      <maprole roleKey="船老大" pic="地图.船老大" description="龙游帮VIP服务小弟">
+        <event type="story" value="bixuejianShyou_龙游帮VIP传送" probability="80">
+          <condition type="in_team" value="袁承志" />
+          <condition type="not_in_team" value="温青青" />
+          <condition type="should_finish" value="bixuejianShyou_接黄金3" />
+          <condition type="should_finish" value="鹿鼎记_皇宫太后7" />
+        </event>
+      </maprole>
+      <maprole roleKey="back" description="返回大地图">
+        <event type="map" value="大地图" />
+      </maprole>
+    </map>
+    <map name="剑魔荒冢" pic="地图.剑魔荒冢">
+      <musics>
+        <music name="音乐.神雕.主题" />
+      </musics>
+      <maprole roleKey="杨过" description="神雕大侠杨过">
+        <event type="story" value="sdxl_剑魔荒冢.杨过" image="头像.杨过" lv="20" repeat="once">
+          <condition type="not_in_team" value="杨过" />
+          <condition type="should_not_finish" value="mainStory_紧急1" />
+        </event>
+        <event type="story" value="武当派_蛇形刁手" image="头像.杨过" lv="20" repeat="once">
+          <condition type="in_team" value="杨过" />
+          <condition type="in_team" value="小龙女" />
+          <condition type="not_in_team" value="郭襄" />
+          <condition type="should_finish" value="武当派_入门" />
+        </event>
+        <event type="story" value="武当派_蛇形刁手1" image="地图.剑魔荒冢">
+          <condition type="in_team" value="杨过" />
+          <condition type="in_team" value="小龙女" />
+          <condition type="should_finish" value="武当派_入门" />
+          <condition type="should_finish" value="武当派_蛇形刁手" />
+          <condition type="should_not_finish" value="武当派_蛇形刁手推演" />
+        </event>
+        <event type="story" value="original_剑魔荒冢独孤求败开始" description="研习独孤求败武学">
+          <condition type="in_team" value="杨过" />
+          <condition type="in_team" value="令狐冲" />
+          <condition type="should_finish" value="original_剑魔荒冢独孤求败" />
+          <condition type="should_not_finish" value="original_剑魔荒冢独孤求败胜" />
+          <condition type="should_not_finish" value="original_剑魔荒冢独孤求败胜简单模式" />
+        </event>
+        <event type="story" value="original_剑魔荒冢独孤求败" description="研习独孤求败武学" repeat="once">
+          <condition type="in_team" value="杨过" />
+          <condition type="in_team" value="令狐冲" />
+        </event>
+      </maprole>
+      <maprole roleKey="back" description="返回大地图">
+        <event type="map" value="大地图" />
+      </maprole>
+    </map>
+    <map name="南贤居" pic="地图.主角之家">
+      <musics>
+        <music name="音乐.室内_清新" />
+      </musics>
+      <maprole roleKey="南贤" description="一个糟老头子">
+        <event type="story" value="original_主角之家.开场" image="头像.南贤" repeat="once" />
+        <event type="story" value="original_主角之家.回家" image="头像.南贤" probability="40" repeat="once" />
+        <event type="story" value="mainStory_黑暗的阴影1" image="头像.南贤" repeat="once">
+          <condition type="should_finish" value="mainStory_黑暗的阴影" />
+        </event>
+        <event type="story" value="mainStory_神秘剑客1" image="头像.南贤" repeat="once">
+          <condition type="should_finish" value="mainStory_神秘剑客" />
+        </event>
+        <event type="story" value="mainStory_紧急1" image="头像.南贤" repeat="once">
+          <condition type="should_finish" value="mainStory_紧急" />
+        </event>
+      </maprole>
+      <maprole roleKey="木头人" description="一个用于练级的木头人">
+        <event type="story" value="original_主角之家.殴打木头人" image="头像.木头人">
+          <condition type="not_exceed_day" value="120" />
+        </event>
+      </maprole>
+      <maprole roleKey="back" description="返回大地图">
+        <event type="map" value="大地图" />
+      </maprole>
+    </map>
+    <map name="白驼山庄" pic="地图.绝情谷大厅.小">
+      <musics>
+        <music name="音乐.神雕.舒缓" />
+      </musics>
+      <maprole roleKey="欧阳克" description="白驼山少庄主欧阳克">
+        <event type="story" value="射雕英雄传_白驼山欧阳克1" lv="10" repeat="once" />
+      </maprole>
+      <maprole roleKey="欧阳锋" description="西毒欧阳锋">
+        <event type="story" value="射雕英雄传_白驼山欧阳锋1" probability="20" lv="25" repeat="once">
+          <condition type="should_finish" value="射雕英雄传_白驼山欧阳克1" />
+          <condition type="should_finish" value="射雕英雄传_张家口1" />
+          <condition type="in_team" value="郭靖" />
+          <condition type="should_finish" value="mainStory_黑暗的阴影1" />
+        </event>
+      </maprole>
+      <maprole roleKey="back" description="返回大地图">
+        <event type="map" value="大地图" />
+      </maprole>
+    </map>
+    <map name="桃花岛" pic="地图.桃花岛">
+      <musics>
+        <music name="音乐.神雕.歌泣" />
+      </musics>
+      <maprole roleKey="郭襄" description="跟郭襄说说话吧。">
+        <event type="story" value="sdxl_三枚金针.桃花岛" repeat="once">
+          <condition type="in_team" value="郭襄" />
+          <condition type="not_in_team" value="杨过" />
+          <condition type="should_finish" value="sdxl_三枚金针.丢失" />
+        </event>
+      </maprole>
+      <maprole roleKey="黄药师" description="桃花岛岛主黄药师">
+        <event type="story" value="射雕英雄传_桃花岛黄药师1" lv="25" repeat="once">
+          <condition type="should_finish" value="射雕英雄传_张家口1" />
+          <condition type="in_team" value="郭靖" />
+          <condition type="should_finish" value="mainStory_黑暗的阴影1" />
+        </event>
+        <event type="story" value="射雕英雄传_桃花岛黄药师再战" lv="25" repeat="once">
+          <condition type="should_finish" value="射雕英雄传_张家口1" />
+          <condition type="in_team" value="郭靖" />
+          <condition type="should_finish" value="mainStory_黑暗的阴影1" />
+          <condition type="should_finish" value="射雕英雄传_桃花岛黄药师1" />
+          <condition type="should_not_finish" value="射雕英雄传_桃花岛黄药师2" />
+        </event>
+        <event type="story" value="射雕英雄传_桃花岛招亲1" lv="25" repeat="once">
+          <condition type="should_finish" value="射雕英雄传_张家口1" />
+          <condition type="should_finish" value="射雕英雄传_桃花岛黄药师2" />
+          <condition type="should_finish" value="射雕英雄传_一灯居2" />
+          <condition type="should_finish" value="射雕英雄传_洪七公2" />
+          <condition type="should_finish" value="射雕英雄传_白驼山欧阳锋2" />
+          <condition type="in_team" value="郭靖" />
+        </event>
+      </maprole>
+      <maprole roleKey="back" description="返回大地图">
+        <event type="map" value="大地图" />
+      </maprole>
+    </map>
+    <map name="武当派" pic="地图.大殿2">
+      <musics>
+        <music name="音乐.天龙八部4" />
+      </musics>
+      <maprole roleKey="冲虚道长" description="武当派冲虚道长">
+        <event type="story" value="倚天邪线_劝说武当成功" lv="15" repeat="once">
+          <condition type="should_finish" value="倚天邪线_劝说各大派" />
+        </event>
+        <event type="story" value="倚天屠龙_劝说武当" lv="15" repeat="once">
+          <condition type="should_finish" value="倚天屠龙_光明顶胜利" />
+          <condition type="should_finish" value="倚天屠龙_张无忌入队" />
+          <condition type="in_team" value="张无忌" />
+        </event>
+        <event type="story" value="original_武当.七截阵" description="挑战武当七截阵">
+          <condition type="should_not_finish" value="original_武当.七截阵胜" />
+          <condition type="should_not_finish" value="original_武当.七截阵胜简单模式" />
+        </event>
+      </maprole>
+      <maprole roleKey="张三丰" description="太师傅张三丰好像出来了">
+        <event type="story" value="武当派_山顶悟道" repeat="once">
+          <condition type="should_finish" value="武当派_入门" />
+          <condition type="should_finish" value="武当派_金陵怀古1" />
+          <condition type="should_finish" value="武当派_少年张三丰" />
+          <condition type="in_team" value="张无忌" />
+          <condition type="in_team" value="郭襄" />
+        </event>
+      </maprole>
+      <maprole roleKey="内室" pic="地图.室内" description="通往武当派内室">
+        <event type="map" value="武当内室" description="武当派内室" />
+      </maprole>
+      <maprole roleKey="back" description="返回大地图">
+        <event type="map" value="大地图" />
+      </maprole>
+    </map>
+    <map name="武当内室" pic="地图.室内">
+      <musics>
+        <music name="音乐.天龙八部4" />
+      </musics>
+      <maprole roleKey="张三丰" description="武林泰山北斗">
+        <event type="story" value="武当派_少年张三丰">
+          <condition type="should_finish" value="mainStory_黑暗的阴影1" />
+          <condition type="in_team" value="张无忌" />
+          <condition type="in_team" value="郭襄" />
+        </event>
+        <event type="story" value="original_武当.张三丰">
+          <condition type="should_not_finish" value="original_武当.张三丰胜" />
+          <condition type="should_not_finish" value="original_武当.张三丰胜简单模式" />
+        </event>
+        <event type="story" value="original_武当.真武七截阵" repeat="once">
+          <condition type="should_finish" value="original_武当.张三丰胜" />
+          <condition type="should_finish" value="original_武当.七截阵胜" />
+        </event>
+        <event type="story" value="original_武当.真武七截阵开始">
+          <condition type="should_finish" value="original_武当.真武七截阵" />
+          <condition type="should_not_finish" value="original_武当.真武七截阵胜" />
+          <condition type="should_not_finish" value="original_武当.真武七截阵胜简单模式" />
+        </event>
+        <event type="story" value="original_武当.张三丰平时" />
+      </maprole>
+      <maprole roleKey="back" description="返回武当派">
+        <event type="map" value="武当派" />
+      </maprole>
+    </map>
+    <map name="昆仑山" pic="地图.昆仑山">
+      <musics>
+        <music name="音乐.天龙八部5" />
+      </musics>
+      <maprole roleKey="昆仑山山路1" pic="地图.雪山山路1" description="昆仑山白雪皑皑，风雪中道路绵延到远方。">
+        <event type="map" value="昆仑山山路1" />
+      </maprole>
+      <maprole roleKey="back" description="返回大地图">
+        <event type="map" value="大地图" />
+      </maprole>
+    </map>
+    <map name="昆仑山山洞1" pic="地图.山洞1">
+      <musics>
+        <music name="音乐.神秘山洞" />
+      </musics>
+      <maprole roleKey="雪莲花" pic="物品.止血草" description="昆仑山万年冰雪的结晶">
+        <event type="story" value="笑傲江湖_昆仑山雪莲" probability="50" repeat="once" />
+      </maprole>
+      <maprole roleKey="张无忌" description="前明教教主张无忌">
+        <event type="story" value="倚天屠龙_张无忌" repeat="once">
+          <condition type="not_in_team" value="张无忌" />
+          <condition type="should_not_finish" value="倚天邪线_加入丐帮" />
+          <condition type="should_not_finish" value="mainStory_神秘剑客1" />
+        </event>
+      </maprole>
+      <maprole roleKey="back" description="返回昆仑山山路">
+        <event type="map" value="昆仑山山路1" />
+      </maprole>
+    </map>
+    <map name="昆仑山山洞2" pic="地图.山洞2">
+      <musics>
+        <music name="音乐.神秘山洞" />
+      </musics>
+      <maprole roleKey="雪莲花" pic="物品.止血草" description="昆仑山万年冰雪的结晶">
+        <event type="story" value="笑傲江湖_昆仑山雪莲" probability="50" repeat="once" />
+      </maprole>
+      <maprole roleKey="血刀老祖" description="这是一个嗜血恶咒缠身的凶悍大汉">
+        <event type="story" value="连城诀_昆仑山.血刀老祖加入" description="被斗得垂头丧气的血刀老祖" repeat="once">
+          <condition type="not_in_menpai" value="血刀门" />
+          <condition type="should_finish" value="连城诀_唐诗山洞.狄云死亡" />
+          <condition type="should_not_finish" value="mainStory_紧急1" />
+        </event>
+        <event type="story" value="连城诀_昆仑山.血刀老祖条件" description="被斗得垂头丧气的血刀老祖" repeat="once">
+          <condition type="not_in_menpai" value="血刀门" />
+          <condition type="should_finish" value="连城诀_唐诗山洞.狄云不加入" />
+          <condition type="should_not_finish" value="mainStory_紧急1" />
+        </event>
+        <event type="story" value="连城诀_昆仑山.血刀老祖不杀后" description="被斗得垂头丧气的血刀老祖">
+          <condition type="not_in_menpai" value="血刀门" />
+          <condition type="should_finish" value="连城诀_昆仑山.血刀老祖不杀" />
+          <condition type="should_not_finish" value="mainStory_紧急1" />
+        </event>
+        <event type="story" value="连城诀_昆仑山.血刀老祖1">
+          <condition type="not_in_menpai" value="血刀门" />
+          <condition type="should_not_finish" value="连城诀_昆仑山.血刀老祖胜" />
+          <condition type="should_not_finish" value="mainStory_神秘剑客1" />
+        </event>
+      </maprole>
+      <maprole roleKey="水笙" description="一位俏生生的女子">
+        <event type="story" value="连城诀_雪谷水笙" repeat="once">
+          <condition type="not_in_menpai" value="血刀门" />
+          <condition type="should_not_finish" value="连城诀_天宁寺毒习武" />
+          <condition type="in_team" value="狄云" />
+        </event>
+      </maprole>
+      <maprole roleKey="back" description="返回昆仑山山路">
+        <event type="map" value="昆仑山山路2" />
+      </maprole>
+    </map>
+    <map name="昆仑山山洞3" pic="地图.山洞3">
+      <musics>
+        <music name="音乐.神秘山洞" />
+      </musics>
+      <maprole roleKey="雪莲花" pic="物品.止血草" description="昆仑山万年冰雪的结晶">
+        <event type="story" value="笑傲江湖_昆仑山雪莲" probability="50" repeat="once" />
+      </maprole>
+      <maprole roleKey="back" description="返回昆仑山山路">
+        <event type="map" value="昆仑山山路5" />
+      </maprole>
+    </map>
+    <map name="昆仑山山洞4" pic="地图.山洞1">
+      <musics>
+        <music name="音乐.神秘山洞" />
+      </musics>
+      <maprole roleKey="雪莲花" pic="物品.止血草" description="昆仑山万年冰雪的结晶">
+        <event type="story" value="笑傲江湖_昆仑山雪莲" probability="50" repeat="once" />
+      </maprole>
+      <maprole roleKey="back" description="返回昆仑山山路">
+        <event type="map" value="昆仑山山路6" />
+      </maprole>
+    </map>
+    <map name="昆仑山天池" pic="地图.天池">
+      <musics>
+        <music name="音乐.天龙八部.逍遥派" />
+      </musics>
+      <maprole roleKey="火工头陀" description="躲了不知道多少年的伙夫">
+        <event type="story" value="少林_火工头陀" probability="50" repeat="once">
+          <condition type="should_not_finish" value="少林寺_南北之争" />
+          <condition type="should_finish" value="少林_金刚门" />
+        </event>
+      </maprole>
+      <maprole roleKey="back" description="返回昆仑山山路">
+        <event type="map" value="昆仑山山路4" />
+      </maprole>
+    </map>
+    <map name="昆仑山之巅" pic="地图.昆仑山之巅">
+      <musics>
+        <music name="音乐.天龙八部.逍遥派" />
+      </musics>
+      <maprole roleKey="昆仑仙境" pic="地图.山洞1" description="前往昆仑仙境">
+        <event type="map" value="昆仑山山洞1" />
+      </maprole>
+      <maprole roleKey="昆仑山天池" pic="地图.天池" description="前往天池">
+        <event type="map" value="昆仑山天池" />
+      </maprole>
+      <maprole roleKey="back" description="返回昆仑山">
+        <event type="map" value="昆仑山" />
+      </maprole>
+    </map>
+    <map name="昆仑山山路1" pic="地图.雪山山路1">
+      <musics>
+        <music name="音乐.天龙八部5" />
+      </musics>
+      <maprole roleKey="front" description="向前走">
+        <event type="battle" value="雪山中等级2_战斗" probability="5" />
+        <event type="map" value="昆仑山山路3" />
+      </maprole>
+      <maprole roleKey="left" description="向左走">
+        <event type="battle" value="雪山中等级2_战斗" probability="5" />
+        <event type="map" value="昆仑山山路2" />
+      </maprole>
+      <maprole roleKey="right" description="向右走">
+        <event type="battle" value="雪山中等级2_战斗" probability="5" />
+        <event type="map" value="昆仑山山洞1" description="前方好像有个山洞..." probability="70" />
+        <event type="map" value="昆仑山山洞1" />
+      </maprole>
+      <maprole roleKey="back" description="返回昆仑山">
+        <event type="map" value="昆仑山" />
+      </maprole>
+    </map>
+    <map name="昆仑山山路2" pic="地图.雪山山路2">
+      <musics>
+        <music name="音乐.天龙八部5" />
+      </musics>
+      <maprole roleKey="front" description="向前走">
+        <event type="battle" value="雪山中等级2_战斗" probability="5" />
+        <event type="map" value="昆仑山山洞2" description="前方好像有个山洞..." probability="70" />
+        <event type="map" value="昆仑山山洞2" />
+      </maprole>
+      <maprole roleKey="left" description="向左走">
+        <event type="battle" value="雪山中等级2_战斗" probability="5" />
+        <event type="map" value="昆仑山山路3" />
+      </maprole>
+      <maprole roleKey="right" description="向右走">
+        <event type="battle" value="雪山中等级2_战斗" probability="5" />
+        <event type="map" value="昆仑山山洞1" description="前方好像有个山洞..." probability="70" />
+        <event type="map" value="昆仑山山洞1" />
+      </maprole>
+      <maprole roleKey="back" description="返回昆仑山">
+        <event type="map" value="昆仑山" />
+      </maprole>
+    </map>
+    <map name="昆仑山山路3" pic="地图.雪山山路3">
+      <musics>
+        <music name="音乐.天龙八部5" />
+      </musics>
+      <maprole roleKey="front" description="向前走">
+        <event type="battle" value="雪山中等级2_战斗" probability="5" />
+        <event type="map" value="昆仑山山路1" />
+      </maprole>
+      <maprole roleKey="left" description="向左走">
+        <event type="battle" value="雪山中等级2_战斗" probability="5" />
+        <event type="map" value="昆仑山山路4" />
+      </maprole>
+      <maprole roleKey="right" description="向右走">
+        <event type="battle" value="雪山中等级2_战斗" probability="5" />
+        <event type="map" value="昆仑山山路2" />
+      </maprole>
+      <maprole roleKey="back" description="返回昆仑山">
+        <event type="map" value="昆仑山" />
+      </maprole>
+    </map>
+    <map name="昆仑山山路4" pic="地图.雪山山路1">
+      <musics>
+        <music name="音乐.天龙八部5" />
+      </musics>
+      <maprole roleKey="front" description="向前走">
+        <event type="battle" value="雪山中等级2_战斗" probability="5" />
+        <event type="map" value="昆仑山山路3" />
+      </maprole>
+      <maprole roleKey="left" description="向左走">
+        <event type="battle" value="雪山中等级2_战斗" probability="5" />
+        <event type="map" value="昆仑山天池" description="传来哗啦啦的水声.." probability="70" />
+        <event type="map" value="昆仑山天池" />
+      </maprole>
+      <maprole roleKey="right" description="向右走">
+        <event type="battle" value="雪山中等级2_战斗" probability="5" />
+        <event type="map" value="昆仑山山路5" />
+      </maprole>
+      <maprole roleKey="back" description="返回昆仑山">
+        <event type="map" value="昆仑山" />
+      </maprole>
+    </map>
+    <map name="昆仑山山路5" pic="地图.雪山山路2">
+      <musics>
+        <music name="音乐.天龙八部5" />
+      </musics>
+      <maprole roleKey="front" description="向前走">
+        <event type="battle" value="雪山中等级2_战斗" probability="5" />
+        <event type="map" value="昆仑山山路4" />
+      </maprole>
+      <maprole roleKey="left" description="向左走">
+        <event type="battle" value="雪山中等级2_战斗" probability="5" />
+        <event type="map" value="昆仑山山洞3" description="前方好像有个山洞..." probability="70" />
+        <event type="map" value="昆仑山山洞3" />
+      </maprole>
+      <maprole roleKey="right" description="向右走">
+        <event type="battle" value="雪山中等级2_战斗" probability="5" />
+        <event type="map" value="昆仑山山路6" />
+      </maprole>
+      <maprole roleKey="back" description="返回昆仑山">
+        <event type="map" value="昆仑山" />
+      </maprole>
+    </map>
+    <map name="昆仑山山路6" pic="地图.雪山山路1">
+      <musics>
+        <music name="音乐.天龙八部5" />
+      </musics>
+      <maprole roleKey="front" description="向前走">
+        <event type="battle" value="雪山中等级2_战斗" probability="5" />
+        <event type="map" value="昆仑山之巅" description="好像快要到顶峰了..." probability="70" />
+        <event type="map" value="昆仑山之巅" />
+      </maprole>
+      <maprole roleKey="left" description="向左走">
+        <event type="battle" value="雪山中等级2_战斗" probability="5" />
+        <event type="map" value="昆仑山山洞4" />
+      </maprole>
+      <maprole roleKey="right" description="向右走">
+        <event type="battle" value="雪山中等级2_战斗" probability="5" />
+        <event type="map" value="昆仑山山路4" />
+      </maprole>
+      <maprole roleKey="back" description="返回昆仑山">
+        <event type="map" value="昆仑山" />
+      </maprole>
+    </map>
+    <map name="峨眉山中1" pic="地图.山间小路1">
+      <musics>
+        <music name="音乐.天龙八部6" />
+      </musics>
+      <maprole roleKey="front" description="向前走">
+        <event type="battle" value="山中等级0_战斗" probability="5" />
+        <event type="map" value="峨眉山中1" />
+      </maprole>
+      <maprole roleKey="left" description="向左走">
+        <event type="battle" value="山中等级0_战斗" probability="5" />
+        <event type="map" value="峨眉山中2" description="好像是通往峨眉顶峰的路..." probability="70" />
+        <event type="map" value="峨眉山中2" />
+      </maprole>
+      <maprole roleKey="right" description="向右走">
+        <event type="battle" value="山中等级0_战斗" probability="5" />
+        <event type="map" value="峨眉山中1" />
+      </maprole>
+      <maprole roleKey="back" description="返回大地图">
+        <event type="map" value="大地图" />
+      </maprole>
+    </map>
+    <map name="峨眉山中2" pic="地图.山间小路2">
+      <musics>
+        <music name="音乐.天龙八部6" />
+      </musics>
+      <maprole roleKey="front" description="向前走">
+        <event type="battle" value="山中等级0_战斗" probability="5" />
+        <event type="map" value="峨眉山中1" />
+      </maprole>
+      <maprole roleKey="left" description="向左走">
+        <event type="battle" value="山中等级0_战斗" probability="5" />
+        <event type="map" value="峨眉山中3" description="好像是通往峨眉顶峰的路..." probability="70" />
+        <event type="map" value="峨眉山中3" />
+      </maprole>
+      <maprole roleKey="right" description="向右走">
+        <event type="battle" value="山中等级0_战斗" probability="5" />
+        <event type="map" value="峨眉山中2" />
+      </maprole>
+      <maprole roleKey="back" description="返回大地图">
+        <event type="map" value="大地图" />
+      </maprole>
+    </map>
+    <map name="峨眉山中3" pic="地图.山间小路1">
+      <musics>
+        <music name="音乐.天龙八部6" />
+      </musics>
+      <maprole roleKey="front" description="向前走">
+        <event type="battle" value="山中等级0_战斗" probability="5" />
+        <event type="map" value="峨眉山中3" />
+      </maprole>
+      <maprole roleKey="left" description="向左走">
+        <event type="battle" value="山中等级0_战斗" probability="5" />
+        <event type="map" value="峨眉山中2" />
+      </maprole>
+      <maprole roleKey="right" description="向右走">
+        <event type="battle" value="山中等级0_战斗" probability="5" />
+        <event type="map" value="峨眉山中4" description="好像是通往峨眉顶峰的路..." probability="70" />
+        <event type="map" value="峨眉山中4" />
+      </maprole>
+      <maprole roleKey="back" description="返回大地图">
+        <event type="map" value="大地图" />
+      </maprole>
+    </map>
+    <map name="峨眉山中4" pic="地图.山间小路2">
+      <musics>
+        <music name="音乐.天龙八部6" />
+      </musics>
+      <maprole roleKey="front" description="向前走">
+        <event type="battle" value="山中等级0_战斗" probability="5" />
+        <event type="map" value="峨眉山中2" />
+      </maprole>
+      <maprole roleKey="left" description="向左走">
+        <event type="battle" value="山中等级0_战斗" probability="5" />
+        <event type="map" value="峨眉山中3" />
+      </maprole>
+      <maprole roleKey="right" description="向右走">
+        <event type="battle" value="山中等级0_战斗" probability="5" />
+        <event type="map" value="峨眉金顶" description="好像是通往峨眉顶峰的路..." probability="70" />
+        <event type="map" value="峨眉金顶" />
+      </maprole>
+      <maprole roleKey="back" description="返回大地图">
+        <event type="map" value="大地图" />
+      </maprole>
+    </map>
+    <map name="峨眉金顶" pic="地图.华山">
+      <musics>
+        <music name="音乐.武侠回忆" />
+      </musics>
+      <maprole roleKey="郭襄" description="郭襄悄然立于峨眉金顶">
+        <event type="story" value="sdxl_峨眉金顶" repeat="once">
+          <condition type="in_team" value="郭襄" />
+          <condition type="in_team" value="杨过" />
+          <condition type="should_finish" value="sdxl_绝情谷底.郭襄2" />
+        </event>
+      </maprole>
+      <maprole roleKey="周芷若" description="峨眉派掌门张教主的老情人">
+        <event type="story" value="倚天屠龙_劝说峨眉" repeat="once">
+          <condition type="in_team" value="张无忌" />
+          <condition type="should_finish" value="倚天屠龙_光明顶胜利2" />
+        </event>
+        <event type="story" value="倚天邪线_劝说峨眉成功" repeat="once">
+          <condition type="should_finish" value="倚天邪线_劝说各大派" />
+        </event>
+      </maprole>
+      <maprole roleKey="back" description="返回大地图。">
+        <event type="map" value="大地图" description="返回大地图" />
+      </maprole>
+    </map>
+    <map name="恒山山顶" pic="地图.恒山">
+      <musics>
+        <music name="音乐.武侠回忆" />
+      </musics>
+      <maprole roleKey="令狐冲" description="四下寻找仪琳的令狐冲">
+        <event type="story" value="笑傲江湖_恒山无人" repeat="once">
+          <condition type="in_team" value="令狐冲" />
+          <condition type="in_team" value="任盈盈" />
+          <condition type="should_finish" value="笑傲江湖_任我行伐五岳1" />
+        </event>
+        <event type="story" value="笑傲邪_收服恒山" repeat="once">
+          <condition type="should_finish" value="笑傲邪_收服嵩山" />
+        </event>
+      </maprole>
+      <maprole roleKey="back" description="返回大地图。">
+        <event type="map" value="大地图" description="返回大地图" />
+      </maprole>
+    </map>
+    <map name="襄阳" pic="地图.襄阳">
+      <musics>
+        <music name="音乐.紧张感" />
+      </musics>
+      <maprole roleKey="郭襄" description="跟郭襄说说话吧。">
+        <event type="story" value="sdxl_三枚金针.丢失" probability="50" repeat="once">
+          <condition type="in_team" value="郭襄" />
+          <condition type="not_in_team" value="杨过" />
+        </event>
+        <event type="story" value="sdxl_三枚金针.襄阳" probability="50" repeat="once">
+          <condition type="in_team" value="郭襄" />
+          <condition type="not_in_team" value="杨过" />
+          <condition type="should_finish" value="sdxl_三枚金针.丢失" />
+          <condition type="should_finish" value="sdxl_三枚金针.桃花岛" />
+          <condition type="should_finish" value="sdxl_三枚金针.风陵渡口胜" />
+        </event>
+      </maprole>
+      <maprole roleKey="丘处机" description="全真教，长春真人丘处机">
+        <event type="story" value="全真教_丘处机" probability="50" repeat="once">
+          <condition type="should_finish" value="全真教_出师" />
+          <condition type="should_finish" value="全真教_苗守一" />
+        </event>
+      </maprole>
+      <maprole roleKey="木桑道长" description="神行百变小木桑">
+        <event type="story" value="bixuejianShyou_襄阳大战" probability="50" repeat="once">
+          <condition type="in_team" value="袁承志" />
+          <condition type="should_not_finish" value="bixuejianShyou_闯王剧情3" />
+          <condition type="should_not_finish" value="bixuejianShyou_金蛇胜1" />
+          <condition type="should_not_finish" value="bixuejianShyou_金蛇败" />
+          <condition type="should_not_finish" value="bixuejianShyou_华山仙境变身03" />
+        </event>
+      </maprole>
+      <maprole roleKey="金蛇郎君" description="似乎在缅怀着什么">
+        <event type="story" value="bixuejianShyou_取宝藏" probability="50" repeat="once">
+          <condition type="in_team" value="袁承志" />
+          <condition type="in_team" value="温青青" />
+          <condition type="should_finish" value="bixuejianShyou_金蛇败" />
+        </event>
+      </maprole>
+      <maprole roleKey="back" description="返回大地图">
+        <event type="map" value="大地图" />
+      </maprole>
+    </map>
+    <map name="杭州" pic="地图.杭州">
+      <musics>
+        <music name="音乐.天龙八部2" />
+      </musics>
+      <maprole roleKey="梅庄" pic="地图.府门前" description="孤山梅庄">
+        <event type="map" value="梅庄" image="地图.府门前" />
+      </maprole>
+      <maprole roleKey="六和塔" pic="地图.城市2" description="六和塔">
+        <event type="map" value="六和塔" image="地图.城市2" />
+      </maprole>
+      <maprole roleKey="杭州酒楼" pic="地图.酒楼" description="杭州酒楼">
+        <event type="map" value="杭州酒楼" image="地图.酒楼" />
+      </maprole>
+      <maprole roleKey="段誉" pic="头像.段誉" description="段誉好像有些话想说">
+        <event type="story" value="武当派_金陵怀古" image="头像.段誉" repeat="once">
+          <condition type="should_finish" value="武当派_复真观" />
+          <condition type="in_team" value="田伯光" />
+          <condition type="in_team" value="段誉" />
+        </event>
+      </maprole>
+      <maprole roleKey="张三" pic="头像.张三" description="赏善罚恶使者">
+        <event type="story" value="侠客行_杭州" image="头像.张三" repeat="once">
+          <condition type="should_finish" value="侠客行_接令" />
+        </event>
+      </maprole>
+      <maprole roleKey="back" description="返回大地图">
+        <event type="map" value="大地图" />
+      </maprole>
+    </map>
+    <map name="杭州酒楼" pic="地图.酒楼">
+      <musics>
+        <music name="音乐.天龙八部2" />
+      </musics>
+      <maprole roleKey="酒楼老板" pic="头像.酒楼老板" description="酒楼的老板，喜欢跟客人攀谈。">
+        <event type="story" value="tlbb.dy_西夏驸马.酒楼传闻" description="在议论些什么。" repeat="once">
+          <condition type="should_finish" value="tlbb.dy_小镜湖乔峰5" />
+          <condition type="in_team" value="段誉" />
+        </event>
+        <event type="story" value="original_长安酒楼.奇闻1" probability="10" />
+        <event type="story" value="original_长安酒楼.奇闻2" probability="10" />
+        <event type="story" value="original_长安酒楼.奇闻3" probability="10" />
+        <event type="story" value="original_长安酒楼.奇闻4" probability="10" />
+        <event type="story" value="original_长安酒楼.奇闻5" probability="10" />
+        <event type="story" value="original_长安酒楼.奇闻6" probability="10" />
+        <event type="story" value="original_长安酒楼.奇闻7" probability="10" />
+        <event type="story" value="original_长安酒楼.奇闻8" probability="10" />
+        <event type="story" value="original_长安酒楼.奇闻9" probability="10" />
+        <event type="story" value="original_长安酒楼.奇闻10" probability="10" />
+        <event type="story" value="original_长安酒楼.奇闻12" probability="10" />
+        <event type="story" value="original_长安酒楼.奇闻11" />
+      </maprole>
+      <maprole roleKey="卓一航" description="武当派弟子卓一航陷入了进退两难之地">
+        <event type="story" value="武当派_卓一航" repeat="once">
+          <condition type="should_finish" value="武当派_蛇形刁手之战胜利" />
+        </event>
+      </maprole>
+      <maprole roleKey="乔峰" description="一个五大三粗的大汉。">
+        <event type="story" value="tlbb.dy_江南酒楼1" probability="50" repeat="once">
+          <condition type="in_team" value="段誉" />
+          <condition type="not_in_team" value="王语嫣" />
+          <condition type="should_finish" value="tlbb.dy_曼陀山庄3" />
+        </event>
+      </maprole>
+      <maprole roleKey="石清" description="石清，一个儒雅的剑客。">
+        <event type="story" value="侠客行_主杭州石清" repeat="once">
+          <condition type="should_finish" value="侠客行_主太玄神功" />
+        </event>
+      </maprole>
+      <maprole roleKey="童姥使者" description="灵鹫宫出门收贡礼的人">
+        <event type="story" value="灵鹫宫_贡品" probability="50" repeat="once">
+          <condition type="should_finish" value="门派灵鹫宫_出师" />
+        </event>
+      </maprole>
+      <maprole roleKey="back" pic="地图.杭州" description="返回杭州">
+        <event type="map" value="杭州" />
+      </maprole>
+    </map>
+    <map name="六和塔" pic="地图.城市2">
+      <musics>
+        <music name="音乐.城市2" />
+      </musics>
+      <maprole roleKey="朝廷走狗" description="红花会四当家文泰来被关押在此。">
+        <event type="story" value="书剑恩仇录_六和塔" probability="50" repeat="once">
+          <condition type="not_in_team" value="陈家洛" />
+          <condition type="should_not_finish" value="mainStory_神秘剑客1" />
+        </event>
+        <event type="story" value="书剑恩仇录_六和塔一般">
+          <condition type="should_not_finish" value="书剑恩仇录_六和塔" />
+        </event>
+      </maprole>
+      <maprole roleKey="岳王墓" pic="地图.古墓外" description="岳飞元帅埋骨之地有事情发生！">
+        <event type="story" value="射雕英雄传_岳家枪法1" description="夜黑风高，闹鬼啦！" probability="40" lv="15" repeat="once">
+          <condition type="in_time" value="子#丑" />
+        </event>
+      </maprole>
+      <maprole roleKey="石梁派" pic="地图.帮派门前2" description="衢州石梁派">
+        <event type="map" value="石梁派" image="地图.帮派门前2" />
+      </maprole>
+      <maprole roleKey="back" description="返回杭州">
+        <event type="map" value="杭州" />
+      </maprole>
+    </map>
+    <map name="梅庄" pic="地图.府门前">
+      <musics>
+        <music name="音乐.天龙八部.逍遥派抒情版" />
+      </musics>
+      <maprole roleKey="西湖底" pic="地图.地牢" description="西湖底下是关押顶尖高手的场所。">
+        <event type="map" value="西湖底" />
+      </maprole>
+      <maprole roleKey="back" description="返回杭州。">
+        <event type="map" value="杭州" />
+      </maprole>
+    </map>
+    <map name="西湖底" pic="地图.地牢">
+      <musics>
+        <music name="音乐.天龙八部.逍遥派抒情版" />
+      </musics>
+      <maprole roleKey="林平之" description="阉人林平之">
+        <event type="story" value="笑傲江湖_西湖底.询问林平之辟邪1" repeat="once">
+          <condition type="should_finish" value="笑傲江湖_岳灵珊3胜" />
+          <condition type="in_team" value="令狐冲" />
+          <condition type="not_in_team" value="曲非烟" />
+          <condition type="should_not_finish" value="笑傲江湖_西湖底.封不平救走林平之1" />
+        </event>
+        <event type="story" value="笑傲江湖_西湖底.封不平救走林平之1" repeat="once">
+          <condition type="should_finish" value="笑傲江湖_岳灵珊3胜" />
+          <condition type="in_team" value="令狐冲" />
+          <condition type="in_team" value="曲非烟" />
+        </event>
+      </maprole>
+      <maprole roleKey="back" description="返回梅庄。">
+        <event type="map" value="梅庄" />
+      </maprole>
+    </map>
+    <map name="黑木崖下" pic="地图.黑木崖下">
+      <musics>
+        <music name="音乐.天龙八部8" />
+      </musics>
+      <maprole roleKey="黑木崖小路" pic="地图.山间小路1" description="去往日月神教黑木崖。">
+        <event type="map" value="黑木崖小路1" />
+      </maprole>
+      <maprole roleKey="back" description="返回大地图。">
+        <event type="map" value="大地图" />
+      </maprole>
+    </map>
+    <map name="黑木崖小路1" pic="地图.山间小路1">
+      <musics>
+        <music name="音乐.天龙八部8" />
+      </musics>
+      <maprole roleKey="front" description="向前走">
+        <event type="battle" value="山中等级3_战斗" probability="25" />
+        <event type="map" value="黑木崖小路2" />
+      </maprole>
+      <maprole roleKey="left" description="向左走">
+        <event type="battle" value="山中等级3_战斗" probability="25" />
+        <event type="map" value="黑木崖小路1" />
+      </maprole>
+      <maprole roleKey="right" description="向右走">
+        <event type="battle" value="山中等级3_战斗" probability="25" />
+        <event type="map" value="黑木崖小路2" description="好像是通往黑木崖的路..." probability="70" />
+        <event type="map" value="黑木崖小路2" />
+      </maprole>
+      <maprole roleKey="back" description="返回黑木崖下">
+        <event type="map" value="黑木崖下" description="黑木崖下" />
+      </maprole>
+    </map>
+    <map name="黑木崖小路2" pic="地图.山间小路2">
+      <musics>
+        <music name="音乐.天龙八部8" />
+      </musics>
+      <maprole roleKey="front" description="向前走">
+        <event type="battle" value="山中等级3_战斗" probability="25" />
+        <event type="map" value="黑木崖小路1" />
+      </maprole>
+      <maprole roleKey="left" description="向左走">
+        <event type="battle" value="山中等级3_战斗" probability="25" />
+        <event type="map" value="黑木崖小路3" description="好像是通往黑木崖的路..." probability="70" />
+        <event type="map" value="黑木崖小路3" />
+      </maprole>
+      <maprole roleKey="right" description="向右走">
+        <event type="battle" value="山中等级3_战斗" probability="25" />
+        <event type="map" value="黑木崖小路2" />
+      </maprole>
+      <maprole roleKey="back" description="返回黑木崖下">
+        <event type="map" value="黑木崖下" description="黑木崖下" />
+      </maprole>
+    </map>
+    <map name="黑木崖小路3" pic="地图.山间小路1">
+      <musics>
+        <music name="音乐.天龙八部8" />
+      </musics>
+      <maprole roleKey="front" description="向前走">
+        <event type="battle" value="山中等级3_战斗" probability="25" />
+        <event type="map" value="黑木崖小路4" description="好像是通往黑木崖的路..." probability="70" />
+        <event type="map" value="黑木崖小路4" />
+      </maprole>
+      <maprole roleKey="left" description="向左走">
+        <event type="battle" value="山中等级3_战斗" probability="25" />
+        <event type="map" value="黑木崖小路2" />
+      </maprole>
+      <maprole roleKey="right" description="向右走">
+        <event type="battle" value="山中等级3_战斗" probability="25" />
+        <event type="map" value="黑木崖小路1" />
+      </maprole>
+      <maprole roleKey="back" description="返回黑木崖下">
+        <event type="map" value="黑木崖下" description="黑木崖下" />
+      </maprole>
+    </map>
+    <map name="黑木崖小路4" pic="地图.山间小路2">
+      <musics>
+        <music name="音乐.天龙八部8" />
+      </musics>
+      <maprole roleKey="front" description="向前走">
+        <event type="battle" value="山中等级3_战斗" probability="25" />
+        <event type="map" value="黑木崖小路3" />
+      </maprole>
+      <maprole roleKey="left" description="向左走">
+        <event type="battle" value="山中等级3_战斗" probability="25" />
+        <event type="map" value="黑木崖" description="好像是通往黑木崖的路..." probability="70" />
+        <event type="map" value="黑木崖" />
+      </maprole>
+      <maprole roleKey="right" description="向右走">
+        <event type="battle" value="山中等级3_战斗" probability="25" />
+        <event type="map" value="黑木崖小路1" />
+      </maprole>
+      <maprole roleKey="back" description="返回黑木崖下">
+        <event type="map" value="黑木崖下" description="黑木崖下" />
+      </maprole>
+    </map>
+    <map name="黑木崖" pic="地图.黑木崖">
+      <musics>
+        <music name="音乐.紧张感" />
+      </musics>
+      <maprole roleKey="封不平" description="阉人封不平">
+        <event type="story" value="笑傲江湖_黑木崖.封不平1" repeat="once">
+          <condition type="should_finish" value="笑傲江湖_华山山洞.辟邪剑谱3" />
+          <condition type="in_team" value="令狐冲" />
+          <condition type="not_in_team" value="曲非烟" />
+        </event>
+        <event type="story" value="笑傲江湖_黑木崖.封不平林平之1" repeat="once">
+          <condition type="should_finish" value="笑傲江湖_西湖底.封不平救走林平之3" />
+          <condition type="in_team" value="令狐冲" />
+          <condition type="in_team" value="曲非烟" />
+        </event>
+      </maprole>
+      <maprole roleKey="任我行" description="日月神教教主">
+        <event type="story" value="笑傲邪_围攻黑木崖" repeat="once">
+          <condition type="should_finish" value="笑傲邪_并派大会胜利" />
+        </event>
+        <event type="story" value="笑傲江湖_任我行伐五岳" repeat="once">
+          <condition type="should_finish" value="笑傲江湖_风陵渡黑衣人胜2" />
+          <condition type="should_finish" value="笑傲江湖_向问天4" />
+          <condition type="should_finish" value="笑傲江湖_上官云4" />
+          <condition type="in_team" value="令狐冲" />
+        </event>
+      </maprole>
+      <maprole roleKey="蒙面黑衣人" description="一群被阉割了的太监">
+        <event type="story" value="笑傲江湖_天关黑木崖" repeat="once">
+          <condition type="should_finish" value="笑傲江湖_恒山无人" />
+          <condition type="in_team" value="令狐冲" />
+        </event>
+      </maprole>
+      <maprole roleKey="向问天" description="天王老子.日月神教左护法">
+        <event type="story" value="笑傲江湖_向问天1">
+          <condition type="should_finish" value="笑傲江湖_黑木崖岳父" />
+          <condition type="in_team" value="令狐冲" />
+          <condition type="not_in_team" value="曲非烟" />
+          <condition type="should_not_finish" value="笑傲江湖_黑木崖东方" />
+        </event>
+        <event type="story" value="笑傲江湖_向问天2">
+          <condition type="should_finish" value="笑傲江湖_黑木崖岳父" />
+          <condition type="in_team" value="令狐冲" />
+          <condition type="not_in_team" value="曲非烟" />
+          <condition type="should_finish" value="笑傲江湖_黑木崖东方" />
+          <condition type="should_not_finish" value="笑傲江湖_琴居东方" />
+        </event>
+        <event type="story" value="笑傲江湖_向问天3">
+          <condition type="should_finish" value="笑傲江湖_黑木崖岳父" />
+          <condition type="in_team" value="令狐冲" />
+          <condition type="not_in_team" value="曲非烟" />
+          <condition type="should_finish" value="笑傲江湖_黑木崖东方" />
+          <condition type="should_finish" value="笑傲江湖_琴居东方" />
+          <condition type="should_not_finish" value="笑傲江湖_风陵渡黑衣人胜2" />
+        </event>
+        <event type="story" value="笑傲江湖_向问天4">
+          <condition type="should_finish" value="笑傲江湖_黑木崖岳父" />
+          <condition type="in_team" value="令狐冲" />
+          <condition type="not_in_team" value="曲非烟" />
+          <condition type="should_finish" value="笑傲江湖_黑木崖东方" />
+          <condition type="should_finish" value="笑傲江湖_琴居东方" />
+          <condition type="should_finish" value="笑傲江湖_风陵渡黑衣人胜2" />
+          <condition type="should_not_finish" value="笑傲江湖_恒山无人" />
+        </event>
+      </maprole>
+      <maprole roleKey="上官云" description="日月神教右护法">
+        <event type="story" value="笑傲江湖_上官云1">
+          <condition type="should_finish" value="笑傲江湖_黑木崖岳父" />
+          <condition type="in_team" value="令狐冲" />
+          <condition type="not_in_team" value="曲非烟" />
+          <condition type="should_not_finish" value="笑傲江湖_黑木崖东方" />
+        </event>
+        <event type="story" value="笑傲江湖_上官云2">
+          <condition type="should_finish" value="笑傲江湖_黑木崖岳父" />
+          <condition type="in_team" value="令狐冲" />
+          <condition type="not_in_team" value="曲非烟" />
+          <condition type="should_finish" value="笑傲江湖_黑木崖东方" />
+          <condition type="should_not_finish" value="笑傲江湖_琴居东方" />
+        </event>
+        <event type="story" value="笑傲江湖_上官云3">
+          <condition type="should_finish" value="笑傲江湖_黑木崖岳父" />
+          <condition type="in_team" value="令狐冲" />
+          <condition type="not_in_team" value="曲非烟" />
+          <condition type="should_finish" value="笑傲江湖_黑木崖东方" />
+          <condition type="should_finish" value="笑傲江湖_琴居东方" />
+          <condition type="should_not_finish" value="笑傲江湖_风陵渡黑衣人胜2" />
+        </event>
+        <event type="story" value="笑傲江湖_上官云4">
+          <condition type="should_finish" value="笑傲江湖_黑木崖岳父" />
+          <condition type="in_team" value="令狐冲" />
+          <condition type="not_in_team" value="曲非烟" />
+          <condition type="should_finish" value="笑傲江湖_黑木崖东方" />
+          <condition type="should_finish" value="笑傲江湖_琴居东方" />
+          <condition type="should_finish" value="笑傲江湖_风陵渡黑衣人胜2" />
+          <condition type="should_not_finish" value="笑傲江湖_恒山无人" />
+        </event>
+      </maprole>
+      <maprole roleKey="黑木崖密洞" pic="地图.华山山洞" description="黑木崖的秘密小山洞">
+        <event type="map" value="黑木崖密洞" />
+      </maprole>
+      <maprole roleKey="back" description="返回黑木崖下。">
+        <event type="map" value="黑木崖下" />
+      </maprole>
+    </map>
+    <map name="黑木崖密洞" pic="地图.华山山洞">
+      <musics>
+        <music name="音乐.武侠雄壮" />
+      </musics>
+      <maprole roleKey="东方不败" description="日出东方，唯我不败">
+        <event type="story" value="笑傲江湖_黑木崖东方" probability="50" repeat="once">
+          <condition type="should_finish" value="笑傲江湖_黑木崖岳父" />
+          <condition type="should_finish" value="笑傲江湖_向问天1" />
+          <condition type="should_finish" value="笑傲江湖_上官云1" />
+          <condition type="in_team" value="令狐冲" />
+        </event>
+      </maprole>
+      <maprole roleKey="back" description="返回黑木崖">
+        <event type="map" value="黑木崖" />
+      </maprole>
+    </map>
+    <map name="湘江" pic="地图.湘江">
+      <musics>
+        <music name="音乐.武侠流水" />
+      </musics>
+      <maprole roleKey="阿碧" description="和阿碧说说话...">
+        <event type="story" value="tlbb.dy_湘江阿碧" repeat="once">
+          <condition type="in_team" value="段誉" />
+          <condition type="in_team" value="阿碧" />
+          <condition type="in_team" value="木婉清" />
+        </event>
+      </maprole>
+      <maprole roleKey="back" description="返回潇湘古林">
+        <event type="map" value="潇湘古林4" />
+      </maprole>
+    </map>
+    <map name="桃花源" pic="地图.桃花源">
+      <musics>
+        <music name="音乐.天外村" />
+      </musics>
+      <maprole roleKey="汉家松鼠" description="游戏制作人：汉家松鼠童鞋">
+        <event type="story" value="original_桃花源.汉家松鼠" repeat="once" />
+        <event type="story" value="original_桃花源.汉家松鼠平时">
+          <condition type="should_finish" value="original_桃花源.汉家松鼠" />
+        </event>
+      </maprole>
+      <maprole roleKey="back" description="返回衡阳">
+        <event type="map" value="衡阳" />
+      </maprole>
+    </map>
+    <map name="衡山派" pic="地图.帮派门前">
+      <musics>
+        <music name="音乐.武侠流水" />
+      </musics>
+      <maprole roleKey="莫大" description="潇湘夜雨莫大先生">
+        <event type="story" value="original_莫大" />
+      </maprole>
+      <maprole roleKey="back" description="返回潇湘古林">
+        <event type="map" value="潇湘古林2" />
+      </maprole>
+    </map>
+    <map name="唐诗山洞" pic="地图.洞穴1">
+      <musics>
+        <music name="音乐.天龙八部.忧伤" />
+      </musics>
+      <maprole roleKey="狄云" description="一个历经劫难，终成大器的武林传说。">
+        <event type="story" value="连城诀_唐诗山洞.狄云加入前" repeat="once">
+          <condition type="should_finish" value="连城诀_昆仑山.血刀老祖杀" />
+          <condition type="not_in_team" value="狄云" />
+          <condition type="should_not_finish" value="mainStory_紧急1" />
+          <condition type="not_in_menpai" value="血刀门" />
+        </event>
+        <event type="story" value="连城诀_唐诗山洞.狄云不加入前" repeat="once">
+          <condition type="should_finish" value="连城诀_昆仑山.血刀老祖不杀" />
+          <condition type="not_in_team" value="狄云" />
+          <condition type="should_not_finish" value="mainStory_紧急1" />
+          <condition type="not_in_menpai" value="血刀门" />
+        </event>
+        <event type="story" value="连城诀_唐诗山洞.狄云不从" repeat="once">
+          <condition type="should_finish" value="连城诀_昆仑山.血刀老祖条件" />
+          <condition type="not_in_team" value="狄云" />
+          <condition type="should_not_finish" value="mainStory_紧急1" />
+          <condition type="not_in_menpai" value="血刀门" />
+        </event>
+        <event type="story" value="连城诀_唐诗山洞.狄云">
+          <condition type="should_not_finish" value="连城诀_唐诗山洞.狄云不加入前" />
+          <condition type="should_not_finish" value="连城诀_唐诗山洞.狄云加入前" />
+          <condition type="not_in_team" value="狄云" />
+          <condition type="not_in_menpai" value="血刀门" />
+        </event>
+        <event type="story" value="连城诀_血刀门.杀狄云" repeat="once">
+          <condition type="in_menpai" value="血刀门" />
+          <condition type="should_finish" value="血刀门_血刀老祖杀死狄云OK" />
+        </event>
+      </maprole>
+      <maprole roleKey="back" description="返回潇湘古林">
+        <event type="map" value="潇湘古林5" />
+      </maprole>
+    </map>
+    <map name="衡阳郊外" pic="地图.郊外2">
+      <musics>
+        <music name="音乐.天龙八部.忧伤" />
+      </musics>
+      <maprole roleKey="曲非烟" description="一个聪明灵秀的女子，日月神教长老曲洋的孙女。">
+        <event type="story" value="笑傲江湖_曲非烟2" description="夜晚独自抚琴的曲非烟..." repeat="once">
+          <condition type="should_not_finish" value="笑傲江湖_曲非烟胜" />
+          <condition type="should_not_finish" value="笑傲江湖_西湖底.询问林平之辟邪1" />
+          <condition type="in_team" value="令狐冲" />
+        </event>
+        <event type="story" value="笑傲江湖_曲非烟1" description="夜晚独自抚琴的曲非烟..." probability="50">
+          <condition type="should_not_finish" value="笑傲江湖_曲非烟胜" />
+          <condition type="should_not_finish" value="笑傲江湖_西湖底.询问林平之辟邪1" />
+          <condition type="not_in_team" value="令狐冲" />
+          <condition type="in_time" value="子#丑#寅#卯#亥" />
+        </event>
+      </maprole>
+      <maprole roleKey="back" description="返回潇湘古林。">
+        <event type="map" value="潇湘古林1" />
+      </maprole>
+    </map>
+    <map name="潇湘古林1" pic="地图.森林1">
+      <musics>
+        <music name="音乐.武侠流水" />
+      </musics>
+      <maprole roleKey="front" description="向前走">
+        <event type="battle" value="山中等级2_战斗" probability="5" />
+        <event type="map" value="潇湘古林2" />
+      </maprole>
+      <maprole roleKey="left" description="向左走">
+        <event type="battle" value="山中等级2_战斗" probability="5" />
+        <event type="map" value="衡阳郊外" description="通往衡阳郊外.." probability="70" />
+        <event type="map" value="衡阳郊外" />
+      </maprole>
+      <maprole roleKey="right" description="向右走">
+        <event type="battle" value="山中等级2_战斗" probability="5" />
+        <event type="map" value="潇湘古林3" />
+      </maprole>
+      <maprole roleKey="back" description="返回衡阳">
+        <event type="map" value="衡阳" />
+      </maprole>
+    </map>
+    <map name="潇湘古林2" pic="地图.森林2">
+      <musics>
+        <music name="音乐.武侠流水" />
+      </musics>
+      <maprole roleKey="front" description="向前走">
+        <event type="battle" value="山中等级2_战斗" probability="5" />
+        <event type="map" value="衡山派" description="前方人声鼎沸..." probability="70" />
+        <event type="map" value="衡山派" />
+      </maprole>
+      <maprole roleKey="left" description="向左走">
+        <event type="battle" value="山中等级2_战斗" probability="5" />
+        <event type="map" value="潇湘古林3" />
+      </maprole>
+      <maprole roleKey="right" description="向右走">
+        <event type="battle" value="山中等级2_战斗" probability="5" />
+        <event type="map" value="潇湘古林1" />
+      </maprole>
+      <maprole roleKey="back" description="返回衡阳">
+        <event type="map" value="衡阳" />
+      </maprole>
+    </map>
+    <map name="潇湘古林3" pic="地图.森林3">
+      <musics>
+        <music name="音乐.武侠流水" />
+      </musics>
+      <maprole roleKey="front" description="向前走">
+        <event type="battle" value="山中等级2_战斗" probability="5" />
+        <event type="map" value="潇湘古林4" description="通往古林深处..." probability="70" />
+        <event type="map" value="潇湘古林4" />
+      </maprole>
+      <maprole roleKey="left" description="向左走">
+        <event type="battle" value="山中等级2_战斗" probability="5" />
+        <event type="map" value="潇湘古林2" />
+      </maprole>
+      <maprole roleKey="right" description="向右走">
+        <event type="battle" value="山中等级2_战斗" probability="5" />
+        <event type="map" value="潇湘古林1" />
+      </maprole>
+      <maprole roleKey="back" description="返回衡阳">
+        <event type="map" value="衡阳" />
+      </maprole>
+    </map>
+    <map name="潇湘古林4" pic="地图.森林1">
+      <musics>
+        <music name="音乐.武侠流水" />
+      </musics>
+      <maprole roleKey="front" description="向前走">
+        <event type="battle" value="山中等级2_战斗" probability="5" />
+        <event type="map" value="潇湘古林3" />
+      </maprole>
+      <maprole roleKey="left" description="向左走">
+        <event type="battle" value="山中等级2_战斗" probability="5" />
+        <event type="map" value="潇湘古林5" description="通往古林深处..." probability="70" />
+        <event type="map" value="潇湘古林5" />
+      </maprole>
+      <maprole roleKey="right" description="向右走">
+        <event type="battle" value="山中等级2_战斗" probability="5" />
+        <event type="map" value="湘江" description="传来哗啦啦的水流声..." probability="70" />
+        <event type="map" value="湘江" />
+      </maprole>
+      <maprole roleKey="back" description="返回衡阳">
+        <event type="map" value="衡阳" />
+      </maprole>
+    </map>
+    <map name="潇湘古林5" pic="地图.森林2">
+      <musics>
+        <music name="音乐.武侠流水" />
+      </musics>
+      <maprole roleKey="front" description="向前走">
+        <event type="battle" value="山中等级2_战斗" probability="5" />
+        <event type="map" value="潇湘古林6" />
+      </maprole>
+      <maprole roleKey="left" description="向左走">
+        <event type="battle" value="山中等级2_战斗" probability="5" />
+        <event type="map" value="唐诗山洞" description="传来一阵阵阴风..." probability="70" />
+        <event type="map" value="唐诗山洞" />
+      </maprole>
+      <maprole roleKey="right" description="向右走">
+        <event type="battle" value="山中等级2_战斗" probability="5" />
+        <event type="map" value="药王庄" description="传来阵阵奇怪的花香..." probability="70" />
+        <event type="map" value="药王庄" />
+      </maprole>
+      <maprole roleKey="back" description="返回衡阳">
+        <event type="map" value="衡阳" />
+      </maprole>
+    </map>
+    <map name="潇湘古林6" pic="地图.森林1">
+      <musics>
+        <music name="音乐.武侠流水" />
+      </musics>
+      <maprole roleKey="front" description="向前走">
+        <event type="battle" value="山中等级2_战斗" probability="5" />
+        <event type="map" value="潇湘古林4" />
+      </maprole>
+      <maprole roleKey="left" description="向左走">
+        <event type="battle" value="山中等级2_战斗" probability="5" />
+        <event type="map" value="桃花源" />
+      </maprole>
+      <maprole roleKey="right" description="向右走">
+        <event type="battle" value="山中等级2_战斗" probability="5" />
+        <event type="map" value="潇湘古林6" />
+      </maprole>
+      <maprole roleKey="back" description="返回衡阳">
+        <event type="map" value="衡阳" />
+      </maprole>
+    </map>
+    <map name="哈萨克部落" pic="地图.塞外">
+      <musics>
+        <music name="音乐.太行八径" />
+      </musics>
+      <maprole roleKey="back" description="返回大地图">
+        <event type="map" value="大地图" />
+      </maprole>
+    </map>
+    <map name="高昌迷宫" pic="地图.沙漠3">
+      <musics>
+        <music name="音乐.宿命" />
+      </musics>
+      <maprole roleKey="back" description="返回大地图">
+        <event type="map" value="大地图" />
+      </maprole>
+    </map>
+    <map name="回族部落" pic="地图.塞外">
+      <musics>
+        <music name="音乐.太行八径" />
+      </musics>
+      <maprole roleKey="张召重" description="武当名家、朝廷鹰犬">
+        <event type="story" value="书剑恩仇录_庖丁解牛" repeat="once">
+          <condition type="in_team" value="霍青桐" />
+          <condition type="should_finish" value="书剑恩仇录_六和塔" />
+          <condition type="should_not_finish" value="mainStory_紧急1" />
+        </event>
+      </maprole>
+      <maprole roleKey="霍青桐" description="翠羽黄衫霍青桐">
+        <event type="story" value="书剑恩仇录_回族部落一般">
+          <condition type="not_in_team" value="霍青桐" />
+        </event>
+      </maprole>
+      <maprole roleKey="back" description="返回大地图">
+        <event type="map" value="大地图" />
+      </maprole>
+    </map>
+    <map name="同福客栈" pic="地图.客栈">
+      <musics>
+        <music name="音乐.欢快工作" />
+      </musics>
+      <maprole roleKey="佟湘玉" description="同福客栈佟掌柜">
+        <event type="story" value="original_同福客栈" repeat="once" />
+        <event type="story" value="original_同福客栈.轻功">
+          <condition type="should_finish" value="original_同福客栈" />
+          <condition type="not_has_time_key" value="同福客栈_轻功" />
+        </event>
+      </maprole>
+      <maprole roleKey="白展堂" description="盗圣白展堂">
+        <event type="story" value="original_同福客栈" repeat="once" />
+        <event type="story" value="original_同福客栈.葵花点穴手" description="同福客栈白展堂">
+          <condition type="should_finish" value="original_同福客栈" />
+          <condition type="not_has_time_key" value="同福客栈_白展堂" />
+        </event>
+      </maprole>
+      <maprole roleKey="邢捕头" description="七侠镇邢捕头">
+        <event type="story" value="original_同福客栈.升级">
+          <condition type="should_finish" value="original_同福客栈" />
+          <condition type="should_not_finish" value="mainStory_黑暗的阴影1" />
+          <condition type="not_has_time_key" value="同福客栈_邢捕头" />
+        </event>
+        <event type="story" value="original_同福客栈.升级.2">
+          <condition type="should_finish" value="original_同福客栈" />
+          <condition type="should_finish" value="mainStory_黑暗的阴影1" />
+          <condition type="should_not_finish" value="mainStory_神秘剑客1" />
+          <condition type="not_has_time_key" value="同福客栈_邢捕头" />
+        </event>
+        <event type="story" value="original_同福客栈.升级.3">
+          <condition type="should_finish" value="original_同福客栈" />
+          <condition type="should_finish" value="mainStory_神秘剑客1" />
+          <condition type="should_not_finish" value="mainStory_紧急1" />
+          <condition type="not_has_time_key" value="同福客栈_邢捕头" />
+        </event>
+        <event type="story" value="original_同福客栈.升级.4">
+          <condition type="should_finish" value="original_同福客栈" />
+          <condition type="should_finish" value="mainStory_紧急1" />
+          <condition type="not_has_time_key" value="同福客栈_邢捕头" />
+        </event>
+        <event type="story" value="original_同福客栈" repeat="once" />
+      </maprole>
+      <maprole roleKey="燕小六" description="七侠镇燕捕头">
+        <event type="story" value="original_同福客栈.竞技场4">
+          <condition type="should_finish" value="original_同福客栈" />
+          <condition type="exceed_day" value="1080" />
+        </event>
+        <event type="story" value="original_同福客栈.竞技场3">
+          <condition type="should_finish" value="original_同福客栈" />
+          <condition type="exceed_day" value="720" />
+        </event>
+        <event type="story" value="original_同福客栈.竞技场2">
+          <condition type="should_finish" value="original_同福客栈" />
+          <condition type="exceed_day" value="360" />
+        </event>
+        <event type="story" value="original_同福客栈.竞技场">
+          <condition type="should_finish" value="original_同福客栈" />
+        </event>
+        <event type="story" value="original_同福客栈" repeat="once" />
+      </maprole>
+      <maprole roleKey="back" description="返回大地图">
+        <event type="map" value="大地图" />
+      </maprole>
+    </map>
+    <map name="北京" pic="地图.长安">
+      <musics>
+        <music name="音乐.城市3" />
+      </musics>
+      <maprole roleKey="韦小宝" description="当今皇上跟前红人。">
+        <event type="story" value="鹿鼎记_北京韦小宝" probability="50" repeat="once">
+          <condition type="not_in_time" value="子#丑#寅#卯#亥" />
+        </event>
+        <event type="story" value="鹿鼎记_北京韦小宝2">
+          <condition type="not_in_time" value="子#丑#寅#卯#亥" />
+          <condition type="should_finish" value="鹿鼎记_北京韦小宝" />
+          <condition type="should_not_finish" value="鹿鼎记_北京韦小宝加入" />
+        </event>
+      </maprole>
+      <maprole roleKey="张召重" description="火手判官，武当逆徒">
+        <event type="story" value="武当派_对战张召重" probability="50" repeat="once">
+          <condition type="should_finish" value="武当派_入门" />
+          <condition type="should_not_finish" value="书剑恩仇录_庖丁解牛" />
+          <condition type="not_in_time" value="子#丑#寅#卯#亥" />
+        </event>
+      </maprole>
+      <maprole roleKey="back" description="返回大地图">
+        <event type="map" value="大地图" />
+      </maprole>
+    </map>
+    <map name="丐帮" pic="地图.丐帮">
+      <musics>
+        <music name="音乐.天龙八部1" />
+        <music name="音乐.天龙八部2" />
+        <music name="音乐.天龙八部3" />
+        <music name="音乐.天龙八部4" />
+      </musics>
+      <maprole roleKey="全冠清" description="丐帮全冠清。">
+        <event type="story" value="倚天邪线_丐帮" repeat="once">
+          <condition type="not_in_team" value="张无忌" />
+          <condition type="should_not_finish" value="倚天屠龙_张无忌" />
+          <condition type="should_finish" value="tlbb.dy_丐帮总舵胜" />
+        </event>
+        <event type="story" value="倚天邪线_劝说各大派" repeat="once">
+          <condition type="should_finish" value="倚天邪线_杀康茂才" />
+        </event>
+        <event type="story" value="倚天邪线_劝说完成" repeat="once">
+          <condition type="should_finish" value="倚天邪线_劝说武当成功" />
+          <condition type="should_finish" value="倚天邪线_劝说少林成功" />
+          <condition type="should_finish" value="倚天邪线_劝说嵩山成功" />
+          <condition type="should_finish" value="倚天邪线_劝说华山成功" />
+          <condition type="should_finish" value="倚天邪线_劝说峨眉成功" />
+        </event>
+      </maprole>
+      <maprole roleKey="何师我" description="小乞丐何师我。">
+        <event type="story" value="门派大轮寺_霍都" repeat="once">
+          <condition type="should_finish" value="tlbb.dy_丐帮大变1" />
+          <condition type="in_team" value="达尔巴" />
+          <condition type="in_team" value="杨过" />
+        </event>
+      </maprole>
+      <maprole roleKey="乔峰" description="丐帮帮主乔峰。">
+        <event type="story" value="tlbb.dy_丐帮大变1" repeat="once">
+          <condition type="not_in_time" value="子#丑#寅#卯#亥" />
+          <condition type="should_finish" value="tlbb.dy_江南酒楼2" />
+          <condition type="in_team" value="段誉" />
+          <condition type="should_not_finish" value="mainStory_紧急1" />
+        </event>
+      </maprole>
+      <maprole roleKey="back" description="返回大地图">
+        <event type="map" value="大地图" />
+      </maprole>
+    </map>
+    <map name="雁门关" pic="地图.雁门关">
+      <musics>
+        <music name="音乐.武林至尊" />
+      </musics>
+      <maprole roleKey="乔峰" description="契丹人乔峰。">
+        <event type="story" value="tlbb.dy_雁门关" repeat="once">
+          <condition type="should_finish" value="tlbb.dy_聚贤庄3" />
+          <condition type="in_team" value="段誉" />
+        </event>
+      </maprole>
+      <maprole roleKey="穆人清" description="神剑仙缘穆人清。">
+        <event type="story" value="bixuejianShyou_闯王剧情1" repeat="once">
+          <condition type="should_finish" value="bixuejianShyou_接金胜不开包裹石梁派4" />
+          <condition type="in_team" value="袁承志" />
+        </event>
+        <event type="story" value="bixuejianShyou_闯王剧情2" repeat="once">
+          <condition type="should_finish" value="bixuejianShyou_闯王剧情1" />
+          <condition type="should_finish" value="mainStory_神秘剑客1" />
+          <condition type="should_not_finish" value="bixuejianShyou_闯王剧情3" />
+          <condition type="in_team" value="袁承志" />
+        </event>
+        <event type="story" value="bixuejianShyou_闯王剧情2">
+          <condition type="should_finish" value="bixuejianShyou_闯王剧情4" />
+          <condition type="should_not_finish" value="bixuejianShyou_闯王剧情3" />
+          <condition type="in_team" value="袁承志" />
+        </event>
+      </maprole>
+      <maprole roleKey="back" description="返回大地图">
+        <event type="map" value="大地图" />
+      </maprole>
+    </map>
+    <map name="擂鼓山" pic="地图.擂鼓山">
+      <musics>
+        <music name="音乐.天龙八部.逍遥派" />
+      </musics>
+      <maprole roleKey="苏星河" description="聪辩先生苏星河。">
+        <event type="story" value="tlbb.xz_擂鼓山1" probability="50" repeat="once" />
+      </maprole>
+      <maprole roleKey="back" description="返回大地图">
+        <event type="map" value="大地图" />
+      </maprole>
+    </map>
+    <map name="黑龙潭" pic="地图.树林2">
+      <musics>
+        <music name="音乐.天龙八部5" />
+      </musics>
+      <maprole roleKey="周伯通" description="老顽童周伯通">
+        <event type="story" value="original_周伯通" />
+        <event type="not_has_time_key" value="练级_周伯通" />
+      </maprole>
+      <maprole roleKey="back" description="返回大地图">
+        <event type="map" value="大地图" />
+      </maprole>
+    </map>
+    <map name="香格里拉" pic="地图.香格里拉">
+      <musics>
+        <music name="音乐.天龙八部.无量山洞" />
+      </musics>
+      <maprole roleKey="北丑" description="北丑">
+        <event type="story" value="original_天关.挑战">
+          <condition type="should_finish" value="original_天关" />
+        </event>
+        <event type="story" value="original_天关" repeat="once" />
+      </maprole>
+      <maprole roleKey="back" description="返回大地图">
+        <event type="map" value="大地图" />
+      </maprole>
+    </map>
+    <map name="松鼠旅馆" pic="地图.松鼠旅馆">
+      <musics>
+        <music name="音乐.天龙八部.无量山洞" />
+      </musics>
+      <maprole roleKey="汉家松鼠" description="游戏制作人汉家松鼠">
+        <event type="story" value="original_松鼠旅馆结束后">
+          <condition type="should_finish" value="original_松鼠旅馆结束" />
+        </event>
+        <event type="story" value="original_松鼠旅馆周目四">
+          <condition type="not_in_round" value="1" />
+          <condition type="not_in_round" value="2" />
+          <condition type="not_in_round" value="3" />
+          <condition type="should_finish" value="original_松鼠旅馆事件启动" />
+          <condition type="should_not_finish" value="original_松鼠旅馆结束" />
+        </event>
+        <event type="story" value="original_松鼠旅馆周目三">
+          <condition type="in_round" value="3" />
+          <condition type="should_finish" value="original_松鼠旅馆事件启动" />
+          <condition type="should_not_finish" value="original_松鼠旅馆结束" />
+        </event>
+        <event type="story" value="original_松鼠旅馆周目二">
+          <condition type="in_round" value="2" />
+          <condition type="should_finish" value="original_松鼠旅馆事件启动" />
+          <condition type="should_not_finish" value="original_松鼠旅馆结束" />
+        </event>
+        <event type="story" value="original_松鼠旅馆事件启动" repeat="once">
+          <condition type="not_in_round" value="1" />
+        </event>
+        <event type="story" value="original_松鼠旅馆无事件一般">
+          <condition type="in_round" value="1" />
+          <condition type="should_finish" value="original_松鼠旅馆无事件" />
+        </event>
+        <event type="story" value="original_松鼠旅馆无事件" repeat="once">
+          <condition type="in_round" value="1" />
+        </event>
+      </maprole>
+      <maprole roleKey="箱子" description="一个储物箱">
+        <event type="story" value="original_松鼠旅馆箱子" repeat="once" />
+        <event type="xiangzi" value="xiangzi" />
+      </maprole>
+      <maprole roleKey="back" description="返回大地图">
+        <event type="map" value="大地图" />
+      </maprole>
+    </map>
+    <map name="石梁派" pic="地图.青城派">
+      <musics>
+        <music name="音乐.神雕.舒缓" />
+      </musics>
+      <maprole roleKey="石梁派大殿" pic="地图.大殿室内6" description="石梁派大殿">
+        <event type="story" value="bixuejianShyou_打开包裹石梁派" image="头像.温老头" description="里面人声鼎沸" repeat="once">
+          <condition type="should_finish" value="bixuejianShyou_得黄金" />
+        </event>
+        <event type="story" value="bixuejianShyou_不接黄金石梁派1" image="头像.温青青" repeat="once">
+          <condition type="should_finish" value="bixuejianShyou_不接黄金" />
+        </event>
+        <event type="story" value="bixuejianShyou_接金胜不开包裹石梁派1" image="头像.温青青" repeat="once">
+          <condition type="should_finish" value="bixuejianShyou_接黄金2" />
+          <condition type="should_not_finish" value="bixuejianShyou_得黄金" />
+        </event>
+        <event type="story" value="bixuejianShyou_接金败石梁派1" image="头像.小兵2" repeat="once">
+          <condition type="should_finish" value="bixuejianShyou_接黄金3" />
+        </event>
+        <event type="map" value="石梁派大殿" description="前往石梁派大殿" />
+      </maprole>
+      <maprole roleKey="back" description="返回杭州">
+        <event type="map" value="杭州" />
+      </maprole>
+    </map>
+    <map name="石梁派大殿" pic="地图.大殿室内6">
+      <musics>
+        <music name="音乐.神雕.舒缓" />
+      </musics>
+      <maprole roleKey="温青青" description="俏脸含煞的瞪着你">
+        <event type="story" value="bixuejianShyou_不接黄金石梁派5">
+          <condition type="should_finish" value="bixuejianShyou_不接黄金石梁派4" />
+          <condition type="should_not_finish" value="mainStory_神秘剑客1" />
+          <condition type="should_not_finish" value="bixuejianShyou_不接黄金石梁派7" />
+        </event>
+      </maprole>
+      <maprole roleKey="back" description="返回杭州">
+        <event type="map" value="石梁派" />
+      </maprole>
+    </map>
+    <map name="天安门" pic="地图.大帐">
+      <musics>
+        <music name="音乐.城市3" />
+      </musics>
+      <maprole roleKey="公主寝宫" pic="地图.琴舍" description="公主寝宫">
+        <event type="map" value="公主寝宫" image="地图.琴舍" description="前往公主寝宫" />
+      </maprole>
+      <maprole roleKey="孙仲寿" description="神情激昂，状若癫狂">
+        <event type="story" value="bixuejianShyou_京城行3" repeat="once">
+          <condition type="in_team" value="阿九" />
+          <condition type="should_finish" value="bixuejianShyou_京城行2" />
+        </event>
+      </maprole>
+      <maprole roleKey="back" description="返回北京">
+        <event type="map" value="北京" />
+      </maprole>
+    </map>
+    <map name="公主寝宫" pic="地图.寝宫">
+      <musics>
+        <music name="音乐.神雕.舒缓" />
+      </musics>
+      <maprole roleKey="阿九" description="惊讶的望着你">
+        <event type="story" value="bixuejianShyou_京城行1" probability="50" repeat="once">
+          <condition type="not_in_team" value="温青青" />
+          <condition type="in_team" value="袁承志" />
+          <condition type="in_time" value="子#丑#亥" />
+        </event>
+      </maprole>
+      <maprole roleKey="back" description="返回北京">
+        <event type="map" value="北京" />
+      </maprole>
+    </map>
+  </maps>
+</root>

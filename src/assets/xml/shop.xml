@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<shops>
+	<shop name="洛阳.商店" pic="场景.商店" music="音乐.城市3">
+		<sale name="小还丹" type="nolimit"/>
+		<sale name="大还丹" type="nolimit"/>
+		<sale name="白酒" type="nolimit"/>
+		<sale name="黄金重甲" type="once"/>
+    <sale name="粗布道袍" type="nolimit"/>
+		<sale name="木鱼" type="once"/>
+    <sale name="阔剑" type="once"/>
+    <sale name="柳叶刀" type="once"/>
+		<sale name="飘雪穿云掌法" type="once"/>
+		<sale name="华山剑法秘籍" type="once"/>
+		<sale name="南山刀法谱" type="once"/>
+		<sale name="蛇鹤八打" type="once"/>
+		<sale name="内功入门" type="once"/>
+    <sale name="刀" type="nolimit"/>
+    <!-- 发布请注释掉下一行 -->
+    <!--<sale name="测试小刀" type="nolimit"/>-->
+	</shop>
+	<shop name="洛阳.商店.神秘" pic="场景.商店" music="音乐.城市3">
+		<sale name="天王保命丹" type="nolimit"/>
+		<sale name="黑玉断续膏" type="nolimit"/>
+		<sale name="燃木刀法" type="once"/>
+    <sale name="石梁心法秘籍" type="once"/>
+    <sale name="乌蚕衣" type="once" yuanbao="1"/>
+    <sale name="不二枪" type="once" yuanbao="2"/>
+    <sale name="碧水剑" type="once" yuanbao="2"/>
+    <sale name="龙头拐杖" type="once" yuanbao="2"/>
+    <sale name="软鞭" type="once" yuanbao="2"/>
+    <sale name="万劫指" type="once" yuanbao="2"/>
+    <sale name="冷月宝刀" type="once" yuanbao="5"/>
+		<sale name="倚天剑" type="once" yuanbao="5"/>
+		<sale name="屠龙刀" type="once" yuanbao="5"/>
+    <sale name="血刀" type="once" yuanbao="5"/>
+    <sale name="真武剑" type="once" yuanbao="4"/>
+    <sale name="打狗棒" type="once" yuanbao="4"/>
+    <sale name="金蛇剑" type="once" yuanbao="3"/>
+    <sale name="灭仙爪" type="once" yuanbao="4"/>
+    <sale name="紫薇软剑" type="once" yuanbao="4"/>
+    <sale name="道家仙丹" type="once"/>
+    <sale name="王母蟠桃" type="once"/>
+    <sale name="刀" type="nolimit"/>
+	</shop>
+	<shop name="长安.商店" pic="场景.商店2" music="音乐.武侠进行">
+		<sale name="生生造化丹" type="nolimit"/>
+		<sale name="白酒" type="nolimit"/>
+		<sale name="九花玉露丸" type="nolimit"/>
+    <sale name="精钢拳套" type="once"/>
+    <sale name="金刚杵" type="once"/>
+    <sale name="金丝道袍" type="once"/>
+    <sale name="木刀" type="nolimit"/>
+    <sale name="银手镯" type="once"/>
+		<sale name="青莲诗集" type="once"/>
+		<sale name="八卦游身掌法" type="once"/>
+		<sale name="绕指柔剑剑谱" type="once"/>
+		<sale name="草原刀法" type="once"/>
+		<sale name="玉蜂针" type="once"/>
+		<sale name="全真心法秘籍" type="once"/>
+    <sale name="刀" type="nolimit"/>
+	</shop>
+	<sellshop name="长安.当铺" pic="场景.商店2" music="音乐.武侠进行"/>
+</shops>

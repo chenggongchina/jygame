@@ -1,22 +1,17 @@
 package cn.hanjiasongshu.jygame.views
 {
 	import flash.text.TextFormat;
-	
-	import cn.hanjiasongshu.jygame.core.assets.Assets;
-	
+
 	import feathers.controls.Button;
 	import feathers.controls.ButtonGroup;
 	import feathers.controls.Label;
 	import feathers.controls.text.TextFieldTextRenderer;
 	import feathers.core.ITextRenderer;
-	import feathers.data.ListCollection;
-	import feathers.text.BitmapFontTextFormat;
 	
 	import starling.display.Image;
-	import starling.display.Sprite;
 	import starling.textures.Texture;
 
-	public class MainMenuView extends Sprite
+	public class MainMenuView extends BaseView
 	{
 		public function MainMenuView()
 		{
@@ -24,9 +19,6 @@ package cn.hanjiasongshu.jygame.views
 		}
 		
 		public var _btnGroup : ButtonGroup;
-		
-		[Inject]
-		public var _assets : Assets;
 		
 		[PostConstruct]
 		public function construct() : void
