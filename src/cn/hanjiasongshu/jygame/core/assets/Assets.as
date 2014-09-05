@@ -20,6 +20,5 @@ package cn.hanjiasongshu.jygame.core.assets
 			verbose = true;
 			this.enqueue(EmbeddedAssets);
 		}
-		
 	}
 }
