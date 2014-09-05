@@ -24,7 +24,7 @@ package cn.hanjiasongshu.jygame.views
 			_background = new ImageLoader();
 			_background.width = 800;
 			_background.height = 600;
-			
+			_background.maintainAspectRatio = false;
 			this.addChild(_background);
 		}
 	}

@@ -10,7 +10,7 @@ package cn.hanjiasongshu.jygame.core.factory
 	{	
 		public static function getSmallFontLabel(
 			text: String = "" , 
-			color : Number = 0xffffff,
+			color : Number = 0xff0000,
 			isBold : Boolean = true
 		) : Label
 		{
