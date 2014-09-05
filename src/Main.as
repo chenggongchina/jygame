@@ -9,6 +9,11 @@ package
 	
 	import starling.core.Starling;
 	
+	/**
+	 * 
+	 * @author cg
+	 * 
+	 */
 	[SWF(width="800", height="600", frameRate="60", backgroundColor="#ffffff")]
 	public class Main extends Sprite
 	{

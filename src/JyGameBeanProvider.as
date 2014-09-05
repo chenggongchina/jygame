@@ -9,6 +9,7 @@ package
 	import cn.hanjiasongshu.jygame.views.MainMenuView;
 	import cn.hanjiasongshu.jygame.views.MapView;
 	import cn.hanjiasongshu.jygame.models.MapsModel;
+	import cn.hanjiasongshu.jygame.models.ResourceModel;
 
 	/**
 	 * bean provider
@@ -23,6 +24,7 @@ package
 				//models
 				new RuntimeModel(),
 				new MapsModel(),
+				new ResourceModel(),
 				
 				//mediators
 				new MainMenuMediator(),

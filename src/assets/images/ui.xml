@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with TexturePacker http://www.codeandweb.com/texturepacker-->
+<!-- $TexturePacker:SmartUpdate:4093bdfc79c62f57b27779bef4a8edc5:1/1$ -->
+<TextureAtlas imagePath="ui.png">
+    <SubTexture name="SceneHeadFrameActive" x="731" y="1264" width="60" height="60"/>
+    <SubTexture name="UI-focus-kuang" x="1059" y="675" width="40" height="40"/>
+    <SubTexture name="UI-kuang" x="602" y="1332" width="345" height="384"/>
+    <SubTexture name="UI-kuang2" x="802" y="1" width="292" height="372"/>
+    <SubTexture name="back" x="949" y="930" width="100" height="100"/>
+    <SubTexture name="back1" x="802" y="374" width="300" height="300"/>
+    <SubTexture name="battleinfo" x="947" y="1835" width="114" height="40"/>
+    <SubTexture name="battleinfo_fan" x="569" y="1766" width="116" height="42" frameX="0" frameY="-5" frameWidth="154" frameHeight="48"/>
+    <SubTexture name="button_gonglue" x="800" y="1717" width="146" height="200"/>
+    <SubTexture name="button_jineng" x="422" y="1628" width="146" height="200"/>
+    <SubTexture name="button_rizhi" x="948" y="1634" width="146" height="200"/>
+    <SubTexture name="button_wupin" x="948" y="1433" width="146" height="200"/>
+    <SubTexture name="button_xitong" x="949" y="1232" width="146" height="200"/>
+    <SubTexture name="button_xiuxi" x="802" y="1131" width="146" height="200"/>
+    <SubTexture name="button_zhuangtai" x="949" y="1031" width="146" height="200"/>
+    <SubTexture name="cao-1" x="787" y="1968" width="267" height="17"/>
+    <SubTexture name="cao-2" x="1" y="1907" width="267" height="17"/>
+    <SubTexture name="cao-3" x="1" y="1889" width="267" height="17"/>
+    <SubTexture name="cao-fill" x="569" y="1809" width="111" height="10"/>
+    <SubTexture name="daditu" x="1" y="602" width="800" height="600"/>
+    <SubTexture name="dialog-0" x="702" y="1983" width="84" height="49" frameX="-8" frameY="-7" frameWidth="100" frameHeight="59"/>
+    <SubTexture name="dialog-1" x="702" y="1933" width="84" height="49" frameX="-8" frameY="-7" frameWidth="100" frameHeight="59"/>
+    <SubTexture name="dialog-2" x="800" y="1918" width="84" height="49" frameX="-8" frameY="-7" frameWidth="100" frameHeight="59"/>
+    <SubTexture name="dialog-3" x="947" y="1876" width="84" height="49" frameX="-8" frameY="-7" frameWidth="100" frameHeight="59"/>
+    <SubTexture name="dialog-4" x="686" y="1766" width="84" height="49" frameX="-8" frameY="-7" frameWidth="100" frameHeight="59"/>
+    <SubTexture name="dialog" x="1" y="1933" width="700" height="104"/>
+    <SubTexture name="donate" x="802" y="930" width="146" height="200"/>
+    <SubTexture name="event_1" x="1095" y="1" width="7" height="6" frameX="-7" frameY="-9" frameWidth="21" frameHeight="22"/>
+    <SubTexture name="event_2" x="1084" y="911" width="13" height="14" frameX="-5" frameY="-4" frameWidth="21" frameHeight="22"/>
+    <SubTexture name="event_3" x="1072" y="959" width="19" height="20" frameX="-2" frameY="-1" frameWidth="21" frameHeight="22"/>
+    <SubTexture name="event_active" x="1072" y="936" width="21" height="22"/>
+    <SubTexture name="event_exist" x="1050" y="936" width="21" height="22"/>
+    <SubTexture name="event_null" x="1050" y="959" width="21" height="20" frameX="0" frameY="-1" frameWidth="21" frameHeight="22"/>
+    <SubTexture name="front" x="968" y="1926" width="82" height="36" frameX="-11" frameY="-32" frameWidth="100" frameHeight="100"/>
+    <SubTexture name="fullscreen" x="1059" y="716" width="40" height="39"/>
+    <SubTexture name="gameover" x="802" y="675" width="256" height="254"/>
+    <SubTexture name="icon-dao" x="1059" y="880" width="30" height="30"/>
+    <SubTexture name="icon-jian" x="1059" y="849" width="30" height="30"/>
+    <SubTexture name="icon-neigong" x="1059" y="818" width="30" height="30"/>
+    <SubTexture name="icon-qimen" x="1059" y="787" width="30" height="30"/>
+    <SubTexture name="icon-quan" x="1059" y="756" width="30" height="30"/>
+    <SubTexture name="info" x="422" y="1829" width="377" height="103"/>
+    <SubTexture name="lancao" x="787" y="1998" width="95" height="11"/>
+    <SubTexture name="lancao_fan" x="787" y="1986" width="95" height="11"/>
+    <SubTexture name="left" x="885" y="1926" width="82" height="36" frameX="-11" frameY="-32" frameWidth="100" frameHeight="100"/>
+    <SubTexture name="lianwuchang" x="1" y="1" width="800" height="600"/>
+    <SubTexture name="logo" x="602" y="1203" width="128" height="128"/>
+    <SubTexture name="mainmenu" x="1" y="1203" width="600" height="424"/>
+    <SubTexture name="nick" x="569" y="1717" width="166" height="48" frameX="0" frameY="-1" frameWidth="166" frameHeight="52"/>
+    <SubTexture name="right" x="269" y="1889" width="82" height="36" frameX="-11" frameY="-32" frameWidth="100" frameHeight="100"/>
+    <SubTexture name="sceneHeadFrame" x="731" y="1203" width="60" height="60"/>
+    <SubTexture name="skillbox" x="1" y="1628" width="420" height="260"/>
+    <SubTexture name="tanhao" x="1059" y="911" width="24" height="24"/>
+    <SubTexture name="xuecao" x="681" y="1816" width="98" height="11"/>
+    <SubTexture name="xuecao_fan" x="702" y="2033" width="97" height="11"/>
+</TextureAtlas>

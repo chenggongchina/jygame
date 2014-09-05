@@ -38,8 +38,8 @@ package cn.hanjiasongshu.jygame.views
 			_btnGroup.buttonFactory = function():Button
 			{
 				var button:Button = new Button();
-				button.defaultSkin = new Image( _assets.getTexture("cao1") );
-				button.downSkin = new Image( _assets.getTexture("cao2") );
+				button.defaultSkin = new Image( _assets.getTexture("cao-1") );
+				button.downSkin = new Image( _assets.getTexture("cao-2") );
 				button.labelFactory = function():ITextRenderer
 				{
 					var textRenderer:TextFieldTextRenderer = new TextFieldTextRenderer();

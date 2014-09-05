@@ -11,7 +11,9 @@ package cn.hanjiasongshu.jygame.core.factory
 		public static function getSmallFontLabel(
 			text: String = "" , 
 			color : Number = 0xff0000,
-			isBold : Boolean = true
+			isBold : Boolean = true,
+			fontSize : Number = 11,
+			font : String = "SimHei"
 		) : Label
 		{
 			var label : Label = new Label();
@@ -19,7 +21,7 @@ package cn.hanjiasongshu.jygame.core.factory
 			label.textRendererFactory = function():ITextRenderer
 			{
 				var textRenderer:TextFieldTextRenderer = new TextFieldTextRenderer();
-				textRenderer.textFormat = new TextFormat( "SimHei", 11, color, isBold );
+				textRenderer.textFormat = new TextFormat( font, fontSize, color, isBold );
 				return textRenderer;
 			}
 			return label;
