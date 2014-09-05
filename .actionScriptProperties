@@ -32,7 +32,9 @@
     </libraryPath>
     <sourceAttachmentPath/>
   </compiler>
-  <applications/>
+  <applications>
+    <application path="Main.as"/>
+  </applications>
   <modules/>
   <workers/>
   <buildCSSFiles/>

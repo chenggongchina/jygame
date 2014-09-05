@@ -1,24 +1,26 @@
 package
 {
 	import com.creativebottle.starlingmvc.beans.BeanProvider;
-	
-	import cn.hanjiasongshu.jygame.controllers.TestController;
-	import cn.hanjiasongshu.jygame.mediators.TestMediator;
-	import cn.hanjiasongshu.jygame.models.TestModel;
+	import cn.hanjiasongshu.jygame.controllers.SceneController;
+	import cn.hanjiasongshu.jygame.mediators.MainMenuMediator;
 
+	/**
+	 * bean provider
+	 * @author cg
+	 * 
+	 */
 	public class JyGameBeanProvider extends BeanProvider
 	{
 		public function JyGameBeanProvider()
 		{
-			beans = [
+			beans = [				
 				//models
-				new TestModel(),
-				
+
 				//mediators
-				new TestMediator(),
+				new MainMenuMediator(),
 				
 				//controllers
-				new TestController(),
+				new SceneController(),
 			];
 		}
 	}

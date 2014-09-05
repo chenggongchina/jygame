@@ -4,13 +4,15 @@ package
 	import com.creativebottle.starlingmvc.config.StarlingMVCConfig;
 	import com.creativebottle.starlingmvc.views.ViewManager;
 	
-	import cn.hanjiasongshu.jygame.ControllerProvider;
-	import cn.hanjiasongshu.jygame.MediatorProvider;
-	import cn.hanjiasongshu.jygame.ModelProvider;
-	
 	import starling.display.Sprite;
-	import starling.text.TextField;
+	import starling.errors.AbstractClassError;
+	import cn.hanjiasongshu.jygame.core.assets.Assets;
 
+	/**
+	 * 
+	 * @author cg
+	 * 
+	 */
 	public class JyGame extends Sprite
 	{
 		private var starlingMVC:StarlingMVC;
@@ -21,9 +23,20 @@ package
 			config.eventPackages = ["cn.hanjiasongshu.jygame.events"];
 			config.viewPackages = ["cn.hanjiasongshu.jygame.views"];
 			
-			var beans:Array = [new JyGameBeanProvider(), new ViewManager(this)];
+			var assets:Assets = new Assets();
+			var gameSprite : Sprite = this;
 			
-			starlingMVC = new StarlingMVC(this, config, beans);
+			assets.loadQueue(
+				function(ratio:Number):void
+				{
+					trace("loading assets, ratio = " + ratio);
+					if (ratio == 1.0){
+						var beans:Array = [assets, new JyGameBeanProvider(), new ViewManager(gameSprite)];
+						starlingMVC = new StarlingMVC(gameSprite, config, beans);
+					}
+				}
+			);
+			
 		}
 	}
 }
